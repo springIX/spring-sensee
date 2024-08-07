@@ -1,0 +1,33 @@
+// SCSS의 'VAR, MIXIN, FUNCTION을 공통으로 사용하기 위한 목적
+
+// Font
+$font-kr: "Noto Sans KR", sans-serif;
+$font-en: "Poppins", sans-serif;
+
+// Primary color
+$color-white: #ffffff;
+$color-black: #000000;
+
+// Secondary color
+$color-bg: #f0f4f7;
+$color-gray1: #888888;
+$color-gray2: #d9d9d9;
+$color-blue: #2832e6;
+$color-green: #00c01e;
+$color-yellow: #ffc800;
+$color-red: #ff3200;
+
+/* ELLIPSIS */
+@mixin ellip($col: 1) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  @if ($col == 1) {
+    white-space: nowrap;
+  } @else {
+    white-space: unset;
+    display: -webkit-box;
+    box-orient: vertical;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $col;
+  }
+}

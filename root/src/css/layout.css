@@ -1,0 +1,256 @@
+/* ELLIPSIS */
+.header {
+  width: 100%;
+  height: 100px;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  padding: 0 44px;
+  font-weight: 700;
+}
+.header .logo {
+  width: 109px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-right: 198px;
+}
+.header .gnb ul {
+  display: flex;
+  gap: 60px;
+}
+.header .gnb ul li.outlink a::after {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(/images/common/arr_link.svg) no-repeat center center/contain;
+  transform: rotate(-45deg) translateY(4px);
+}
+.header .setting_box {
+  margin-left: auto;
+  display: flex;
+}
+.header .setting_box .ctrl_txt {
+  position: relative;
+}
+.header .setting_box .ctrl_txt .ctrl_btn {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 7px 12px;
+  border-radius: 4px;
+}
+.header .setting_box .ctrl_txt .ctrl_btn span {
+  width: 23px;
+  height: 14px;
+  position: relative;
+  margin-left: 11px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header .setting_box .ctrl_txt .ctrl_btn span::before, .header .setting_box .ctrl_txt .ctrl_btn span::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #000000;
+}
+.header .setting_box .ctrl_txt .ctrl_btn span i::before, .header .setting_box .ctrl_txt .ctrl_btn span i::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #000000;
+  position: absolute;
+  transition: 0.3s ease;
+}
+.header .setting_box .ctrl_txt .ctrl_btn span i::before {
+  left: 3px;
+  top: -3px;
+}
+.header .setting_box .ctrl_txt .ctrl_btn span i::after {
+  right: 3px;
+  bottom: -3px;
+}
+.header .setting_box .ctrl_txt .ctrl_btn:hover span i::before {
+  left: 12px;
+}
+.header .setting_box .ctrl_txt .ctrl_btn:hover span i::after {
+  right: 12px;
+}
+.header .setting_box .ctrl_txt .ctrl_box {
+  width: 326px;
+  position: relative;
+  padding: 45px 30px 40px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  position: absolute;
+  right: 0;
+  top: calc(100% + 16px);
+  border-radius: 8px;
+  background: linear-gradient(110deg, rgba(0, 0, 0, 0.5) 12.72%, rgba(255, 255, 255, 0.5) 105.39%);
+  box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+.header .setting_box .ctrl_txt .ctrl_box .close_btn {
+  width: 10px;
+  height: 10px;
+  background: url(/images/common/close.svg) no-repeat center center/contain;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+.header .setting_box .ctrl_txt .ctrl_box .txt_size {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.header .setting_box .ctrl_txt .ctrl_box .txt_size .btn_wrap {
+  display: flex;
+  gap: 10px;
+}
+.header .setting_box .ctrl_txt .ctrl_box .txt_size .btn_wrap button {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: relative;
+  transition: 0.3s eae;
+}
+.header .setting_box .ctrl_txt .ctrl_box .txt_size .btn_wrap button::before, .header .setting_box .ctrl_txt .ctrl_box .txt_size .btn_wrap button::after {
+  content: "";
+  width: 16px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s ease;
+}
+.header .setting_box .ctrl_txt .ctrl_box .txt_size .btn_wrap button::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+.header .setting_box .ctrl_txt .ctrl_box .txt_size .btn_wrap button.size_down::after {
+  display: none;
+}
+.header .setting_box .ctrl_txt .ctrl_box .txt_size .btn_wrap button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.header .setting_box .ctrl_txt .ctrl_box .txt_size .btn_wrap button:hover::before, .header .setting_box .ctrl_txt .ctrl_box .txt_size .btn_wrap button:hover::after {
+  background-color: #ffffff;
+}
+.header .setting_box .ctrl_txt .ctrl_box .txt_color .btn_wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.header .setting_box .ctrl_txt .ctrl_box .txt_color .btn_wrap button {
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  font-size: 36px;
+  position: relative;
+  padding: 4px;
+  border: 0px solid #000000;
+  box-sizing: content-box;
+  border-radius: 6px;
+}
+.header .setting_box .ctrl_txt .ctrl_box .txt_color .btn_wrap button span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background-color: #000000;
+  position: relative;
+}
+.header .setting_box .ctrl_txt .ctrl_box .txt_color .btn_wrap button span::before, .header .setting_box .ctrl_txt .ctrl_box .txt_color .btn_wrap button span::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.header .setting_box .ctrl_txt .ctrl_box .txt_color .btn_wrap button span::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+.header .setting_box .ctrl_txt .ctrl_box .txt_color .btn_wrap button.white_black {
+  border-color: #ffffff;
+}
+.header .setting_box .ctrl_txt .ctrl_box .txt_color .btn_wrap button.white_black span {
+  background-color: #ffffff;
+  color: #000000;
+}
+.header .setting_box .ctrl_txt .ctrl_box .txt_color .btn_wrap button.black_white span {
+  color: #ffffff;
+}
+.header .setting_box .ctrl_txt .ctrl_box .txt_color .btn_wrap button.blue_yellow {
+  border-color: #2832e6;
+}
+.header .setting_box .ctrl_txt .ctrl_box .txt_color .btn_wrap button.blue_yellow span {
+  background-color: #2832e6;
+  color: #ffc800;
+}
+.header .setting_box .ctrl_txt .ctrl_box .txt_color .btn_wrap button.black_yellow span {
+  color: #ffc800;
+}
+.header .setting_box .ctrl_txt .ctrl_box .txt_color .btn_wrap button.on {
+  border-width: 1px;
+}
+.header .setting_box .lang_wrap {
+  position: relative;
+  margin-left: 11px;
+}
+.header .setting_box .lang_wrap .lang_btn {
+  width: 71px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+}
+.header .setting_box .lang_wrap .lang_btn::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: url(/images/common/arr_select.svg) no-repeat center center/contain;
+}
+.header .setting_box .lang_wrap .lang_link {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 16px);
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 8px;
+  padding: 12px;
+  width: 100%;
+}
+.header .setting_box .lang_wrap .lang_link a,
+.header .setting_box .lang_wrap .lang_link span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.3;
+}
+.header .setting_box .lang_wrap .lang_link span {
+  opacity: 1;
+}
+.header .setting_box .lang_wrap .lang_link span::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  border-radius: 50%;
+  transform: translateY(-1px);
+}
