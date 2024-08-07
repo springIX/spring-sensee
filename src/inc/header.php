@@ -1,7 +1,8 @@
-<header class="header pps">
+<header class="header pps" data-view="all_menu">
   <h1 class="logo">
     <a href="/">
-      <img src="/images/common/logo.svg" alt="센시 로고">
+      <img src="/src/images/common/logo.svg" class="logo_w" alt="센시 화이트 로고">
+      <img src="/src/images/common/logo_b.svg" class="logo_b" alt="센시 블랙 로고">
     </a>
   </h1>
   <nav class="gnb">
@@ -30,10 +31,10 @@
         <div class="txt_color" data-view="text_ctrl">
           <span>Text color</span>
           <div class="btn_wrap pps">
-            <button class="white_black on" title="하얀색 배경에 검정색 텍스트로 변경"><span>S</span></button>
-            <button class="black_white" title="검정색 배경에 하얀색 텍스트로 변경"><span>S</span></button>
-            <button class="blue_yellow" title="파란색 배경에 노란색 텍스트로 변경"><span>S</span></button>
-            <button class="black_yellow" title="검정색 배경에 노란색 텍스트로 변경"><span>S</span></button>
+            <button data-color="white_black" class="on" title="하얀색 배경에 검정색 텍스트로 변경"><span>S</span></button>
+            <button data-color="black_white" title="검정색 배경에 하얀색 텍스트로 변경"><span>S</span></button>
+            <button data-color="blue_yellow" title="파란색 배경에 노란색 텍스트로 변경"><span>S</span></button>
+            <button data-color="black_yellow" title="검정색 배경에 노란색 텍스트로 변경"><span>S</span></button>
           </div>
         </div>
       </div>
@@ -46,5 +47,10 @@
         <a href="/sp/" title="스페인사이트로 이동">ES</a>
       </div>
     </div>
+    <button title="전체메뉴 버튼" data-btn="all_menu" class="all_menu_btn tb">
+      <i></i>
+      <i></i>
+      <i></i>
+    </button>
   </div>
 </header>
