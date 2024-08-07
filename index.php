@@ -14,7 +14,8 @@
   <?php include $path."/src/inc/header.php"; ?>
   
   <div>
-  </div>
+d  
+</div>
 
   <?php include $path."/src/inc/footer.php"; ?>
 </body>
