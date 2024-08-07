@@ -21,17 +21,23 @@
     font-size: 12rem;
   }
 }
-.header::before {
+.header::before, .header::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 100%;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.header::before {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
   z-index: 5;
 }
-.header.bg::before {
+.header::after {
+  height: 100%;
+  transition: 0.3s ease;
+}
+.header.bg:not(.on)::after {
   background: rgba(0, 0, 0, 0.4);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
@@ -108,11 +114,17 @@
     flex-direction: column;
     gap: 16rem;
   }
+  .header .gnb ul li {
+    transition: 0.3s ease;
+  }
   .header .gnb ul li.outlink a::after {
     filter: brightness(0);
     width: 33rem;
     height: 33rem;
     transform: rotate(-45deg) translateY(6rem);
+  }
+  .header .gnb ul li:hover {
+    transform: translateX(5rem);
   }
 }
 @media (max-width: 750px) {
@@ -138,6 +150,7 @@
 }
 .header .setting_box .ctrl_txt {
   position: relative;
+  z-index: 1;
 }
 .header .setting_box .ctrl_txt .ctrl_btn {
   display: flex;
@@ -510,6 +523,9 @@
   transform: translateY(-100%);
 }
 @media (max-width: 1280px) {
+  .header.on::before {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
   .header.on .logo a img.logo_w {
     opacity: 0;
   }
@@ -537,5 +553,6 @@
     opacity: 1;
     touch-action: auto;
     pointer-events: auto;
+    transform: translateY(0);
   }
 }

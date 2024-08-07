@@ -10,7 +10,7 @@
   include $path."src/inc/head.php";   
 ?>
 </head>
-<body style="background:#000; height:200vh;" class="<?=$menuClass?>">
+<body style="background:url(/src/images/main/main_visual.png); height:200vh;" class="<?=$menuClass?>">
   <?php include $path."/src/inc/header.php"; ?>
   
   <div>

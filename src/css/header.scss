@@ -18,17 +18,24 @@
     padding: 0 20rem;
     font-size: 12rem;
   }
-  &::before {
+  &::before,
+  &::after {
     content: "";
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 100%;
-    border-bottom: 1px solid rgba($color: $color-white, $alpha: 0.3);
+  }
+  &::before {
+    height: 1px;
+    background-color: rgba($color: $color-white, $alpha: 0.3);
     z-index: 5;
   }
-  &.bg::before {
+  &::after {
+    height: 100%;
+    transition: 0.3s ease;
+  }
+  &.bg:not(.on)::after {
     background: rgba($color: $color-black, $alpha: 0.4);
     backdrop-filter: blur(10px);
   }
@@ -105,6 +112,7 @@
         flex-direction: column;
         gap: 16rem;
         li {
+          transition: 0.3s ease;
           &.outlink {
             a::after {
               filter: brightness(0);
@@ -112,6 +120,9 @@
               height: 33rem;
               transform: rotate(-45deg) translateY(6rem);
             }
+          }
+          &:hover {
+            transform: translateX(5rem);
           }
         }
       }
@@ -139,6 +150,7 @@
     }
     .ctrl_txt {
       position: relative;
+      z-index: 1;
       .ctrl_btn {
         display: flex;
         align-items: center;
@@ -525,6 +537,9 @@
 
   @include screen("tb") {
     &.on {
+      &::before {
+        background-color: rgba($color: $color-black, $alpha: 0.1);
+      }
       .logo a img {
         &.logo_w {
           opacity: 0;
@@ -555,6 +570,7 @@
           opacity: 1;
           touch-action: auto;
           pointer-events: auto;
+          transform: translateY(0);
         }
       }
     }
