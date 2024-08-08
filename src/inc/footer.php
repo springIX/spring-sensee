@@ -11,7 +11,7 @@
     </select>
   </div>
   <div class="cymbol">
-    <img src="/src/images/common/logo-cymbol.svg" alt="센시 로고 심볼">
+    <img src="/src/images/common/logo_cymbol.svg" alt="센시 로고 심볼">
   </div>
   <div class="info">
     <p class="ft_tit pps">Touch the world and <br>See the unseen

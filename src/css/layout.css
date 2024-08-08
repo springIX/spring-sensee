@@ -29,6 +29,7 @@
 }
 .h3_.pps {
   font-weight: 600;
+  line-height: 1.2;
 }
 @media (max-width: 750px) {
   .h3_.pps {
@@ -168,6 +169,9 @@
   }
 }
 
+.section_tit .h3_.pps {
+  margin-top: 10rem;
+}
 .section_tit .body_txt {
   margin-top: 40rem;
 }
@@ -205,6 +209,33 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+}
+
+.btn-more {
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  display: flex;
+  cursor: pointer;
+}
+.btn-more::before {
+  content: "Touch more";
+  color: #ffffff;
+  background-color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  width: 150px;
+  height: 56px;
+  line-height: 56px;
+  border-radius: 2px;
+}
+.btn-more::after {
+  content: "";
+  width: 56px;
+  height: 56px;
+  background: #000000 url() no-repeat center center/40% auto;
+  margin-left: 1px;
+  border-radius: 2px;
 }
 
 @media (min-width: 751px) {

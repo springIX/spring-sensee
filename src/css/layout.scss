@@ -26,6 +26,7 @@
   }
   &.pps {
     font-weight: 600;
+    line-height: 1.2;
     @include screen("mo") {
       line-height: 1.2;
     }
@@ -154,7 +155,8 @@
 .section_tit {
   .h5_ {
   }
-  .h2_ {
+  .h3_.pps {
+    margin-top: 10rem;
   }
   .body_txt {
     margin-top: 40rem;
@@ -191,7 +193,35 @@
   align-items: flex-end;
 }
 
-// 특정 해상도에서만
+// Btn
+.btn-more {
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  display: flex;
+  cursor: pointer;
+  &::before {
+    content: "Touch more";
+    color: $color-white;
+    background-color: $color-black;
+    font-family: $font-en;
+    font-weight: 700;
+    width: 150px;
+    height: 56px;
+    line-height: 56px;
+    border-radius: 2px;
+  }
+  &::after {
+    content: "";
+    width: 56px;
+    height: 56px;
+    background: $color-black url() no-repeat center center / 40% auto;
+    margin-left: 1px;
+    border-radius: 2px;
+  }
+}
+
+// Responsive
 @include screen("pc") {
   .mo {
     display: none !important;

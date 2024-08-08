@@ -39,7 +39,26 @@
       <section class="<?=$menuClass?>_brand">
         <div class="section_tit">
           <h6 class="h5_">Brand story</h6>
-          <h2 class="h3_ pps">Touch the world and <br>See the unseen</h2>
+          <h3 class="h3_ pps">Touch the world and <br>See the unseen</h3>
+        </div>
+        <div class="txt_box">
+          <div class="txt_wrap">
+            <p>
+              센시는 사회적 기업으로서의 한계를 넘어
+              빅데이터 기반의 AI 기술과 특수 인쇄술을 바탕으로
+              플랫폼 & 콘텐츠 브랜드로써 지속가능한 비전 및 
+              지향가치를 새롭게 정립합니다.
+            </p>
+            <p>
+              점자책의 변화를 넘어서 디지털 콘텐츠 플랫폼을 
+              구축하고, 이를 통해 일반인과 장애인들이 
+              정보를 교류하고 즐기는 세상을 만들고자 합니다.
+              점자책의 다양한 콘텐츠를 통해 
+              장애와 비장애의 경계가 없는 세상,
+              그것이 센시가 꿈꾸는 세상입니다.
+            </p>
+            <a href="" class="btn_more"></a>
+          </div>
         </div>
       </section>
     </main>

@@ -88,7 +88,7 @@
   display: inline-block;
   width: 16rem;
   height: 16rem;
-  background: url(/src/images/common/arr-link.svg) no-repeat center center/contain;
+  background: url(/src/images/common/arr_link.svg) no-repeat center center/contain;
   transform: rotate(-45deg) translateY(4rem);
 }
 @media (max-width: 1280px) {
@@ -407,7 +407,7 @@
   content: "";
   width: 8rem;
   height: 8rem;
-  background: url(/src/images/common/arr-select.svg) no-repeat center center/contain;
+  background: url(/src/images/common/arr_select.svg) no-repeat center center/contain;
   transition: 0.3s ease;
 }
 @media (max-width: 1280px) {
