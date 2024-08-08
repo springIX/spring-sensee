@@ -19,6 +19,54 @@
   top: 853rem;
   width: 100%;
 }
-.main_container .main_brand .txt_box {
-  margin-top: 160rem;
+.main_container .main_brand {
+  padding-bottom: 500rem;
+}
+.main_container .main_brand .main_brand_info {
+  padding: 0 94rem 147rem 198rem;
+}
+.main_container .main_brand .main_brand_info .txt_box {
+  width: max-content;
+  margin: 160rem 0 0 auto;
+}
+.main_container .main_brand .main_brand_info .txt_box .txt_wrap {
+  display: flex;
+  gap: 49rem;
+  margin-bottom: 96rem;
+}
+.main_container .main_brand .main_brand_visual {
+  position: relative;
+}
+.main_container .main_brand .main_brand_visual .txt_box {
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+.main_container .main_brand .main_brand_visual .txt_box .tit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #ffffff;
+  font-weight: 700;
+  padding-bottom: 32rem;
+}
+.main_container .main_brand .main_brand_visual .txt_box .tit span + span {
+  display: flex;
+  align-items: center;
+}
+.main_container .main_brand .main_brand_visual .txt_box .tit span + span::before {
+  content: "";
+  width: 130rem;
+  height: 1px;
+  background-color: #ffffff;
+  margin: 0 8rem;
+}
+.main_container .main_brand .main_brand_visual .txt_box .txt {
+  flex-shrink: 0;
+  background-color: #f0f4f7;
+  padding: 144rem 322rem;
 }

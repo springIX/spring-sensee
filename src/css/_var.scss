@@ -17,8 +17,6 @@ $color-green: #00c01e;
 $color-yellow: #ffc800;
 $color-red: #ff3200;
 
-// Inner padding val
-
 /* Responsive */
 @mixin screen($size) {
   @if $size == "pc" {

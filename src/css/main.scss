@@ -22,8 +22,54 @@
   }
 
   .main_brand {
-    .txt_box {
-      margin-top: 160rem;
+    padding-bottom: 500rem;
+    .main_brand_info {
+      padding: 0 94rem 147rem 198rem;
+      .txt_box {
+        width: max-content;
+        margin: 160rem 0 0 auto;
+        .txt_wrap {
+          display: flex;
+          gap: 49rem;
+          margin-bottom: 96rem;
+        }
+      }
+    }
+    .main_brand_visual {
+      position: relative;
+      .txt_box {
+        display: flex;
+        align-items: flex-end;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        .tit {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          color: $color-white;
+          font-weight: 700;
+          padding-bottom: 32rem;
+          span + span {
+            display: flex;
+            align-items: center;
+            &::before {
+              content: "";
+              width: 130rem;
+              height: 1px;
+              background-color: $color-white;
+              margin: 0 8rem;
+            }
+          }
+        }
+        .txt {
+          flex-shrink: 0;
+          background-color: $color-bg;
+          padding: 144rem 322rem;
+        }
+      }
     }
   }
 }

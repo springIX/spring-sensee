@@ -3,7 +3,8 @@
   $pageUrl = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
   $menuClass = 'main';
   $menuName = '';
-  $img = '/src/images/'.$menuClass.'/';
+  $img = '/src/images/'.$menuClass.'/'.$menuClass.'_';
+  $icon = '/src/images/common/';
   $pageTitle = '';
   $pageImages = '';
   $pageDescription = '디스크립션';
@@ -33,32 +34,61 @@
             MEANINGFUL <br>
             BASICS
           </strong>
-          <img src="<?=$img?>main_intro.png" alt="" class="hand_img">
+          <img src="<?=$img?>intro.png" alt="" class="hand_img">
         </div>
       </section>
       <section class="<?=$menuClass?>_brand">
-        <div class="section_tit">
-          <h6 class="h5_">Brand story</h6>
-          <h3 class="h3_ pps">Touch the world and <br>See the unseen</h3>
-        </div>
-        <div class="txt_box">
-          <div class="txt_wrap">
-            <p>
-              센시는 사회적 기업으로서의 한계를 넘어
-              빅데이터 기반의 AI 기술과 특수 인쇄술을 바탕으로
-              플랫폼 & 콘텐츠 브랜드로써 지속가능한 비전 및 
-              지향가치를 새롭게 정립합니다.
-            </p>
-            <p>
-              점자책의 변화를 넘어서 디지털 콘텐츠 플랫폼을 
-              구축하고, 이를 통해 일반인과 장애인들이 
-              정보를 교류하고 즐기는 세상을 만들고자 합니다.
-              점자책의 다양한 콘텐츠를 통해 
-              장애와 비장애의 경계가 없는 세상,
-              그것이 센시가 꿈꾸는 세상입니다.
-            </p>
+        <div class="<?=$menuClass?>_brand_info">
+          <div class="section_tit">
+            <h6 class="h5_">Brand story</h6>
+            <h3 class="h3_ pps">Touch the world and <br>See the unseen</h3>
+          </div>
+          <div class="txt_box">
+            <div class="txt_wrap">
+              <p>
+                센시는 사회적 기업으로서의 한계를 넘어 <br>
+                빅데이터 기반의 AI 기술과 특수 인쇄술을 바탕으로 <br>
+                플랫폼 & 콘텐츠 브랜드로써 지속가능한 비전 및 <br>
+                지향가치를 새롭게 정립합니다.
+              </p>
+              <p>
+                점자책의 변화를 넘어서 디지털 콘텐츠 플랫폼을  <br>
+                구축하고, 이를 통해 일반인과 장애인들이  <br>
+                정보를 교류하고 즐기는 세상을 만들고자 합니다. <br>
+                점자책의 다양한 콘텐츠를 통해  <br>
+                장애와 비장애의 경계가 없는 세상, <br>
+                그것이 센시가 꿈꾸는 세상입니다.
+              </p>
+            </div>
             <a href="" class="btn_more"></a>
           </div>
+        </div>
+        <div class="<?=$menuClass?>_brand_visual">
+          <picture class="brand_bg">
+            <source media="(min-width: 751px)" srcset="<?=$img?>brand.png" />
+            <source media="(max-width: 750px)" srcset="<?=$img?>brand_mo.png" />
+            <img src="<?=$img?>brand.png" data-src="<?=$img?>brand.png" alt="" />
+          </picture>
+          <div class="txt_box">
+            <p class="tit body_txt">
+              <span>TOGETHER</span>
+              <span>MEANINGFUL</span>
+              <span>BASICS</span>
+            </p>
+            <p class="txt">
+              일상의 순간들을 읽어내고,  <br>
+              일상의 경계를 지우며 확장시키는 온전한 삶을, <br>
+              모두가 윤리적인 삶을 누릴 수 있는세상을  <br>
+              센시가 만들어 갑니다.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="<?=$menuClass?>_tech">
+        <div class="section_tit">
+          <h5 class="h5_">TECHNOLOGY</h5>
+          <h5 class="h3_">모두를 위한 기술, 함께하는 세상</h5>
+          <h5 class="body_txt"></h5>
         </div>
       </section>
     </main>

@@ -194,7 +194,7 @@
 }
 
 // Btn
-.btn-more {
+.btn_more {
   background-color: transparent;
   border: none;
   text-align: center;
@@ -215,7 +215,8 @@
     content: "";
     width: 56px;
     height: 56px;
-    background: $color-black url() no-repeat center center / 40% auto;
+    background: $color-black url(/src/images/common/arr_link.svg) no-repeat
+      center center / 40% auto;
     margin-left: 1px;
     border-radius: 2px;
   }

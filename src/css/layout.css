@@ -211,14 +211,14 @@
   align-items: flex-end;
 }
 
-.btn-more {
+.btn_more {
   background-color: transparent;
   border: none;
   text-align: center;
   display: flex;
   cursor: pointer;
 }
-.btn-more::before {
+.btn_more::before {
   content: "Touch more";
   color: #ffffff;
   background-color: #000000;
@@ -229,11 +229,11 @@
   line-height: 56px;
   border-radius: 2px;
 }
-.btn-more::after {
+.btn_more::after {
   content: "";
   width: 56px;
   height: 56px;
-  background: #000000 url() no-repeat center center/40% auto;
+  background: #000000 url(/src/images/common/arr_link.svg) no-repeat center center/40% auto;
   margin-left: 1px;
   border-radius: 2px;
 }
