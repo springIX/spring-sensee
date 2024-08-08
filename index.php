@@ -1,8 +1,12 @@
 <?php 
+  $path = './';
+  $pageUrl = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
   $menuClass = 'main';
   $menuName = '';
+  $img = '/src/images/'.$menuClass.'/';
   $pageDescription = '디스크립션';
   $pageKeywords = '키워드';
+
 
   include "./src/inc/head.php";
 ?>
