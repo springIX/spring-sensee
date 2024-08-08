@@ -25,17 +25,17 @@
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
   width: 100%;
 }
 .header::before {
   height: 1px;
   background-color: rgba(255, 255, 255, 0.3);
-  z-index: 5;
+  bottom: 0;
 }
 .header::after {
   height: 100%;
   transition: 0.3s ease;
+  bottom: 1px;
 }
 .header.bg:not(.on)::after {
   background: rgba(0, 0, 0, 0.4);
@@ -49,7 +49,7 @@
   align-items: center;
   margin-right: 198rem;
   position: relative;
-  z-index: 5;
+  z-index: 6;
 }
 .header .logo a img {
   width: 100%;
@@ -74,6 +74,10 @@
     width: 96rem;
   }
 }
+.header .gnb {
+  position: relative;
+  z-index: 5;
+}
 .header .gnb ul {
   display: flex;
   gap: 60rem;
@@ -83,7 +87,7 @@
   display: inline-block;
   width: 16rem;
   height: 16rem;
-  background: url(/src/images/common/arr_link.svg) no-repeat center center/contain;
+  background: url(/src/images/common/arr-link.svg) no-repeat center center/contain;
   transform: rotate(-45deg) translateY(4rem);
 }
 @media (max-width: 1280px) {
@@ -113,6 +117,9 @@
   .header .gnb ul {
     flex-direction: column;
     gap: 16rem;
+    max-height: calc(100% - 103rem);
+    overflow-y: auto;
+    align-items: flex-start;
   }
   .header .gnb ul li {
     transition: 0.3s ease;
@@ -150,7 +157,7 @@
 }
 .header .setting_box .ctrl_txt {
   position: relative;
-  z-index: 1;
+  z-index: 3;
 }
 .header .setting_box .ctrl_txt .ctrl_btn {
   display: flex;
@@ -341,7 +348,6 @@
   border-radius: 4rem;
   background-color: #000000;
   position: relative;
-  line-height: 1.2;
 }
 .header .setting_box .ctrl_txt .ctrl_box .txt_color .btn_wrap button span::before, .header .setting_box .ctrl_txt .ctrl_box .txt_color .btn_wrap button span::after {
   content: "";
@@ -386,6 +392,7 @@
 }
 .header .setting_box .lang_wrap {
   position: relative;
+  z-index: 5;
   margin-left: 11rem;
 }
 @media (max-width: 1280px) {
@@ -409,7 +416,7 @@
   content: "";
   width: 8rem;
   height: 8rem;
-  background: url(/src/images/common/arr_select.svg) no-repeat center center/contain;
+  background: url(/src/images/common/arr-select.svg) no-repeat center center/contain;
   transition: 0.3s ease;
 }
 @media (max-width: 1280px) {
@@ -525,6 +532,7 @@
 @media (max-width: 1280px) {
   .header.on::before {
     background-color: rgba(0, 0, 0, 0.1);
+    z-index: 6;
   }
   .header.on .logo a img.logo_w {
     opacity: 0;

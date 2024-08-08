@@ -23,17 +23,17 @@
     content: "";
     position: absolute;
     left: 0;
-    bottom: 0;
     width: 100%;
   }
   &::before {
     height: 1px;
     background-color: rgba($color: $color-white, $alpha: 0.3);
-    z-index: 5;
+    bottom: 0;
   }
   &::after {
     height: 100%;
     transition: 0.3s ease;
+    bottom: 1px;
   }
   &.bg:not(.on)::after {
     background: rgba($color: $color-black, $alpha: 0.4);
@@ -46,7 +46,7 @@
     align-items: center;
     margin-right: 198rem;
     position: relative;
-    z-index: 5;
+    z-index: 6;
     a {
       img {
         width: 100%;
@@ -69,6 +69,8 @@
     }
   }
   .gnb {
+    position: relative;
+    z-index: 5;
     ul {
       display: flex;
       gap: 60rem;
@@ -79,7 +81,7 @@
             display: inline-block;
             width: 16rem;
             height: 16rem;
-            background: url(/src/images/common/arr_link.svg) no-repeat center
+            background: url(/src/images/common/arr-link.svg) no-repeat center
               center / contain;
             transform: rotate(-45deg) translateY(4rem);
           }
@@ -111,6 +113,9 @@
       ul {
         flex-direction: column;
         gap: 16rem;
+        max-height: calc(100% - 103rem);
+        overflow-y: auto;
+        align-items: flex-start;
         li {
           transition: 0.3s ease;
           &.outlink {
@@ -150,7 +155,7 @@
     }
     .ctrl_txt {
       position: relative;
-      z-index: 1;
+      z-index: 3;
       .ctrl_btn {
         display: flex;
         align-items: center;
@@ -356,7 +361,6 @@
                 border-radius: 4rem;
                 background-color: $color-black;
                 position: relative;
-                line-height: 1.2;
                 &::before,
                 &::after {
                   content: "";
@@ -407,6 +411,7 @@
     }
     .lang_wrap {
       position: relative;
+      z-index: 5;
       margin-left: 11rem;
       @include screen("tb") {
         position: fixed;
@@ -426,7 +431,7 @@
           content: "";
           width: 8rem;
           height: 8rem;
-          background: url(/src/images/common/arr_select.svg) no-repeat center
+          background: url(/src/images/common/arr-select.svg) no-repeat center
             center / contain;
           transition: 0.3s ease;
         }
@@ -539,6 +544,7 @@
     &.on {
       &::before {
         background-color: rgba($color: $color-black, $alpha: 0.1);
+        z-index: 6;
       }
       .logo a img {
         &.logo_w {

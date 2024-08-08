@@ -10,13 +10,10 @@
   include $path."src/inc/head.php";   
 ?>
 </head>
-<body style="background:#000; height:200vh;" class="<?=$menuClass?>">
+<body class="<?=$menuClass?>">
   <?php include $path."/src/inc/header.php"; ?>
+  <div style="background:url(/src/images/main/main-visual.png)no-repeat center center / cover; height:100vh;"></div>
   
-  <div>
-d  
-</div>
-
   <?php include $path."/src/inc/footer.php"; ?>
 </body>
 

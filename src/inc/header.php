@@ -2,7 +2,7 @@
   <h1 class="logo">
     <a href="/">
       <img src="/src/images/common/logo.svg" class="logo_w" alt="센시 화이트 로고">
-      <img src="/src/images/common/logo_b.svg" class="logo_b" alt="센시 블랙 로고">
+      <img src="/src/images/common/logo-b.svg" class="logo_b" alt="센시 블랙 로고">
     </a>
   </h1>
   <nav class="gnb">

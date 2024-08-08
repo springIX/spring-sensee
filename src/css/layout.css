@@ -137,7 +137,12 @@
 .caption {
   font-weight: 400;
   font-size: 14rem;
-  line-height: 1.49;
+  line-height: 1.43;
+}
+@media (max-width: 1280px) {
+  .caption {
+    font-size: 21rem;
+  }
 }
 @media (max-width: 750px) {
   .caption {

@@ -120,7 +120,10 @@
 .caption {
   font-weight: 400;
   font-size: 14rem;
-  line-height: 1.49;
+  line-height: 1.43;
+  @include screen("tb") {
+    font-size: 21rem;
+  }
   @include screen("mo") {
     font-size: 12rem;
     line-height: 1.3;
