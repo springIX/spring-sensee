@@ -12,7 +12,7 @@
 </head>
 <body class="<?=$menuClass?>">
   <?php include $path."/src/inc/header.php"; ?>
-  <div style="background:url(/src/images/main/main_visual.png)no-repeat center center / cover; height:100vh;"></div>
+  <div style="background:url(/src/images/main/main-visual.png)no-repeat center center / cover; height:100vh;"></div>
   
   <?php include $path."/src/inc/footer.php"; ?>
 </body>

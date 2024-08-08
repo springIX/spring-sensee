@@ -8,7 +8,6 @@ $(function () {
   });
   
   /********* HEADER *********/
-  let prvScr = 0;
   win.on("scroll", function(){
     let scrTop = $(this).scrollTop();
     

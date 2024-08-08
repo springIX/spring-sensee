@@ -1,6 +1,6 @@
 @import "var";
 
-.footer_ {
+.footer {
   background-color: $color-black;
   color: $color-white;
   display: grid;
@@ -31,7 +31,7 @@
     select {
       width: 290rem;
       border-bottom: 1px solid $color-white;
-      background: url(/src/images/common/arr_select.svg) no-repeat right top /
+      background: url(/src/images/common/arr-select.svg) no-repeat right top /
         10rem auto;
       transform: translateY(1px);
       @include screen("mo") {
