@@ -122,6 +122,11 @@
   }
 }
 
+.sub_tit4 {
+  font-weight: 700;
+  font-size: 16rem;
+  line-height: 1.55;
+}
 .body_txt {
   font-size: 20rem;
   line-height: 1.52;

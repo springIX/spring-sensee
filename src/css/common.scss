@@ -109,6 +109,9 @@ img {
 option {
   color: #000;
 }
+section {
+  position: relative;
+}
 
 @include screen("tb") {
   body {
