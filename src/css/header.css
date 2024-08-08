@@ -172,9 +172,7 @@
   height: 14rem;
   position: relative;
   margin-left: 11rem;
-  display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 .header .setting_box .ctrl_txt .ctrl_btn span::before, .header .setting_box .ctrl_txt .ctrl_btn span::after {
   content: "";
@@ -276,9 +274,6 @@
   top: 16rem;
 }
 .header .setting_box .ctrl_txt .ctrl_box .txt_size {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-bottom: 20rem;
 }
 .header .setting_box .ctrl_txt .ctrl_box .txt_size .btn_wrap {
@@ -320,8 +315,6 @@
   background-color: rgba(0, 0, 0, 0.2);
 }
 .header .setting_box .ctrl_txt .ctrl_box .txt_color .btn_wrap {
-  display: flex;
-  justify-content: space-between;
   margin-top: 15rem;
 }
 @media (max-width: 750px) {
@@ -407,9 +400,6 @@
 .header .setting_box .lang_wrap .lang_btn {
   width: 71rem;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 0 12rem;
 }
 .header .setting_box .lang_wrap .lang_btn::after {

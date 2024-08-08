@@ -72,11 +72,6 @@
     margin-bottom: 204rem;
   }
 }
-.footer .info .ft_contact {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
 @media (max-width: 750px) {
   .footer .info .ft_contact {
     flex-direction: column-reverse;
