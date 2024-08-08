@@ -30,7 +30,8 @@
   <meta name="msapplication-TileImage" content="/favicon/"><!-- 투명 -->
 
   <link rel="stylesheet" href="/src/css/common.css">
-
+  <link rel="stylesheet" href="<?=$path?>src/css/<?=$menuClass?>.css">
+  
   <?php
     require_once $path.'mobile-detect.php';
     $detect = new Mobile_Detect;
