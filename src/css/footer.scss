@@ -65,9 +65,6 @@
       }
     }
     .ft_contact {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
       @include screen("mo") {
         flex-direction: column-reverse;
         align-items: flex-start;

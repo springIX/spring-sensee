@@ -15,7 +15,7 @@
   </div>
   <div class="info">
     <p class="ft_tit pps">Touch the world and <br>See the unseen
-    <div class="ft_contact">
+    <div class="ft_contact flex_btn">
       <p class="caption">
         대전광역시 중구 테미로44번안길 33
         <a href="mailto:company@sensee.world">company@sensee.world</a>

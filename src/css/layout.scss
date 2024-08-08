@@ -130,6 +130,58 @@
   }
 } // 부연설명
 
+// inner
+.inner {
+  padding-left: 198rem !important;
+  padding-right: 198rem !important;
+  position: relative;
+  @include screen("mo") {
+    padding-left: 20rem !important;
+    padding-right: 20rem !important;
+  }
+}
+
+// section txt
+.section_tit {
+  .h5_ {
+  }
+  .h2_ {
+  }
+  .body_txt {
+    margin-top: 40rem;
+  }
+}
+
+// etc
+.taC {
+  text-align: center;
+}
+.taL {
+  text-align: center;
+}
+.taR {
+  text-align: center;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.flex_cnt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+}
+.flex_btm {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
 // 특정 해상도에서만
 @include screen("pc") {
   .mo {
