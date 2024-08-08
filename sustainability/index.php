@@ -20,8 +20,8 @@
 						'media-d' => $img.'/sustainability_keyvisual_d.jpg', // required
 						'media-m' => $img.'/sustainability_keyvisual_m.jpg', // option
 						'media-alt' => '', // required
-						'heading-logo' => '', // option
-						'heading-text' => '', // required
+						'dimmed' => 'circle', // required
+						'title' => 'Sustainability', // required
 						'desc' => '센시는 환경적 가치와 함께 장애인과 비장애인의 편견을 없애는 공평한 사회 추구, <br>포용적 교육, 공익을 위한 사회공헌등 모두가 평등한 사회를 위한 경영철학을 가지고 있습니다. ', // option
 					);
 					printKeyvisual();

@@ -1,40 +1,52 @@
 <?php
+$min_width_d = 751;
+$max_width_m = 750;
 
-  function printKeyvisual() {
+function printKeyvisual() {
+
     global $aPath;
     global $Keyvisual;
     global $Height;
+    global $min_width_d;
+    global $max_width_m;
+
     echo '<div class="keyvisual">';
     echo '  <div class="container">';
-    echo '    <div class="image-area">';
-    if($Keyvisual['media-type'] == 'image') {
+    echo '    <div class="image_area">';
+    if ($Keyvisual['media-type'] == 'image') {
       echo '<picture>';
-      echo '<source media="(min-width: 751px)" srcset="'.$Keyvisual['media-d'].'" />';
-      echo '<source media="(max-width: 750px)" srcset="'.$Keyvisual['media-m'].'" />';
+      echo '<source media="(min-width: '.$min_width_d.'px)" srcset="'.$Keyvisual['media-d'].'" />';
+      echo '<source media="(max-width: '.$max_width_m.'px)" srcset="'.$Keyvisual['media-m'].'" />';
       echo '<img src="'.$aPath.'/assets/images/blank.svg" data-src="'.$Keyvisual['media-m'].','.$Keyvisual['media-d'].'" class="lazy" alt="'.$Keyvisual['media-alt'].'" aria-hidden="true" />';
       echo '</picture>';
-    } else if($Keyvisual['media-type'] == 'video') {
-      echo '<video title="'.$Keyvisual['media-alt'].'" playsinline muted loop preload autoplay="autoplay">';
-      echo '<source src="'.$Keyvisual['media-d'].'" type="video/mp4" loop>';
-      echo '</video>';
+    } else if ($Keyvisual['media-type'] == 'video') {
+      echo '<picture>';
+      echo '  <source srcset="'.$Keyvisual['media-d'].'" media="(min-width: '.$min_width_d.'px)" type="video/mp4">';
+      echo '  <source srcset="'.$Keyvisual['media-m'].'" media="(max-width: '.$max_width_m.'px)" type="video/mp4">';
+      echo '  <video controls>';
+      echo '    <source src="video-default.mp4" type="video/mp4">';
+      echo '  </video>';
+      echo '</picture>';
     }
-    echo '      <div class="dimmed"></div>';
+    if ($Keyvisual['dimmed'] == 'circle') {
+      echo '      <div class="dimmed circle"></div>';
+    } else if ($Keyvisual['dimmed'] == 'all') {
+      echo '      <div class="dimmed all"></div>';
+    }
     echo '    </div>';
-    echo '    <div class="floating-area">';
-    echo '     <div class="floating-text">';
-    echo '        <h1 class="title">';
+    echo '    <div class="floating_area">';
+    echo '     <div class="floating_txt">';
+    echo '        <h2 class="kv_tit h2_">'.$Keyvisual['title'].'</h2>';
+    echo '        <div class="infor_txt">';
     echo '          <div class="sensee_symbol_logo">';
-    echo '            <img src="'.$aPath.'/assets/images/blank.svg" class="lazy icon-white" alt="'.$Keyvisual['heading-text'].'" />';
+    echo '            <img src="'.$aPath.'/src/images/common/logo_cymbol.svg" class="lazy icon-white" alt="센시 심볼 로고" />';
     echo '          </div>';
-    echo '        </h1>';
-    echo '        <div class="desc">'.$Keyvisual['desc'].'</div>';
+    echo '          <div class="kv_desc">'.$Keyvisual['desc'].'</div>';
+    echo '          <div class="line">'.$Keyvisual['desc'].'</div>';
+    echo '        </div>';
     echo '      </div>';
     echo '    </div>';
     echo '  </div>';
     echo '</div>';
   }
-
-
 ?>
-
-
