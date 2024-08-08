@@ -20,14 +20,6 @@
     </main>
     <?php include $path."/src/inc/footer.php"; ?>
   </div>
-<body style="background:url(/src/images/main/main_visual.png); height:200vh;" class="<?=$menuClass?>">
-  <?php include $path."/src/inc/header.php"; ?>
-  
-  <div>
-d  
-</div>
-
-  <?php include $path."/src/inc/footer.php"; ?>
 </body>
 
 </html>

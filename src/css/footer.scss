@@ -38,9 +38,12 @@
         margin-top: 32rem;
         width: 100%;
         transform: none;
-        padding-bottom: 29rem;
+        padding-bottom: 20rem;
         background-position-y: 5rem;
       }
+    }
+    @include screen("mo") {
+      border: none;
     }
   }
   .cymbol {
@@ -86,7 +89,7 @@
           display: inline-block;
           width: 12rem;
           height: 12rem;
-          background: url(/src/images/common/arr_link02.svg) no-repeat center /
+          background: url(/src/images/common/arr-link02.svg) no-repeat center /
             contain;
           margin-left: 49rem;
           transform: translateY(1rem);

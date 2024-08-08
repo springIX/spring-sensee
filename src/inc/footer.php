@@ -7,7 +7,7 @@
   <div class="family_site pps">
     <select title="" onchange="window.open(value,'_target');">
       <option value="/" selected>Family site</option>
-      <option value="https://3dcoloring.co.kr/">3d coloring</option>
+      <option value="https://3dcoloring.co.kr/">SENSEE 3DColoring</option>
     </select>
   </div>
   <div class="cymbol">
@@ -15,7 +15,7 @@
   </div>
   <div class="info">
     <p class="ft_tit pps">Touch the world and <br>See the unseen
-    <div class="ft_contact flex_btn">
+    <div class="ft_contact flex_btm">
       <p class="caption">
         대전광역시 중구 테미로44번안길 33
         <a href="mailto:company@sensee.world">company@sensee.world</a>
