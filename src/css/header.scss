@@ -24,18 +24,11 @@
     position: absolute;
     left: 0;
     width: 100%;
-  }
-  &::before {
-    height: 1px;
-    background-color: rgba($color: $color-white, $alpha: 0.3);
-    bottom: 0;
-  }
-  &::after {
     height: 100%;
-    transition: 0.3s ease;
-    bottom: 1px;
+    border-bottom: 1px solid rgba($color: $color-white, $alpha: 0.3);
+    z-index: 5;
   }
-  &.bg:not(.on)::after {
+  &.bg::before {
     background: rgba($color: $color-black, $alpha: 0.4);
     backdrop-filter: blur(10px);
   }
@@ -155,7 +148,6 @@
     }
     .ctrl_txt {
       position: relative;
-      z-index: 3;
       .ctrl_btn {
         display: flex;
         align-items: center;
@@ -532,10 +524,6 @@
 
   @include screen("tb") {
     &.on {
-      &::before {
-        background-color: rgba($color: $color-black, $alpha: 0.1);
-        z-index: 6;
-      }
       .logo a img {
         &.logo_w {
           opacity: 0;
