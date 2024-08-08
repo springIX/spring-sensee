@@ -107,6 +107,15 @@
   }
 } // 설명형 타이틀3
 
+.sub_tit4 {
+  font-weight: 700;
+  font-size: 16rem;
+  line-height: 1.55;
+  @include screen("mo") {
+    // font-size: 14rem;
+  }
+} // 설명형 타이틀4
+
 .body_txt {
   font-size: 20rem;
   line-height: 1.52;

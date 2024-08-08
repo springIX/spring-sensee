@@ -1,2 +1,21 @@
 /* Responsive */
 /* Ellipsis */
+.main_container {
+  background-color: #f0f4f7;
+}
+.main_container .main_intro {
+  padding: 288rem 0 1092rem;
+}
+.main_container .main_intro .bg_tit {
+  display: block;
+  margin-top: 222rem;
+  font-size: 220rem;
+  line-height: 1.05;
+  color: #fff;
+}
+.main_container .main_intro .hand_img {
+  position: absolute;
+  left: 0;
+  top: 853rem;
+  width: 100%;
+}

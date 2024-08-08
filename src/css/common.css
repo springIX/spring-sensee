@@ -118,6 +118,10 @@ option {
   color: #000;
 }
 
+section {
+  position: relative;
+}
+
 @media (max-width: 1280px) {
   body {
     font-size: 24rem;

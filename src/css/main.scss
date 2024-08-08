@@ -2,5 +2,22 @@
 
 .main_visual {
 }
-.main_intro {
+.main_container {
+  background-color: $color-bg;
+  .main_intro {
+    padding: 288rem 0 1092rem;
+    .bg_tit {
+      display: block;
+      margin-top: 222rem;
+      font-size: 220rem;
+      line-height: 1.05;
+      color: #fff;
+    }
+    .hand_img {
+      position: absolute;
+      left: 0;
+      top: 853rem;
+      width: 100%;
+    }
+  }
 }
