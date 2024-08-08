@@ -124,7 +124,7 @@ section {
 
 @media (max-width: 1280px) {
   body {
-    font-size: 24rem;
+    font-size: 20rem;
   }
 }
 @media (max-width: 750px) {
@@ -135,4 +135,67 @@ section {
     font-size: 14rem;
     line-height: 1.45;
   }
+}
+/* keyvisual_css */
+.keyvisual {
+  position: relative;
+}
+.keyvisual .image_area img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+.keyvisual .image_area .dimmed {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.4;
+}
+.keyvisual .image_area .circle {
+  background: radial-gradient(circle, transparent 0%, #000000 100%);
+}
+.keyvisual .image_area .all {
+  background-color: #000000;
+}
+.keyvisual .floating_area {
+  position: absolute;
+  right: 0;
+  bottom: 119rem;
+  width: 1722rem;
+  height: 460rem;
+  z-index: 2;
+}
+.keyvisual .floating_area .floating_txt {
+  display: flex;
+  flex-direction: column;
+  gap: 202rem;
+  color: #ffffff;
+}
+.keyvisual .floating_area .floating_txt .infor_txt {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.keyvisual .floating_area .floating_txt .infor_txt .sensee_symbol_logo {
+  width: 137.957rem;
+  height: 46rem;
+  flex-shrink: 0;
+}
+.keyvisual .floating_area .floating_txt .infor_txt .kv_desc {
+  width: 952rem;
+  flex-shrink: 0;
+  padding-right: 20rem;
+}
+.keyvisual .floating_area .floating_txt .infor_txt .kv_desc::after {
+  content: "";
+  width: 952rem;
+  display: block;
+  height: 1px;
+  opacity: 0.3;
+  background: #fff;
+  margin-top: 41rem;
 }
