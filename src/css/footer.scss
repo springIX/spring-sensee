@@ -1,0 +1,105 @@
+@import "var";
+
+.footer_ {
+  background-color: $color-black;
+  color: $color-white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 172rem 0;
+  padding: 60rem 0;
+  @include screen("mo") {
+    display: block;
+    padding: 30rem 0 40rem;
+    > * {
+      padding: 0 20rem !important;
+    }
+  }
+  .logo,
+  .family_site {
+    border-bottom: 1px solid rgba($color: $color-white, $alpha: 0.2);
+    > * {
+      padding-bottom: 30rem;
+    }
+  }
+  .logo {
+    padding-left: 45rem;
+    a {
+      width: 112rem;
+    }
+  }
+  .family_site {
+    select {
+      width: 290rem;
+      border-bottom: 1px solid $color-white;
+      background: url(/src/images/common/arr_select.svg) no-repeat right top /
+        10rem auto;
+      transform: translateY(1px);
+      @include screen("mo") {
+        margin-top: 32rem;
+        width: 100%;
+        transform: none;
+        padding-bottom: 29rem;
+        background-position-y: 5rem;
+      }
+    }
+  }
+  .cymbol {
+    padding-left: 211rem;
+    img {
+      width: 480rem;
+      @include screen("mo") {
+        width: 112rem;
+        padding: 80rem 0 16rem;
+      }
+    }
+  }
+  .info {
+    padding-right: 44rem;
+    .ft_tit {
+      font-size: 64rem;
+      line-height: 1.25;
+      margin-bottom: 207rem;
+      @include screen("mo") {
+        font-size: 32rem;
+        margin-bottom: 204rem;
+      }
+    }
+    .ft_contact {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      @include screen("mo") {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+      }
+      .caption {
+        a.tel {
+          margin-bottom: 40rem;
+          @include screen("mo") {
+            margin-bottom: 30rem;
+          }
+        }
+      }
+      .insta {
+        @include screen("mo") {
+          margin-bottom: 50rem;
+        }
+        &::after {
+          content: "";
+          display: inline-block;
+          width: 12rem;
+          height: 12rem;
+          background: url(/src/images/common/arr_link02.svg) no-repeat center /
+            contain;
+          margin-left: 49rem;
+          transform: translateY(1rem);
+          @include screen("mo") {
+            width: 10rem;
+            height: 10rem;
+            margin-left: 28rem;
+          }
+        }
+      }
+    }
+  }
+}

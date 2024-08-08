@@ -11,17 +11,6 @@ $(function () {
   let prvScr = 0;
   win.on("scroll", function(){
     let scrTop = $(this).scrollTop();
-
-    /* 스크롤 내리면 사라지는 헤더 */
-    // var crntScr = win.scrollTop();
-    // if (crntScr > prvScr) {
-    //   $('.header').addClass('hide');
-    //   $('[data-view]').removeClass('on');
-    // } 
-    // else {
-    //   $('.header').removeClass('hide');
-    // }
-    // prvScr = crntScr;
     
     /* 불투명 헤더로 전환 */
     if (scrTop > 100) {

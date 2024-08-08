@@ -1,4 +1,4 @@
-<header class="header pps" data-view="all_menu">
+<header class="header_ pps" data-view="all_menu">
   <h1 class="logo">
     <a href="/">
       <img src="/src/images/common/logo.svg" class="logo_w" alt="센시 화이트 로고">
