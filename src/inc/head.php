@@ -36,9 +36,7 @@
     $detect = new Mobile_Detect;
     $deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') : 'desktop');
     $scriptVersion = $detect->getScriptVersion();
-
-    define('BASE_URL', '/root');
-    define('LIBRARY_URL', BASE_URL . '/library');
+    include $path.'/functions.php';
   ?>
 
   <script type="text/javascript">var deviceType = "<?=$deviceType?>";</script>
