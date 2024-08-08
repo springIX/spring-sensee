@@ -5,12 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="chrome=1, IE=edge">
   <meta name="format-detection" content="telephone=no" />
 
-  <?php
-    $path = './';
-    $img = '/src/images/'.$menuClass.'/';
-    $pageUrl = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
-  ?>
-  
   <title>SENSEE <?=$menuName==""?"":"｜$menuName"?></title>
   <meta name="description" content="<?=$pageDescription==""?"":"$pageDescription"?>">
   <meta name="keywords" content="<?=$pageKeywords==""?"":"$pageKeywords"?>">
