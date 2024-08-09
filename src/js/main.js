@@ -3,7 +3,55 @@
 */
 
 $(function () {
-	// Key visual
+  // Key visual
+  
+  const KvSwiper = new Swiper(".swiper-container", {
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      renderBullet: function (index, className) {
+        return (
+          '<span class="' +
+          className +
+          '" role="button" aria-label="Go to slide ' +
+          (index + 1) +
+          '"><span class="progress"></span></span>'
+        );
+      },
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    loop: true,
+    speed: 500,
+    autoplay: kvAutoPlay,
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
+    noSwiping: true,
+    // preloadImages: true,
+    allowTouchMove: true,
+    // lazy: true,
+    lazy: {
+      loadPrevNext: true,
+    },
+    breakpoints: {
+      // min 750px
+      751: {
+        speed: 1000,
+        allowTouchMove: false,
+      },
+    },
+    on: {
+      init: (swiper) => {
+      },
+    },
+  });
+
+
+  let kvAutoPlay = { delay: 5000, disableOnInteraction: false };
 
 	$.fn.KvSwiper = function (t) {
 		const swipeCont = t;
@@ -12,7 +60,6 @@ $(function () {
 
 		let isPaused = false;
 		let remainingTime = 0;
-		let kvAutoPlay = { delay: 5000, disableOnInteraction: false };
 
 		if ($(swipeCont).find(".swiper-slide ").eq(0).hasClass("video-slide")) {
 			kvAutoPlay = false;

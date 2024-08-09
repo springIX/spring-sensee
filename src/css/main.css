@@ -136,5 +136,17 @@
   filter: blur(10px);
 }
 .main_container .main_sustain {
-  padding-left: 198rem;
+  padding-top: 400rem;
+}
+.main_container .main_sustain .sustain_info {
+  display: flex;
+}
+.main_container .main_sustain .sustain_info > * {
+  width: 100%;
+}
+.main_container .main_sustain .sustain_info .cymbol_img {
+  padding-left: 109rem;
+}
+.main_container .main_sustain .sustain_info .cymbol_img img {
+  width: 235rem;
 }

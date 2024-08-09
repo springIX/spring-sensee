@@ -140,6 +140,18 @@
     }
   }
   .main_sustain {
-    padding-left: 198rem;
+    padding-top: 400rem;
+    .sustain_info {
+      display: flex;
+      > * {
+        width: 100%;
+      }
+      .cymbol_img {
+        padding-left: 109rem;
+        img {
+          width: 235rem;
+        }
+      }
+    }
   }
 }
