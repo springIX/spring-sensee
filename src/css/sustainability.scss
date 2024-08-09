@@ -1,0 +1,62 @@
+.sustainability_wrap {
+  overflow: hidden;
+}
+.sustainability_inner {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* 섹션의 높이 */
+  font-size: 20rem;
+  color: #000;
+  background-color: #fff;
+  .sustainability_esg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .sustainability_esg_contents {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    .esg_title {
+      font-size: 500rem;
+      font-weight: 700;
+    }
+  }
+  .esg_earth_wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    .sustainability_esg_contents {
+      height: 100%;
+    }
+    .sensee_symbol_black {
+      width: 480rem;
+      height: 160rem;
+    }
+    .sustainability_earth_img {
+      width: 140rem;
+      height: 140rem;
+    }
+    // #content3 {
+    //   .p_center {
+    //     right: 550rem;
+    //     left: auto;
+    //   }
+    // }
+    #content4 {
+      .p_center {
+        left: calc(50% + 161rem);
+      }
+    }
+  }
+}
+
+#content1 {
+  opacity: 1;
+} /* 첫 번째 컨텐츠를 초기에는 보이도록 설정 */

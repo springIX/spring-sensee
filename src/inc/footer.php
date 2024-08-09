@@ -32,4 +32,7 @@
 <!-- PUBLIC JS -->
 <script src="<?=$path?>src/js/jquery.js"></script>
 <script src="<?=$path?>src/js/swiper.min.js"></script>
+<script src="<?=$path?>src/js/gsap.js"></script>
+<script src="<?=$path?>src/js/ScrollTrigger.js"></script>
+<script src="<?=$path?>src/js/main.js"></script>
 <script src="<?=$path?>src/js/common.js"></script>

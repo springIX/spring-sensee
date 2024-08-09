@@ -185,6 +185,19 @@
   }
 }
 
+.f_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p_center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .section_tit .h3_.pps {
   margin-top: 10rem;
 }

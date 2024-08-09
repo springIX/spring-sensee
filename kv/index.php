@@ -321,7 +321,7 @@
 									<video 
 										class="video" 
 										poster="<?=$img?>visual_d.jpg"
-										src="<?=$img?>visual01_d.mp4" aria-label="" preload="none" autoplay loop muted playsinline></video>
+										src="<?=$img?>visual02_d.mp4" aria-label="" preload="none" autoplay loop muted playsinline></video>
 								</div>
 								<div class="inner mobile">
 									<video 

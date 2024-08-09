@@ -11,7 +11,7 @@ function printKeyvisual() {
     global $min_width_d;
     global $max_width_m;
 
-    echo '<div class="keyvisual">';
+    echo '<section class="keyvisual">';
     echo '  <div class="container">';
     echo '    <div class="image_area">';
     if ($Keyvisual['media-type'] == 'image') {
@@ -36,18 +36,20 @@ function printKeyvisual() {
     }
     echo '    </div>';
     echo '    <div class="floating_area">';
-    echo '     <div class="floating_txt">';
+    echo '     <div class="floating_txt layout_inner_w">';
     echo '        <h2 class="kv_tit h2_">'.$Keyvisual['title'].'</h2>';
     echo '        <div class="infor_txt">';
     echo '          <div class="sensee_symbol_logo">';
     echo '            <img src="'.$aPath.'/src/images/common/logo_cymbol.svg" class="lazy icon-white" alt="센시 심볼 로고" />';
     echo '          </div>';
     echo '          <div class="kv_desc">'.$Keyvisual['desc'].'</div>';
-    echo '          <div class="line"></div>';
     echo '        </div>';
     echo '      </div>';
+    echo '      <div class="kv_line"></div>';
     echo '    </div>';
     echo '  </div>';
-    echo '</div>';
+    echo '</section>';
   }
 ?>
+
+
