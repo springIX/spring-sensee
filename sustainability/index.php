@@ -3,8 +3,10 @@
   $pageUrl = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
   $menuClass = 'sustainability';
   $menuName = '';
-  $img = '/src/images/'.$menuClass.'/';
+  $img = '/src/images/'.$menuClass.'/'.$menuClass.'_';
   $pageDescription = '디스크립션';
+  $pageTitle = '';
+  $pageImages = '';
   $pageKeywords = '키워드';
 
   include $path."src/inc/head.php";
@@ -17,8 +19,8 @@
       <?php
 					$Keyvisual = array(
 						'media-type' => 'image', // required, image or video
-						'media-d' => $img.'/sustainability_keyvisual_d.jpg', // required
-						'media-m' => $img.'/sustainability_keyvisual_m.jpg', // option
+						'media-d' => $img.'keyvisual_d.jpg', // required
+						'media-m' => $img.'keyvisual_m.jpg', // option
 						'media-alt' => '', // required
 						'dimmed' => 'circle', // required
 						'title' => 'Sustainability', // required

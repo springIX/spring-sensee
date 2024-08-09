@@ -29,7 +29,7 @@
   <meta name="msapplication-TileColor" content="#FFFFFF">
   <meta name="msapplication-TileImage" content="/favicon/"><!-- 투명 -->
 
-  <link rel="stylesheet" href="/src/css/common.css">
+  <link rel="stylesheet" href="<?=$path?>src/css/common.css">
   <link rel="stylesheet" href="<?=$path?>src/css/<?=$menuClass?>.css">
   
   <?php

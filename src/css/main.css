@@ -3,9 +3,11 @@
 .main_container {
   background-color: #f0f4f7;
 }
+
 .main_container .main_intro {
   padding: 288rem 0 1092rem;
 }
+
 .main_container .main_intro .bg_tit {
   display: block;
   margin-top: 222rem;
@@ -13,30 +15,37 @@
   line-height: 1.05;
   color: #fff;
 }
+
 .main_container .main_intro .hand_img {
   position: absolute;
   left: 0;
   top: 853rem;
   width: 100%;
 }
+
 .main_container .main_brand {
   padding-bottom: 500rem;
 }
+
 .main_container .main_brand .main_brand_info {
   padding: 0 94rem 147rem 0;
 }
+
 .main_container .main_brand .main_brand_info .txt_box {
   width: max-content;
   margin: 160rem 0 0 auto;
 }
+
 .main_container .main_brand .main_brand_info .txt_box .txt_wrap {
   display: flex;
   gap: 49rem;
   margin-bottom: 96rem;
 }
+
 .main_container .main_brand .main_brand_visual {
   position: relative;
 }
+
 .main_container .main_brand .main_brand_visual .txt_box {
   display: flex;
   align-items: flex-end;
@@ -45,6 +54,7 @@
   bottom: 0;
   width: 100%;
 }
+
 .main_container .main_brand .main_brand_visual .txt_box .tit {
   display: flex;
   justify-content: center;
@@ -54,30 +64,36 @@
   font-weight: 700;
   padding-bottom: 32rem;
 }
-.main_container .main_brand .main_brand_visual .txt_box .tit span + span {
+
+.main_container .main_brand .main_brand_visual .txt_box .tit span+span {
   display: flex;
   align-items: center;
 }
-.main_container .main_brand .main_brand_visual .txt_box .tit span + span::before {
+
+.main_container .main_brand .main_brand_visual .txt_box .tit span+span::before {
   content: "";
   width: 130rem;
   height: 1px;
   background-color: #ffffff;
   margin: 0 8rem;
 }
+
 .main_container .main_brand .main_brand_visual .txt_box .txt {
   flex-shrink: 0;
   background-color: #f0f4f7;
   padding: 144rem 322rem;
 }
+
 .main_container .main_tech .tech_visual {
   margin-top: 138rem;
   position: relative;
 }
+
 .main_container .main_tech .tech_visual .visual_wrap {
   overflow: hidden;
   position: relative;
 }
+
 .main_container .main_tech .tech_visual .visual_wrap::before {
   content: "";
   width: 1682rem;
@@ -89,6 +105,7 @@
   transform: translateX(-50%);
   bottom: -553rem;
 }
+
 .main_container .main_tech .tech_visual .visual_wrap .mom_baby {
   width: 1122rem;
   margin: 0 auto;
@@ -96,38 +113,45 @@
   margin-bottom: -20rem;
   position: relative;
 }
+
 .main_container .main_tech .tech_visual .leaf {
   position: absolute;
 }
+
 .main_container .main_tech .tech_visual .leaf.leaf1 {
   width: 304rem;
   top: 42rem;
   right: 119rem;
 }
+
 .main_container .main_tech .tech_visual .leaf.leaf2 {
   width: 69rem;
   left: 145rem;
   top: 422rem;
   transform: rotate(-45deg);
 }
+
 .main_container .main_tech .tech_visual .leaf.leaf3 {
   width: 160rem;
   right: 639rem;
   top: 474rem;
   transform: rotate(-60deg);
 }
+
 .main_container .main_tech .tech_visual .leaf.leaf4 {
   width: 87rem;
   left: 417rem;
   bottom: 628rem;
   transform: rotate(60deg);
 }
+
 .main_container .main_tech .tech_visual .leaf.leaf5 {
   width: 117rem;
   left: 260rem;
   bottom: 155rem;
   transform: rotate(135deg);
 }
+
 .main_container .main_tech .tech_visual .leaf.leaf6 {
   width: 678rem;
   right: -80rem;
@@ -135,6 +159,7 @@
   transform: rotate(-120deg);
   filter: blur(10px);
 }
+
 .main_container .main_sustain {
   padding-left: 198rem;
 }

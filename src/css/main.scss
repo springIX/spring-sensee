@@ -74,72 +74,8 @@
   }
   .main_tech {
     .tech_visual {
+      overflow: hidden;
       margin-top: 138rem;
-      position: relative;
-      .visual_wrap {
-        overflow: hidden;
-        position: relative;
-        &::before {
-          content: "";
-          width: 1682rem;
-          height: 1682rem;
-          border-radius: 50%;
-          background-color: $color-white;
-          position: absolute;
-          left: 50%;
-          transform: translateX(-50%);
-          bottom: -553rem;
-        }
-        .mom_baby {
-          width: 1122rem;
-          margin: 0 auto;
-          overflow: hidden;
-          margin-bottom: -20rem;
-          position: relative;
-        }
-      }
-      .leaf {
-        position: absolute;
-        &.leaf1 {
-          width: 304rem;
-          top: 42rem;
-          right: 119rem;
-        }
-        &.leaf2 {
-          width: 69rem;
-          left: 145rem;
-          top: 422rem;
-          transform: rotate(-45deg);
-        }
-        &.leaf3 {
-          width: 160rem;
-          right: 639rem;
-          top: 474rem;
-          transform: rotate(-60deg);
-        }
-        &.leaf4 {
-          width: 87rem;
-          left: 417rem;
-          bottom: 628rem;
-          transform: rotate(60deg);
-        }
-        &.leaf5 {
-          width: 117rem;
-          left: 260rem;
-          bottom: 155rem;
-          transform: rotate(135deg);
-        }
-        &.leaf6 {
-          width: 678rem;
-          right: -80rem;
-          bottom: -312rem;
-          transform: rotate(-120deg);
-          filter: blur(10px);
-        }
-      }
     }
-  }
-  .main_sustain {
-    padding-left: 198rem;
   }
 }
