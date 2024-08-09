@@ -101,11 +101,14 @@
           <img src="<?=$icon?>leaf.png" alt="" class="leaf leaf6"/>
         </div>
       </section>
-      <section class="<?=$menuClass?>_tech">
+      <section class="<?=$menuClass?>_sustain layout_inner">
         <div class="section_tit">
           <h5 class="h5_">SUSTAINABILITY</h5>
           <h5 class="h3_">지속 가능한 세상을 만들며 <br>모두가 평등한 사회를 위해 <br>노력합니다.</h5>
-          <h5 class="body_txt">센시는 빅데이터 기반 AI기술과 특수인쇄기술을 기반으로 독보적인 기술로 <br>다양한 플랫폼 & 콘텐츠의 점자인쇄를 통해 모든 사람을 위한 세상을 만들고자 합니다.</h5>
+        </div>
+        <div class="sustain_info">
+          <img src="<?=$icon?>logo_cymbol_green.svg" alt="" class="cymbol"/>
+
         </div>
       </section>
     </main>
