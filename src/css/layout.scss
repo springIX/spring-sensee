@@ -141,13 +141,20 @@
 } // 부연설명
 
 // inner
-.inner {
-  padding-left: 198rem !important;
-  padding-right: 198rem !important;
+.layout_inner {
+  padding-left: $layout_inner !important;
+  padding-right: $layout_inner !important;
   position: relative;
   @include screen("mo") {
-    padding-left: 20rem !important;
-    padding-right: 20rem !important;
+    padding-left: $layout_inner_m !important;
+    padding-right: $layout_inner_m !important;
+  }
+}
+.layout_inner_l {
+  padding-left: $layout_inner !important;
+  position: relative;
+  @include screen("mo") {
+    padding-left: $layout_inner_m !important;
   }
 }
 
@@ -168,10 +175,10 @@
   text-align: center;
 }
 .taL {
-  text-align: center;
+  text-align: left;
 }
 .taR {
-  text-align: center;
+  text-align: right;
 }
 .flex {
   display: flex;

@@ -37,7 +37,7 @@
         </div>
       </section>
       <section class="<?=$menuClass?>_brand">
-        <div class="<?=$menuClass?>_brand_info">
+        <div class="<?=$menuClass?>_brand_info layout_inner_l">
           <div class="section_tit">
             <h6 class="h5_">Brand story</h6>
             <h3 class="h3_ pps">Touch the world and <br>See the unseen</h3>
@@ -90,9 +90,22 @@
           <h5 class="body_txt">센시는 빅데이터 기반 AI기술과 특수인쇄기술을 기반으로 독보적인 기술로 <br>다양한 플랫폼 & 콘텐츠의 점자인쇄를 통해 모든 사람을 위한 세상을 만들고자 합니다.</h5>
         </div>
         <div class="tech_visual">
-          <div class="mom_baby">
-            <img src="<?=$img?>tech.png" alt="" />
+          <div class="visual_wrap">
+            <img src="<?=$img?>tech.png" alt="" class="mom_baby"/>
           </div>
+          <img src="<?=$icon?>leaf.png" alt="" class="leaf leaf1"/>
+          <img src="<?=$icon?>leaf.png" alt="" class="leaf leaf2"/>
+          <img src="<?=$icon?>leaf.png" alt="" class="leaf leaf3"/>
+          <img src="<?=$icon?>leaf.png" alt="" class="leaf leaf4"/>
+          <img src="<?=$icon?>leaf.png" alt="" class="leaf leaf5"/>
+          <img src="<?=$icon?>leaf.png" alt="" class="leaf leaf6"/>
+        </div>
+      </section>
+      <section class="<?=$menuClass?>_tech">
+        <div class="section_tit">
+          <h5 class="h5_">SUSTAINABILITY</h5>
+          <h5 class="h3_">지속 가능한 세상을 만들며 <br>모두가 평등한 사회를 위해 <br>노력합니다.</h5>
+          <h5 class="body_txt">센시는 빅데이터 기반 AI기술과 특수인쇄기술을 기반으로 독보적인 기술로 <br>다양한 플랫폼 & 콘텐츠의 점자인쇄를 통해 모든 사람을 위한 세상을 만들고자 합니다.</h5>
         </div>
       </section>
     </main>

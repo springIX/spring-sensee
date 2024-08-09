@@ -23,7 +23,7 @@
   padding-bottom: 500rem;
 }
 .main_container .main_brand .main_brand_info {
-  padding: 0 94rem 147rem 198rem;
+  padding: 0 94rem 147rem 0;
 }
 .main_container .main_brand .main_brand_info .txt_box {
   width: max-content;
@@ -71,6 +71,70 @@
   padding: 144rem 322rem;
 }
 .main_container .main_tech .tech_visual {
-  overflow: hidden;
   margin-top: 138rem;
+  position: relative;
+}
+.main_container .main_tech .tech_visual .visual_wrap {
+  overflow: hidden;
+  position: relative;
+}
+.main_container .main_tech .tech_visual .visual_wrap::before {
+  content: "";
+  width: 1682rem;
+  height: 1682rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -553rem;
+}
+.main_container .main_tech .tech_visual .visual_wrap .mom_baby {
+  width: 1122rem;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: -20rem;
+  position: relative;
+}
+.main_container .main_tech .tech_visual .leaf {
+  position: absolute;
+}
+.main_container .main_tech .tech_visual .leaf.leaf1 {
+  width: 304rem;
+  top: 42rem;
+  right: 119rem;
+}
+.main_container .main_tech .tech_visual .leaf.leaf2 {
+  width: 69rem;
+  left: 145rem;
+  top: 422rem;
+  transform: rotate(-45deg);
+}
+.main_container .main_tech .tech_visual .leaf.leaf3 {
+  width: 160rem;
+  right: 639rem;
+  top: 474rem;
+  transform: rotate(-60deg);
+}
+.main_container .main_tech .tech_visual .leaf.leaf4 {
+  width: 87rem;
+  left: 417rem;
+  bottom: 628rem;
+  transform: rotate(60deg);
+}
+.main_container .main_tech .tech_visual .leaf.leaf5 {
+  width: 117rem;
+  left: 260rem;
+  bottom: 155rem;
+  transform: rotate(135deg);
+}
+.main_container .main_tech .tech_visual .leaf.leaf6 {
+  width: 678rem;
+  right: -80rem;
+  bottom: -312rem;
+  transform: rotate(-120deg);
+  filter: blur(10px);
+}
+.main_container .main_sustain {
+  padding-left: 198rem;
 }
