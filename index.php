@@ -65,8 +65,8 @@
         </div>
         <div class="<?=$menuClass?>_brand_visual">
           <picture class="brand_bg">
-            <source media="(min-width: 751px)" srcset="<?=$img?>brand.png" />
-            <source media="(max-width: 750px)" srcset="<?=$img?>brand_mo.png" />
+            <source media="(min-width: <?=$min_width_d?>px)" srcset="<?=$img?>brand.png" />
+            <source media="(max-width: <?=$max_width_m?>px)" srcset="<?=$img?>brand_mo.png" />
             <img src="<?=$img?>brand.png" data-src="<?=$img?>brand.png" alt="" />
           </picture>
           <div class="txt_box">
@@ -85,10 +85,17 @@
         </div>
       </section>
       <section class="<?=$menuClass?>_tech">
-        <div class="section_tit">
+        <div class="section_tit taC">
           <h5 class="h5_">TECHNOLOGY</h5>
           <h5 class="h3_">모두를 위한 기술, 함께하는 세상</h5>
-          <h5 class="body_txt"></h5>
+          <h5 class="body_txt">센시는 빅데이터 기반 AI기술과 특수인쇄기술을 기반으로 독보적인 기술로 <br>다양한 플랫폼 & 콘텐츠의 점자인쇄를 통해 모든 사람을 위한 세상을 만들고자 합니다.</h5>
+        </div>
+        <div class="tech_visual">
+          <picture class="brand_bg">
+            <source media="(min-width: <?=$min_width_d?>px)" srcset="<?=$img?>brand.png" />
+            <source media="(max-width: <?=$max_width_m?>px)" srcset="<?=$img?>brand_mo.png" />
+            <img src="<?=$img?>brand.png" data-src="<?=$img?>brand.png" alt="" />
+          </picture>
         </div>
       </section>
     </main>
