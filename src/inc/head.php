@@ -37,6 +37,8 @@
     $detect = new Mobile_Detect;
     $deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') : 'desktop');
     $scriptVersion = $detect->getScriptVersion();
+    $icon = '/src/images/common/';
+  
     include $path.'/functions.php';
   ?>
 
