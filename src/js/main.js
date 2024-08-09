@@ -63,7 +63,8 @@ $(function () {
 			},
 		});
 
-		function videoPlayAfterLoad() {
+    function videoPlayAfterLoad() {
+      console.log("videoPlayAfterLoad");
 			let video = document.querySelector(".key-visual .swiper-slide-active .inner.mobile .video");
 			if (window.innerWidth > 750) {
 				video = document.querySelector(".key-visual .swiper-slide-active .inner.desktop .video");
@@ -276,38 +277,6 @@ $(function () {
 
 		$(window).on("resize", fixKVHeight).resize();
 
-		const txtEl = document.querySelectorAll(".main-kv .floating-area .text-box");
-
-		$(txtEl)
-			.find(".cta-wrap a")
-			.on("click", function () {
-				pushDataLayer({
-					event: "click_button",
-					click_button: {
-						buttonText: convertTitle($(this).text()),
-						sectionName: "key-visual-area",
-						sectionContentTitle: convertTitle($(this).closest(".text-box").find(".title").text()),
-						sectionContentSub: convertTitle($(this).closest(".text-box").find(".desc").text()),
-						clickURL: $(this).attr("href") == "#" ? "" : $(this).attr("href"),
-					},
-				});
-			});
-
-		$(kvEl)
-			.find(".swiper-slide > a")
-			.on("click", function () {
-				const $link = $(this).parent().find(".cta-wrap a");
-				pushDataLayer({
-					event: "click_button",
-					click_button: {
-						buttonText: convertTitle($link.text()),
-						sectionName: "key-visual-area",
-						sectionContentTitle: convertTitle($link.closest(".text-box").find(".title").text()),
-						sectionContentSub: convertTitle($link.closest(".text-box").find(".desc").text()),
-						clickURL: $link.attr("href") == "#" ? "" : $link.attr("href"),
-					},
-				});
-			});
 	}
 
 });

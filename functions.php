@@ -2,8 +2,6 @@
 $min_width_d = 751;
 $max_width_m = 750;
 
-$icon = '/src/images/common/';
-
 function printKeyvisual() {
 
     global $aPath;
