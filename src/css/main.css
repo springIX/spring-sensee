@@ -70,3 +70,7 @@
   background-color: #f0f4f7;
   padding: 144rem 322rem;
 }
+.main_container .main_tech .tech_visual {
+  overflow: hidden;
+  margin-top: 138rem;
+}

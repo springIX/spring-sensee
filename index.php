@@ -4,7 +4,6 @@
   $menuClass = 'main';
   $menuName = '';
   $img = '/src/images/'.$menuClass.'/'.$menuClass.'_';
-  $icon = '/src/images/common/';
   $pageTitle = '';
   $pageImages = '';
   $pageDescription = '디스크립션';
@@ -65,9 +64,9 @@
         </div>
         <div class="<?=$menuClass?>_brand_visual">
           <picture class="brand_bg">
-            <source media="(min-width: <?=$min_width_d?>px)" srcset="<?=$img?>brand.png" />
-            <source media="(max-width: <?=$max_width_m?>px)" srcset="<?=$img?>brand_mo.png" />
-            <img src="<?=$img?>brand.png" data-src="<?=$img?>brand.png" alt="" />
+            <source media="(min-width: <?=$min_width_d?>px)" srcset="<?=$img?>brand_d.jpg" />
+            <source media="(max-width: <?=$max_width_m?>px)" srcset="<?=$img?>brand_m.jpg" />
+            <img src="<?=$img?>brand_d.jpg" data-src="<?=$img?>brand_d.jpg" alt="" />
           </picture>
           <div class="txt_box">
             <p class="tit body_txt">
@@ -91,11 +90,9 @@
           <h5 class="body_txt">센시는 빅데이터 기반 AI기술과 특수인쇄기술을 기반으로 독보적인 기술로 <br>다양한 플랫폼 & 콘텐츠의 점자인쇄를 통해 모든 사람을 위한 세상을 만들고자 합니다.</h5>
         </div>
         <div class="tech_visual">
-          <picture class="brand_bg">
-            <source media="(min-width: <?=$min_width_d?>px)" srcset="<?=$img?>brand.png" />
-            <source media="(max-width: <?=$max_width_m?>px)" srcset="<?=$img?>brand_mo.png" />
-            <img src="<?=$img?>brand.png" data-src="<?=$img?>brand.png" alt="" />
-          </picture>
+          <div class="mom_baby">
+            <img src="<?=$img?>tech.png" alt="" />
+          </div>
         </div>
       </section>
     </main>
