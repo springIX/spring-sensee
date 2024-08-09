@@ -110,8 +110,7 @@ $(function () {
 			},
 		});
 
-    function videoPlayAfterLoad() {
-      console.log("videoPlayAfterLoad");
+		function videoPlayAfterLoad() {
 			let video = document.querySelector(".key-visual .swiper-slide-active .inner.mobile .video");
 			if (window.innerWidth > 750) {
 				video = document.querySelector(".key-visual .swiper-slide-active .inner.desktop .video");
@@ -133,7 +132,6 @@ $(function () {
 						}, 500);
 					}
 				};
-				// $(".logo").css("color", "white").html(video.readyState);
 				video.addEventListener("loadeddata", function () {
 					loadedVideo();
 				});
@@ -146,7 +144,6 @@ $(function () {
 
 		function startProgressAnimation() {
 			const progressEl = $(swipeCont).find(".swiper-pagination-bullet-active .progress");
-			// console.log($(".swiper-pagination-bullet-active .progress"));
 			progressEl.css("transform", "scaleX(0)");
 			const duration = KvSwiper.params.autoplay.delay || 6000;
 			const increment = 10 / duration; // 10ms마다 (1/duration) 만큼 증가하도록 변경
@@ -296,10 +293,9 @@ $(function () {
 			}
 		});
 	};
-	if ($(".main-wrap .key-visual").length > 0) {
+	if ($(".main_wrap .key-visual").length > 0) {
 		const mainKv = $(".key-visual");
-		
-		$(".main-wrap").KvSwiper(".key-visual");
+		initKvSwiper(".key-visual");
 		mainKv.addClass("swiper-load");
 
 		const kvEl = document.querySelector(".main-kv");
@@ -323,7 +319,5 @@ $(function () {
 		};
 
 		$(window).on("resize", fixKVHeight).resize();
-
 	}
-
 });

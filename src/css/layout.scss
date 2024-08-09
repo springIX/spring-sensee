@@ -229,6 +229,40 @@
   }
 }
 
+.btn-play {
+  margin-left: 10rem;
+  margin-top: 0;
+  &::before {
+    content: "";
+    width: 40rem;
+    height: 40rem;
+    position: relative;
+    background-image: url(/src/images/common/kv_play.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: auto;
+    left: 1rem;
+    display: block;
+  }
+}
+.btn-pause {
+  width: 40rem;
+  height: 40rem;
+  display: flex;
+  &:before {
+    content: "";
+    width: 40rem;
+    height: 40rem;
+    position: relative;
+    background-image: url(/src/images/common/kv_pause.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: auto;
+    left: 1rem;
+    display: block;
+  }
+}
+
 // Responsive
 @include screen("pc") {
   .mo {
