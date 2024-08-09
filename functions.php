@@ -3,7 +3,6 @@ $min_width_d = 751;
 $max_width_m = 750;
 $icon = $path.'src/images/common/';
 
-
 function printKeyvisual() {
 
     global $aPath;
@@ -44,7 +43,7 @@ function printKeyvisual() {
     echo '            <img src="'.$aPath.'/src/images/common/logo_cymbol.svg" class="lazy icon-white" alt="센시 심볼 로고" />';
     echo '          </div>';
     echo '          <div class="kv_desc">'.$Keyvisual['desc'].'</div>';
-    echo '          <div class="line">'.$Keyvisual['desc'].'</div>';
+    echo '          <div class="line"></div>';
     echo '        </div>';
     echo '      </div>';
     echo '    </div>';

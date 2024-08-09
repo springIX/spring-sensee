@@ -1,7 +1,7 @@
 <footer class="footer">
   <h1 class="logo">
     <a href="/">
-      <img src="/src/images/common/logo.svg" class="logo_w" alt="센시 화이트 로고">
+      <img src="<?=$icon?>logo.svg" class="logo_w" alt="센시 화이트 로고">
     </a>
   </h1>
   <div class="family_site pps">
@@ -11,7 +11,7 @@
     </select>
   </div>
   <div class="cymbol">
-    <img src="/src/images/common/logo_cymbol.svg" alt="센시 로고 심볼">
+    <img src="<?=$icon?>logo_cymbol.svg" alt="센시 로고 심볼">
   </div>
   <div class="info">
     <p class="ft_tit pps">Touch the world and <br>See the unseen
@@ -32,5 +32,4 @@
 <!-- PUBLIC JS -->
 <script src="<?=$path?>src/js/jquery.js"></script>
 <script src="<?=$path?>src/js/swiper.min.js"></script>
-<script src="<?=$path?>src/js/main.js"></script>
 <script src="<?=$path?>src/js/common.js"></script>

@@ -20,16 +20,14 @@
 .h3_ {
   font-weight: 700;
   font-size: 100rem;
-  line-height: 1.45;
-  @include screen("mo") {
-    font-size: 40rem;
-  }
+  line-height: 1.44;
   &.pps {
     font-weight: 600;
     line-height: 1.2;
-    @include screen("mo") {
-      line-height: 1.2;
-    }
+  }
+  @include screen("mo") {
+    font-size: 40rem;
+    line-height: 1.4 !important;
   }
 } // 섹션 타이틀
 
@@ -52,7 +50,6 @@
   @include screen("mo") {
     font-size: 14rem;
     line-height: 1.15;
-    letter-spacing: 12px;
   }
 } // 섹션 소타이틀
 
@@ -157,16 +154,40 @@
     padding-left: $layout_inner_m !important;
   }
 }
+.layout_inner_w {
+  padding-left: $layout_inner !important;
+  position: relative;
+  @include screen("mo") {
+    padding-left: $layout_inner_m !important;
+    padding-right: $layout_inner_m !important;
+  }
+}
 
 // section txt
 .section_tit {
-  .h5_ {
-  }
   .h3_.pps {
     margin-top: 10rem;
   }
   .body_txt {
     margin-top: 40rem;
+  }
+  .btn_more {
+    display: inline-flex;
+    margin-top: 80rem;
+  }
+  @include screen("mo") {
+    br:not(.mo) {
+      display: none;
+    }
+    .h3_ {
+      margin-top: 12rem !important;
+    }
+    .body_txt {
+      margin-top: 20rem;
+    }
+    .btn_more {
+      margin-top: 60rem;
+    }
   }
 }
 
@@ -213,19 +234,19 @@
     background-color: $color-black;
     font-family: $font-en;
     font-weight: 700;
-    width: 150px;
-    height: 56px;
-    line-height: 56px;
-    border-radius: 2px;
+    width: 150rem;
+    height: 56rem;
+    line-height: 56rem;
+    border-radius: 2rem;
   }
   &::after {
     content: "";
-    width: 56px;
-    height: 56px;
+    width: 56rem;
+    height: 56rem;
     background: $color-black url(/src/images/common/arr_link.svg) no-repeat
       center center / 40% auto;
     margin-left: 1px;
-    border-radius: 2px;
+    border-radius: 2rem;
   }
 }
 
