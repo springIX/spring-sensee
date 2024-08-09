@@ -1,59 +1,7 @@
-/*
-  Main JS
-*/
-
-$(function () {
-  // Key visual
+$(document).ready(function () {
   
-  const KvSwiper = new Swiper(".swiper-container", {
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      renderBullet: function (index, className) {
-        return (
-          '<span class="' +
-          className +
-          '" role="button" aria-label="Go to slide ' +
-          (index + 1) +
-          '"><span class="progress"></span></span>'
-        );
-      },
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    loop: true,
-    speed: 500,
-    autoplay: kvAutoPlay,
-    keyboard: {
-      enabled: true,
-      onlyInViewport: false,
-    },
-    noSwiping: true,
-    // preloadImages: true,
-    allowTouchMove: true,
-    // lazy: true,
-    lazy: {
-      loadPrevNext: true,
-    },
-    breakpoints: {
-      // min 750px
-      751: {
-        speed: 1000,
-        allowTouchMove: false,
-      },
-    },
-    on: {
-      init: (swiper) => {
-      },
-    },
-  });
-
-
-  let kvAutoPlay = { delay: 5000, disableOnInteraction: false };
-
-	$.fn.KvSwiper = function (t) {
+  // Key visual
+	function initKvSwiper(t) {
 		const swipeCont = t;
 		const $btnPause = $(swipeCont).find(".btn-pause");
 		const $btnPlay = $(swipeCont).find(".btn-play");
