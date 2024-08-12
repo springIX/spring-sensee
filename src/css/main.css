@@ -35,19 +35,24 @@
 .main_container .main_intro .main_intro_visual {
   position: relative;
 }
-.main_container .main_intro .main_intro_visual::after {
-  content: "";
+.main_container .main_intro .main_intro_visual i {
   display: block;
   width: 1px;
   height: 400rem;
   background-color: #000000;
   margin: 0 auto;
+  transform: scaleY(0);
+  transform-origin: left top;
+  transition: 1s ease;
 }
 @media (max-width: 750px) {
-  .main_container .main_intro .main_intro_visual::after {
+  .main_container .main_intro .main_intro_visual i {
     height: 200rem;
     margin-top: 8rem;
   }
+}
+.main_container .main_intro .main_intro_visual i.aos-animate {
+  transform: scaleY(1);
 }
 .main_container .main_intro .main_intro_visual .bg_tit {
   font-size: 220rem;
@@ -205,8 +210,9 @@
   background-color: #ffffff;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) scale(0);
   bottom: -553rem;
+  transition: 1s ease;
 }
 @media (max-width: 750px) {
   .main_container .main_tech .tech_visual .visual_wrap::before {
@@ -240,69 +246,69 @@
     transform: translateX(-50%);
   }
 }
-.main_container .main_tech .tech_visual .leaf_box .leaf {
+.main_container .main_tech .tech_visual .leaf_box i {
   position: absolute;
 }
-.main_container .main_tech .tech_visual .leaf_box .leaf.leaf1 {
+.main_container .main_tech .tech_visual .leaf_box i.leaf1 {
   width: 304rem;
   top: 42rem;
   right: 119rem;
 }
 @media (max-width: 750px) {
-  .main_container .main_tech .tech_visual .leaf_box .leaf.leaf1 {
+  .main_container .main_tech .tech_visual .leaf_box i.leaf1 {
     width: 93rem;
     top: -60rem;
     right: -45rem;
   }
 }
-.main_container .main_tech .tech_visual .leaf_box .leaf.leaf2 {
+.main_container .main_tech .tech_visual .leaf_box i.leaf2 {
   width: 69rem;
   left: 145rem;
   top: 422rem;
   transform: rotate(-45deg);
 }
-.main_container .main_tech .tech_visual .leaf_box .leaf.leaf3 {
+.main_container .main_tech .tech_visual .leaf_box i.leaf3 {
   width: 160rem;
   right: 639rem;
   top: 474rem;
   transform: rotate(-60deg);
 }
 @media (max-width: 750px) {
-  .main_container .main_tech .tech_visual .leaf_box .leaf.leaf3 {
+  .main_container .main_tech .tech_visual .leaf_box i.leaf3 {
     width: 48rem;
     right: 48rem;
     top: 179rem;
   }
 }
-.main_container .main_tech .tech_visual .leaf_box .leaf.leaf4 {
+.main_container .main_tech .tech_visual .leaf_box i.leaf4 {
   width: 87rem;
   left: 417rem;
   bottom: 628rem;
   transform: rotate(60deg);
 }
 @media (max-width: 750px) {
-  .main_container .main_tech .tech_visual .leaf_box .leaf.leaf4 {
+  .main_container .main_tech .tech_visual .leaf_box i.leaf4 {
     width: 26rem;
     left: -9rem;
     bottom: auto;
     top: -28rem;
   }
 }
-.main_container .main_tech .tech_visual .leaf_box .leaf.leaf5 {
+.main_container .main_tech .tech_visual .leaf_box i.leaf5 {
   width: 117rem;
   left: 260rem;
   bottom: 155rem;
   transform: rotate(135deg);
 }
 @media (max-width: 750px) {
-  .main_container .main_tech .tech_visual .leaf_box .leaf.leaf5 {
+  .main_container .main_tech .tech_visual .leaf_box i.leaf5 {
     width: 73rem;
     left: 32rem;
     bottom: 200rem;
     transform: rotate(-141deg);
   }
 }
-.main_container .main_tech .tech_visual .leaf_box .leaf.leaf6 {
+.main_container .main_tech .tech_visual .leaf_box i.leaf6 {
   width: 678rem;
   right: -80rem;
   bottom: -312rem;
@@ -310,12 +316,26 @@
   filter: blur(10px);
 }
 @media (max-width: 750px) {
-  .main_container .main_tech .tech_visual .leaf_box .leaf.leaf6 {
+  .main_container .main_tech .tech_visual .leaf_box i.leaf6 {
     width: 204rem;
     right: -63rem;
     bottom: -95rem;
     filter: blur(4px);
   }
+}
+.main_container .main_tech .tech_visual .leaf_box i img {
+  position: relative;
+  top: 100rem;
+  opacity: 0;
+  transition: 1s ease, transform 0s;
+}
+.main_container .main_tech .tech_visual.aos-animate .visual_wrap::before {
+  transform: translateX(-50%) scale(1);
+  transition-delay: 0.2s;
+}
+.main_container .main_tech .tech_visual.aos-animate .leaf_box i img {
+  top: 0;
+  opacity: 1;
 }
 .main_container .main_sustain {
   background: url(/src/images/main/main_sustain_d.jpg) no-repeat center bottom/cover;

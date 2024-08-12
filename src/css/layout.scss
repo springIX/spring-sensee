@@ -5,6 +5,67 @@
   font-family: $font-en;
 }
 
+// color change
+body {
+  &.black_white {
+    .h2_,
+    .h3_,
+    .h4_,
+    .h5_,
+    .sub_head,
+    .sub_tit,
+    .sub_tit2,
+    .sub_tit3,
+    .sub_tit4,
+    .body_txt,
+    .caption,
+    p,
+    strong,
+    header {
+      background-color: $color-black !important;
+      color: $color-white !important;
+    }
+  }
+  &.blue_yellow {
+    .h2_,
+    .h3_,
+    .h4_,
+    .h5_,
+    .sub_head,
+    .sub_tit,
+    .sub_tit2,
+    .sub_tit3,
+    .sub_tit4,
+    .body_txt,
+    .caption,
+    p,
+    strong,
+    header {
+      background-color: $color-blue !important;
+      color: $color-yellow !important;
+    }
+  }
+  &.black_yellow {
+    .h2_,
+    .h3_,
+    .h4_,
+    .h5_,
+    .sub_head,
+    .sub_tit,
+    .sub_tit2,
+    .sub_tit3,
+    .sub_tit4,
+    .body_txt,
+    .caption,
+    p,
+    strong,
+    header {
+      background-color: $color-black !important;
+      color: $color-yellow !important;
+    }
+  }
+}
+
 // headline component
 .h2_ {
   font-family: $font-en;
@@ -254,6 +315,14 @@
   position: absolute;
   left: 0;
   top: -2rem;
+}
+
+// img clip animation
+[data-aos="clip-up"] {
+  clip-path: polygon(0 0, 100% 0, 100% 0%, 0 0%);
+  &.aos-animate {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
 }
 
 // Btn

@@ -25,10 +25,13 @@ $(function () {
   let txtZoomVar = 5; // 버튼 누를때마다 텍스트 증감 값
   let txtZoomMax = txtZoom + txtZoomVar * 3; // 마지막 숫자가 최대 클릭 수)
   let txtZoomMin = txtZoom - txtZoomVar * 3; // 마지막 숫자가 최소 클릭 수)
+  let crntZoom = window.sessionStorage.getItem('zoom'); 
   
   function txtSizeCtrl(txtZoom) {
     $('body').css('zoom', txtZoom + '%');
+    sessionStorage.setItem("zoom", txtZoom);
   }
+  $('body').css('zoom', crntZoom + '%');
   
   txtBtn.click(function () { 
     if ($(this).hasClass('size_up')) {
@@ -66,10 +69,12 @@ $(function () {
   txtColorBtn.each(function () { 
     let colorVal = $(this).data('color');
     $(this).click(function () { 
+      $('body').removeClass().addClass(colorVal);
       sessionStorage.setItem("txtColor", colorVal);
       $(this).addClass('on').siblings().removeClass('on');
     });
   });
 
-
+  /* AOS */
+  AOS.init({ duration: 1000, offset: 100, easing: 'cubic-bezier(0.25, 1, 0.5, 1);' });
 });

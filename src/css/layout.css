@@ -5,6 +5,58 @@
   font-family: "Poppins", sans-serif;
 }
 
+body.black_white .h2_,
+body.black_white .h3_,
+body.black_white .h4_,
+body.black_white .h5_,
+body.black_white .sub_head,
+body.black_white .sub_tit,
+body.black_white .sub_tit2,
+body.black_white .sub_tit3,
+body.black_white .sub_tit4,
+body.black_white .body_txt,
+body.black_white .caption,
+body.black_white p,
+body.black_white strong,
+body.black_white header {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+body.blue_yellow .h2_,
+body.blue_yellow .h3_,
+body.blue_yellow .h4_,
+body.blue_yellow .h5_,
+body.blue_yellow .sub_head,
+body.blue_yellow .sub_tit,
+body.blue_yellow .sub_tit2,
+body.blue_yellow .sub_tit3,
+body.blue_yellow .sub_tit4,
+body.blue_yellow .body_txt,
+body.blue_yellow .caption,
+body.blue_yellow p,
+body.blue_yellow strong,
+body.blue_yellow header {
+  background-color: #2832e6 !important;
+  color: #ffc800 !important;
+}
+body.black_yellow .h2_,
+body.black_yellow .h3_,
+body.black_yellow .h4_,
+body.black_yellow .h5_,
+body.black_yellow .sub_head,
+body.black_yellow .sub_tit,
+body.black_yellow .sub_tit2,
+body.black_yellow .sub_tit3,
+body.black_yellow .sub_tit4,
+body.black_yellow .body_txt,
+body.black_yellow .caption,
+body.black_yellow p,
+body.black_yellow strong,
+body.black_yellow header {
+  background-color: #000000 !important;
+  color: #ffc800 !important;
+}
+
 .h2_ {
   font-family: "Poppins", sans-serif;
   font-size: 150rem;
@@ -288,6 +340,13 @@
   position: absolute;
   left: 0;
   top: -2rem;
+}
+
+[data-aos=clip-up] {
+  clip-path: polygon(0 0, 100% 0, 100% 0%, 0 0%);
+}
+[data-aos=clip-up].aos-animate {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .btn_more {

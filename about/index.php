@@ -94,7 +94,7 @@
         </div>
         <div class="movie_btn_wrap">
           <div class="movie_btn">
-            <button>
+            <button data-btn="brand_movie">
               <img src="<?=$img?>movie_thumb.png" alt=""/>
               <i></i>
             </button>
@@ -214,6 +214,31 @@
           </li>
         </ol>
       </section>
+    </div>
+
+    <!-- CEO INTRODUCE POPUP -->
+    <div class="popup layout_inner" data-view="ceo">
+      <button class="close" data-btn="ceo"></button>
+      <div class="txt_box">
+        <div class="meant">
+          <p class="caption pps">Touch the world and <br>See the unseen</p>
+          <div class="sub_tit">
+            세상에 대한 끊임없는 연구 <br>
+            그리고 근본적인 문제 해결에 대한 도전. <br>
+            센시는 모두가 함께 즐길 수 있는  <br>
+            세상을 만들기 위해 설립되었습니다.
+          </div>
+        </div>
+        <div class="name">
+          <strong>Victor Insik (서인식)</strong><br>
+          CE0 & Founder of SENSEE, Inc
+        </div>
+      </div>
+      <img src="<?=$img?>ceo.png" alt="" class="ceo_img">
+    </div>
+    <div class="popup" data-view="brand_movie">
+      <button class="close" data-btn="brand_movie"></button>
+      <video src="<?=$img?>ceo.mp4"></video>
     </div>
     <?php include $path."/src/inc/footer.php"; ?>
     <script src="<?=$path?>src/js/<?=$menuClass?>.js"></script>

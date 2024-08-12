@@ -30,16 +30,21 @@
     }
     .main_intro_visual {
       position: relative;
-      &::after {
-        content: "";
+      i {
         display: block;
         width: 1px;
         height: 400rem;
         background-color: $color-black;
         margin: 0 auto;
+        transform: scaleY(0);
+        transform-origin: left top;
+        transition: 1s ease;
         @include screen("mo") {
           height: 200rem;
           margin-top: 8rem;
+        }
+        &.aos-animate {
+          transform: scaleY(1);
         }
       }
       .bg_tit {
@@ -178,8 +183,9 @@
           background-color: $color-white;
           position: absolute;
           left: 50%;
-          transform: translateX(-50%);
+          transform: translateX(-50%) scale(0);
           bottom: -553rem;
+          transition: 1s ease;
           @include screen("mo") {
             width: 754rem;
             height: 754rem;
@@ -209,7 +215,7 @@
           bottom: 0;
           transform: translateX(-50%);
         }
-        .leaf {
+        i {
           position: absolute;
           &.leaf1 {
             width: 304rem;
@@ -275,6 +281,22 @@
               filter: blur(4px);
             }
           }
+          img {
+            position: relative;
+            top: 100rem;
+            opacity: 0;
+            transition: 1s ease, transform 0s;
+          }
+        }
+      }
+      &.aos-animate {
+        .visual_wrap::before {
+          transform: translateX(-50%) scale(1);
+          transition-delay: 0.2s;
+        }
+        .leaf_box i img {
+          top: 0;
+          opacity: 1;
         }
       }
     }
