@@ -50,7 +50,96 @@
 .sustainability_inner .esg_earth_wrap #content4 .p_center {
   left: calc(50% + 161rem);
 }
+.sustainability_inner .esg_earth_wrap .sustainability_leaf_img {
+  position: absolute;
+  opacity: 0;
+}
+.sustainability_inner .esg_earth_wrap #leaf_img_01 {
+  width: 304rem;
+  height: 266rem;
+  top: 0;
+  right: 207rem;
+}
+.sustainability_inner .esg_earth_wrap #leaf_img_02 {
+  width: 69.11rem;
+  height: 60.25rem;
+  top: 380rem;
+  left: 5rem;
+  transform: rotate(-45deg);
+}
+.sustainability_inner .esg_earth_wrap #leaf_img_03 {
+  width: 160.7rem;
+  height: 140.1rem;
+  top: 467rem;
+  left: 949rem;
+  transform: rotate(-60deg);
+}
+.sustainability_inner .esg_earth_wrap #leaf_img_04 {
+  width: 87.29rem;
+  height: 76.1rem;
+  top: 626rem;
+  left: 266rem;
+  transform: rotate(60deg);
+}
+.sustainability_inner .esg_earth_wrap #leaf_img_05 {
+  width: 678rem;
+  height: 594rem;
+  bottom: -720rem;
+  right: 70rem;
+  transform: rotate(-120deg);
+  filter: blur(10px);
+}
+.sustainability_inner .esg_earth_wrap #leaf_img_06 {
+  width: 117rem;
+  height: 102rem;
+  bottom: -200rem;
+  left: 109rem;
+  transform: rotate(-135deg);
+}
+
+.sustainability_info {
+  margin-top: 430rem;
+}
+.sustainability_info .info_wrap {
+  padding-top: 295rem;
+  padding-left: 336rem;
+  padding-right: 336rem;
+  display: flex;
+  flex-direction: column;
+}
+.sustainability_info .info_contents {
+  width: 462rem;
+  display: flex;
+  flex-direction: column;
+  gap: 39rem;
+}
+.sustainability_info .info_contents .info_img {
+  height: 611rem;
+  width: 100%;
+}
+.sustainability_info .info_contents .info_txt .info_tit {
+  font-size: 40rem;
+  font-weight: 600;
+  line-height: 1.4;
+  padding-bottom: 16rem;
+}
+.sustainability_info .info_contents .info_txt .info_desc {
+  font-size: 16rem;
+  font-weight: 600;
+  line-height: 1.75;
+}
+.sustainability_info .environment_contents {
+  align-self: flex-end;
+}
+.sustainability_info .social_contents {
+  align-self: flex-start;
+  margin-top: -185rem;
+}
+.sustainability_info .governance_contents {
+  align-self: flex-end;
+  margin-top: -149rem;
+}
 
 #content1 {
   opacity: 1;
-} /* 첫 번째 컨텐츠를 초기에는 보이도록 설정 */
+} /* 첫 번째 컨텐츠를 초기에는 보이도록 설정 *//*# sourceMappingURL=sustainability.css.map */
