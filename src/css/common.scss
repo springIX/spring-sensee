@@ -112,6 +112,10 @@ option {
 section {
   position: relative;
 }
+picture {
+  display: block;
+  width: 100%;
+}
 
 @include screen("tb") {
   body {

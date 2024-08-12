@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Responsive */
 /* Ellipsis */
 .pps {
@@ -174,6 +175,16 @@
   }
 }
 
+.layout_inner_r {
+  padding-right: 198rem !important;
+  position: relative;
+}
+@media (max-width: 750px) {
+  .layout_inner_r {
+    padding-right: 20rem !important;
+  }
+}
+
 .layout_inner_w {
   padding-left: 198rem !important;
   position: relative;
@@ -256,6 +267,27 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+}
+
+.dot_txt,
+.dot_list > li {
+  position: relative;
+  padding-left: 18rem;
+}
+@media (max-width: 750px) {
+  .dot_txt,
+  .dot_list > li {
+    padding-left: 12rem;
+  }
+}
+
+.dot_txt::before,
+.dot_list > li::before {
+  content: "•";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -2rem;
 }
 
 .btn_more {

@@ -7,13 +7,13 @@
   </h1>
   <nav class="gnb">
     <ul>
-      <li><a href="">ABOUT US</a></li>
-      <li><a href="">TECHNOLOGY</a></li>
-      <li><a href="">PRODUCT</a></li>
-      <li><a href="">SUSTAINABILITY</a></li>
-      <li><a href="">MEDIA ROOM</a></li>
-      <li><a href="">CONTACT US</a></li>
-      <li class="outlink"><a href="" target="_blank">SHOP</a></li>
+      <li><a href="/about/">ABOUT US</a></li>
+      <li><a href="/tech/">TECHNOLOGY</a></li>
+      <li><a href="/product/">PRODUCT</a></li>
+      <li><a href="/sustainability/">SUSTAINABILITY</a></li>
+      <li><a href="/media/">MEDIA ROOM</a></li>
+      <li><a href="/contact/">CONTACT US</a></li>
+      <li class="outlink"><a href="https://3dcoloring.co.kr/" target="_blank">SHOP</a></li>
     </ul>
   </nav>
   <div class="setting_box">

@@ -154,6 +154,13 @@
     padding-left: $layout_inner_m !important;
   }
 }
+.layout_inner_r {
+  padding-right: $layout_inner !important;
+  position: relative;
+  @include screen("mo") {
+    padding-right: $layout_inner_m !important;
+  }
+}
 .layout_inner_w {
   padding-left: $layout_inner !important;
   position: relative;
@@ -231,6 +238,22 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+}
+.dot_txt,
+.dot_list > li {
+  position: relative;
+  padding-left: 18rem;
+  @include screen("mo") {
+    padding-left: 12rem;
+  }
+}
+.dot_txt::before,
+.dot_list > li::before {
+  content: "•";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -2rem;
 }
 
 // Btn
