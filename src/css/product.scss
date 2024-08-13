@@ -1,0 +1,14 @@
+@import "var";
+
+.product_container {
+  overflow: hidden;
+  .h3_ {
+    text-align: center;
+  }
+  .product_introduce {
+    .h3_ {
+      margin: 465rem 0;
+      font-weight: 700;
+    }
+  }
+}

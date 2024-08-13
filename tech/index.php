@@ -22,7 +22,7 @@
           'media-d' => $img.'keyvisual_d.jpg', // required
           'media-m' => $img.'keyvisual_m.jpg', // option
           'media-alt' => '', // required
-          'dimmed' => 'all', // required
+          'dimmed' => 'circle', // required
           'title' => 'Technology', // required
           'desc' => '센시는 빅데이터 기반 AI 기술과 특수인쇄기술을 기반으로 독보적인 기술로 다양한 플랫폼 & <br>콘텐츠의 점자 인쇄를 통해 모든 사람을 위한 세상을 만들고자 합니다.', // option
         );

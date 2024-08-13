@@ -1,0 +1,12 @@
+/* Responsive */
+/* Ellipsis */
+.product_container {
+  overflow: hidden;
+}
+.product_container .h3_ {
+  text-align: center;
+}
+.product_container .product_introduce .h3_ {
+  margin: 465rem 0;
+  font-weight: 700;
+}
