@@ -264,7 +264,8 @@ body.black_yellow header {
 .section_tit .h3_.pps {
   margin-top: 10rem;
 }
-.section_tit .body_txt {
+.section_tit .body_txt,
+.section_tit .sub_tit {
   margin-top: 40rem;
 }
 .section_tit .btn_more {
@@ -272,13 +273,11 @@ body.black_yellow header {
   margin-top: 80rem;
 }
 @media (max-width: 750px) {
-  .section_tit br:not(.mo) {
-    display: none;
-  }
   .section_tit .h3_ {
     margin-top: 12rem !important;
   }
-  .section_tit .body_txt {
+  .section_tit .body_txt,
+  .section_tit .sub_tit {
     margin-top: 20rem;
   }
   .section_tit .btn_more {

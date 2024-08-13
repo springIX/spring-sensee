@@ -29,21 +29,21 @@
         printKeyvisual();
       ?>
       <section class="<?=$menuClass?>_overview">
-        <div class="section_tit layout_inner">
+        <div class="section_tit layout_inner" data-aos="fade-up">
           <h5 class="h5_">OVERVIEW</h5>
-          <h3 class="h3_ pps">Evolving to bring <br>the world together</h3>
+          <h3 class="h3_ pps">Evolving to bring <br class="pc">the world together</h3>
         </div>
         <div class="overview_cont layout_inner_w">
           <div class="txt_wrap">
-            <p class="sub_head pps">Brand history</p>
+            <p class="sub_head pps" data-aos="fade-up">Brand history</p>
             <div class="info_wrap">
-              <p class="info">가족의 사랑과 배려와 함께, 시각 장애를 가진 분들이 <br>
+              <p class="info" data-aos="fade-up" data-aos-delay="100">가족의 사랑과 배려와 함께, 시각 장애를 가진 분들이 <br>
               정보에 더 쉽게 접근할 수 있도록 두 마음을 잇는 <br>
               하나의 기술로 시작하여, 모두를 위한 기술로 <br>지속 가능한 세상을 만들어갑니다.</p>
-              <div class="ceo_info">
+              <div class="ceo_info" data-aos="fade-up" data-aos-delay="200">
                 <div class="profile">
                   <div class="img_box">
-                    <img src="<?=$img?>ceo_profile.png" alt=""/>
+                    <img src="<?=$img?>ceo_profile.png"/>
                   </div>
                   <div class="txt_box">
                     <span>Victor Insik (서인식)</span>
@@ -53,7 +53,7 @@
                 <button class="btn_more" data-btn="ceo"></button>
               </div>
               <div class="img1">
-                <picture>
+                <picture data-aos="clip-up">
                   <source media="(min-width: <?=$min_width_d?>px)" srcset="<?=$img?>overview01_d.jpg" />
                   <source media="(max-width: <?=$max_width_m?>px)" srcset="<?=$img?>overview01_m.jpg" />
                   <img src="<?=$img?>overview01_d.jpg" data-src="<?=$img?>overview01_d.jpg" alt="" />
@@ -63,20 +63,20 @@
           </div>
           <div class="img_wrap">
             <div class="img2">
-              <picture>
+              <picture data-aos="clip-up">
                 <source media="(min-width: <?=$min_width_d?>px)" srcset="<?=$img?>overview02_d.jpg" />
                 <source media="(max-width: <?=$max_width_m?>px)" srcset="<?=$img?>overview02_m.jpg" />
                 <img src="<?=$img?>overview02_d.jpg" data-src="<?=$img?>overview02_d.jpg" alt="" />
               </picture>
             </div>
             <div class="img3">
-              <picture>
+              <picture data-aos="clip-up" data-aos-delay="100">
                 <source media="(min-width: <?=$min_width_d?>px)" srcset="<?=$img?>overview03_d.jpg" />
                 <source media="(max-width: <?=$max_width_m?>px)" srcset="<?=$img?>overview03_m.jpg" />
                 <img src="<?=$img?>overview03_d.jpg" data-src="<?=$img?>overview03_d.jpg" alt="" />
               </picture>
             </div>
-            <p>
+            <p data-aos="fade-up" data-aos-delay="200">
               센시의 내일은 <br>
               점자산업의 보편화와 함께 <br>
               장애인과 비장애인의 경계가 사라지는 <br class="mo">교육시장과 <br class="pc"> 
@@ -86,13 +86,13 @@
         </div>
       </section>
       <section class="<?=$menuClass?>_movie taC layout_inner">
-        <div class="tit_box">
+        <div class="tit_box" data-aos="fade-up">
           <img src="<?=$icon?>logo_cymbol_black.svg" alt="" class="logo_cymbol">
           <h4 class="h4_">Touch the world and <br>See the unseen</h4>
           <p class="body_txt">차이로 차별하지 않으며, 변화에 변함없는 원칙 <br class="pc">
           모두가 윤리적인 삶을 누릴 수 있는 세상을 SENSEE가 만들어 갑니다.</p>
         </div>
-        <div class="movie_btn_wrap">
+        <div class="movie_btn_wrap" data-aos="fade-up">
           <div class="movie_btn">
             <button data-btn="brand_movie">
               <img src="<?=$img?>movie_thumb.png" alt=""/>
@@ -158,18 +158,18 @@
         </div>
       </section>
       <section class="<?=$menuClass?>_business">
-        <div class="section_tit">
+        <div class="section_tit" data-aos="fade-up">
           <h5 class="h5_">BUSINESS AREA</h5>
           <h5 class="h3_">사회적 기업의 <br>한계를 넘어</h5>
-          <h5 class="body_txt">머신러닝 기반의 데이터 변환 기술과 특수 인쇄술을 바탕으로 한 <br>
+          <h5 class="body_txt">머신러닝 기반의 데이터 변환 기술과 특수 인쇄술을 바탕으로 한 <br class="pc">
           지속 가능한 사업모델을 구축합니다.</h5>
         </div>
         <ol class="busi_list">
           <li>
             <div class="img_box">
-              <img src="<?=$img?>business01.jpg" alt="">
+              <img src="<?=$img?>business01.jpg" alt=""  data-aos="clip-up">
             </div>
-            <div class="txt_box layout_inner_l">
+            <div class="txt_box layout_inner_l" data-aos="fade-up">
               <p class="sub_tit2 pps">Commercial</p>
               <div class="info">
                 <ul class="body_txt dot_list">
@@ -183,9 +183,9 @@
           </li>
           <li>
             <div class="img_box">
-              <img src="<?=$img?>business02.jpg" alt="">
+              <img src="<?=$img?>business02.jpg" alt=""  data-aos="clip-up">
             </div>
-            <div class="txt_box layout_inner_r">
+            <div class="txt_box layout_inner_r" data-aos="fade-up">
               <p class="sub_tit2 pps">Education</p>
               <div class="info">
                 <ul class="body_txt dot_list">
@@ -198,9 +198,9 @@
           </li>
           <li>
             <div class="img_box">
-              <img src="<?=$img?>business03.jpg" alt="">
+              <img src="<?=$img?>business03.jpg" alt=""  data-aos="clip-up">
             </div>
-            <div class="txt_box layout_inner_l">
+            <div class="txt_box layout_inner_l" data-aos="fade-up">
               <p class="sub_tit2 pps">Database <br>infrastructure</p>
               <div class="info">
                 <ul class="body_txt dot_list">
@@ -236,6 +236,8 @@
       </div>
       <img src="<?=$img?>ceo.png" alt="" class="ceo_img">
     </div>
+
+    <!-- BRAND MOVIE POPUP -->
     <div class="popup" data-view="brand_movie">
       <button class="close" data-btn="brand_movie"></button>
       <video src="<?=$img?>ceo.mp4"></video>

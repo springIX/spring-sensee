@@ -42,7 +42,7 @@
         <div class="<?=$menuClass?>_brand_info layout_inner_l">
           <div class="section_tit" data-aos="fade-up">
             <h6 class="h5_">BRAND STORY</h6>
-            <h3 class="h3_ pps">Touch the world and <br>See the unseen</h3>
+            <h3 class="h3_ pps">Touch the world and <br class="pc">See the unseen</h3>
           </div>
           <div class="txt_box">
             <div class="txt_wrap">
@@ -91,7 +91,7 @@
         <div class="section_tit taC layout_inner" data-aos="fade-up">
           <h5 class="h5_">TECHNOLOGY</h5>
           <h5 class="h3_">모두를 위한 기술, 함께하는 세상</h5>
-          <h5 class="body_txt">센시는 빅데이터 기반 AI기술과 특수인쇄기술을 기반으로 독보적인 기술로 <br>다양한 플랫폼 & 콘텐츠의 점자인쇄를 통해 모든 사람을 위한 세상을 만들고자 합니다.</h5>
+          <h5 class="body_txt">센시는 빅데이터 기반 AI기술과 특수인쇄기술을 기반으로 독보적인 기술로 <br class="pc">다양한 플랫폼 & 콘텐츠의 점자인쇄를 통해 모든 사람을 위한 세상을 만들고자 합니다.</h5>
           <a href="" class="btn_more"></a>
         </div>
         <div class="tech_visual" data-aos="">
@@ -111,7 +111,7 @@
       <section class="<?=$menuClass?>_sustain layout_inner_w">
         <div class="section_tit" data-aos="fade-up">
           <h5 class="h5_">SUSTAINABILITY</h5>
-          <h5 class="h3_">지속 가능한 세상을 만들며 <br>모두가 평등한 사회를 위해 <br>노력합니다.</h5>
+          <h5 class="h3_">지속 가능한 세상을 만들며 <br class="pc">모두가 평등한 사회를 위해 <br class="pc">노력합니다.</h5>
         </div>
         <div class="sustain_info">
           <div class="cymbol_img"data-aos="fade-up">

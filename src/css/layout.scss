@@ -248,7 +248,8 @@ body {
   .h3_.pps {
     margin-top: 10rem;
   }
-  .body_txt {
+  .body_txt,
+  .sub_tit {
     margin-top: 40rem;
   }
   .btn_more {
@@ -256,13 +257,11 @@ body {
     margin-top: 80rem;
   }
   @include screen("mo") {
-    br:not(.mo) {
-      display: none;
-    }
     .h3_ {
       margin-top: 12rem !important;
     }
-    .body_txt {
+    .body_txt,
+    .sub_tit {
       margin-top: 20rem;
     }
     .btn_more {
