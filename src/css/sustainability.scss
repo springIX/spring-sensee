@@ -15,15 +15,12 @@
     width: 100%;
     height: 100%;
     .sustainability_contents {
-      position: absolute;
-      top: 0;
-      left: 0;
       width: 100%;
       .esg_inner {
         display: flex;
         flex-direction: column;
         gap: 42rem;
-        padding-top: 316rem;
+        width: 100%;
         .body_txt {
           width: 598rem;
           align-self: flex-end;
@@ -47,6 +44,9 @@
     .esg_title {
       font-size: 500rem;
       font-weight: 700;
+      @include screen("mo") {
+        font-size: 150px;
+      }
     }
   }
   .esg_earth_wrap {
@@ -61,14 +61,25 @@
     .sensee_symbol_black {
       width: 480rem;
       height: 160rem;
+      @include screen("mo") {
+        width: 200px;
+        height: auto;
+      }
     }
     .sustainability_earth_img {
       width: 140rem;
       height: 140rem;
+      @include screen("mo") {
+        width: 60px;
+        height: 60px;
+      }
     }
     #content4 {
-      .p_center {
+      #esg_img_wrap {
         left: calc(50% + 161rem);
+        @include screen("mo") {
+          left: calc(50% + 67px);
+        }
       }
     }
     .sustainability_leaf_img {
@@ -76,11 +87,25 @@
       opacity: 0;
 
     }
+    .leaf_img_wrap {
+      width: 100%;
+      height: 100%;
+      @include screen("mo") {
+        width: 300px;
+        height: 300px;
+      }
+    }
     #leaf_img_01 {      
       width: 304rem;
       height: 266rem;
       top: 0;
       right: 207rem;
+      @include screen("mo") {
+        width: 66px;
+        height: 57px;
+        top: -19px;
+        right: 6.2px;
+      }
     }
     #leaf_img_02 {      
       width: 69.11rem;
@@ -88,6 +113,12 @@
       top: 380rem;
       left: 5rem;
       transform: rotate(-45deg);
+      @include screen("mo") {
+        width: 20.1px;
+        height: 17.52px;
+        top: 50px;
+        left: -30px;
+      }
     }
     #leaf_img_03 {      
       width: 160.7rem;
@@ -95,6 +126,12 @@
       top: 467rem;
       left: 949rem;
       transform: rotate(-60deg);
+      @include screen("mo") {
+        width: 36.995px;
+        height: 32.252px;
+        top: 74.5px;
+        left: 162.7px;
+      }
     }
     #leaf_img_04 {      
       width: 87.29rem;
@@ -102,6 +139,12 @@
       top: 626rem;
       left: 266rem;
       transform: rotate(60deg);
+      @include screen("mo") {
+        width: 20.1px;
+        height: 17.52px;
+        top: 119px;
+        left: 10.3px;
+      }
     }
     #leaf_img_05 {      
       width: 678rem;
@@ -110,6 +153,13 @@
       right: 70rem;
       transform: rotate(-120deg);
       filter: blur(10px);
+      @include screen("mo") {
+        width: 134.587px;
+        height: 117.913px;
+        bottom: -45px;
+        right: 10px;
+        filter: blur(2.5px);
+      }
     }
     #leaf_img_06 {      
       width: 117rem;
@@ -117,26 +167,46 @@
       bottom: -200rem;
       left: 109rem;
       transform: rotate(-135deg);
+      @include screen("mo") {
+        width: 26.935px;
+        height: 23.482px;
+        bottom: 57.1px;
+        left: -30px;
+      }
     }
   }
 }
 .sustainability_info {
   margin-top: 500rem;
+  @include screen("mo") {
+    margin-top: 0;
+  }
   .info_wrap {
     padding-top: 295rem;
     padding-left: 336rem;
     padding-right: 336rem;
     display: flex;
     flex-direction: column;
+    @include screen("mo") {
+      gap: 100px;
+      padding: 0 20px;
+    }
   }
   .info_contents {
     width: 462rem;
     display: flex;
     flex-direction: column;
     gap: 39rem;
+    @include screen("mo") {
+      width: 265px;
+      gap: 24px;
+    }
     .info_img {
       height: 611rem;
       width: 100%;
+      @include screen("mo") {
+        height: 350px;
+      }
     }
     .info_txt {
       .info_tit {
@@ -158,40 +228,69 @@
   .social_contents {
     align-self: flex-start;
     margin-top: -185rem;
+    @include screen("mo") {
+      margin-top: 0;
+    }
   }
   .governance_contents {
     align-self: flex-end;
     margin-top: -149rem;
+    @include screen("mo") {
+      margin-top: 0;
+    }
   }
 }
 .sustainability_explanation,
 .sustainability_management {
   padding-top: 300rem;
   padding-bottom: 196rem;
+  @include screen("mo") {
+    padding-top: 160px;
+  }
   .explanation_txt {
     padding-top: 100rem;
     display: flex;
     justify-content: space-between;
+    @include screen("mo") {
+      gap: 80px;
+      padding-top: 24px;
+      flex-direction: column;
+    }
   }
   .explanation_list {
     width: 765rem;
     display: flex;
     flex-direction: column;
     gap: 140rem;
+    @include screen("mo") {
+      width: auto;
+      padding-left:79px;
+      gap: 40px;
+    }
     .explanation_item {
       display: flex;
       flex-direction: column;
       gap: 80rem;
       padding-top: 24rem;
-      border-top: 1px solid $color-black;
+      border-top: 1rem solid $color-black;
+      @include screen("mo") {
+        padding-top: 20px;
+        gap: 54px;
+      }
       .txt_box {
         display: flex;
         justify-content: space-between;
+        @include screen("mo") {
+          font-size: 24px;
+        }
       }
       .sub_list {
         .sub_item {
           padding-left: 20rem;
           position: relative;
+          @include screen("mo") {
+            padding-left: 15rem;
+          }
           &::before {
             content: "";
             display: block;
@@ -202,6 +301,11 @@
             height: 5rem;
             border-radius: 50%;
             background-color: $color-black;
+            @include screen("mo") {
+              top: 9px;
+              width: 4px;
+              height: 4px;
+            }
           }
         }
       }
@@ -213,9 +317,12 @@
   .glacier_contents {
     .glacier_img {
       transform: translateX(0);
-      transition: transform 1s ease-in-out;
+      transition: transform 0.5s ease-in-out;
       img {
         width: 105%;
+        @include screen("mo") {
+          width: 120%;
+        }
       }
     }
     .floating_txt {
@@ -223,6 +330,10 @@
       font-size: 200rem;
       font-weight: 700;
       top: 690rem;
+      @include screen("mo") {
+        font-size: 44px;
+        top: 43%;
+      }
     }
   }
 }
@@ -232,12 +343,24 @@
   display: flex;
   flex-direction: column;
   gap: 130rem;
+  @include screen("mo") {
+    gap: 90px;
+  }
   .tit_wtap {
     width: 829rem;
     align-self: flex-end;
     margin-right: 129rem;
+    @include screen("mo") {
+      width: auto;
+      padding-left: 91px;
+      padding-right: 15px;
+      margin-right: 0
+    }
     .h3_ {
       padding-bottom: 40rem;
+      @include screen("mo") {
+        padding-bottom: 20px;
+      }
     }
   }
 }

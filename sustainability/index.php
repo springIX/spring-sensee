@@ -33,7 +33,7 @@
       <section class="<?=$menuClass?>_inner">
         <div class="<?=$menuClass?>_esg">
           <div class="<?=$menuClass?>_contents" id="content1">
-            <div class="esg_inner layout_inner_l">
+            <div class="esg_inner layout_inner_l p_center">
               <div class="section_tit">
                 <div class="h5_">ESG</div>
                 <h3 class="h3_">작은 실천으로<br> 더 큰 꿈을 향해</h3>
@@ -58,9 +58,9 @@
             </div>
             <div class="<?=$menuClass?>_esg_contents" id="content4">
               <div class="p_center" id="esg_img_wrap">
-                <img class="<?=$menuClass?>_earth_img" src="<?=$img?>earth.png" alt="" />
+                <img class="<?=$menuClass?>_earth_img" src="<?=$img?>earth.png" alt="" />                
               </div>
-              <div class="leaf_img_wrap">
+              <div class="leaf_img_wrap p_center">
                 <img class="<?=$menuClass?>_leaf_img" id="leaf_img_01" src="<?=$img?>leaf.png" alt="" />
                 <img class="<?=$menuClass?>_leaf_img" id="leaf_img_02" src="<?=$img?>leaf.png" alt="" />
                 <img class="<?=$menuClass?>_leaf_img" id="leaf_img_03" src="<?=$img?>leaf.png" alt="" />
@@ -117,6 +117,13 @@
         <div class="explanation_contents layout_inner">
           <div class="explanation_img">
             <img src="<?=$img?>eco_friendly.jpg" alt="" />
+          </div>
+          <div class="explanation_img">
+            <picture>
+              <source media="(min-width: <?=$min_width_d?>px)" srcset="<?=$img?>eco_friendly-d.jpg" />
+              <source media="(max-width: <?=$max_width_m?>px)" srcset="<?=$img?>eco_friendly-m" />
+              <img src="<?=$img?>eco_friendly-d.jpg" data-src="<?=$img?>eco_friendly-d.jpg" alt="" />
+            </picture>
           </div>
           <div class="explanation_txt">
             <div class="explanation_tit sub_tit">
@@ -175,7 +182,7 @@
               </li>
               <li class="explanation_item">
                 <div class="txt_box sub_tit3">
-                  <div>폐기물 감소 및 자원 순환 노력</div>
+                  <div>폐기물 감소 및<br class="mo"> 자원 순환 노력</div>
                   <div>04</div>
                 </div>
                 <ul class="sub_list body_txt">
@@ -212,6 +219,13 @@
         </div>
         <div class="explanation_contents layout_inner">
           <div class="explanation_img">
+            <picture>
+              <source media="(min-width: <?=$min_width_d?>px)" srcset="<?=$img?>management-d" />
+              <source media="(max-width: <?=$max_width_m?>px)" srcset="<?=$img?>management-m" />
+              <img src="<?=$img?>management-d" data-src="<?=$img?>management-d" alt="" />
+            </picture>
+          </div>
+          <div class="explanation_img">
             <img src="<?=$img?>management.jpg" alt="" />
           </div>
           <div class="explanation_txt">
@@ -223,60 +237,46 @@
             <ul class="explanation_list">
               <li class="explanation_item">
                 <div class="txt_box sub_tit3">
-                  <div>탄소중립실천</div>
+                  <div>공평한 사회 추구</div>
                   <div>01</div>
                 </div>
                 <ul class="sub_list body_txt">
                   <li class="sub_item">
-                    탄소중립 중장기 로드맵 수립
+                    차별없는 사회에서의 이념과 문화 형성 및 확산
                   </li>
                   <li class="sub_item">
-                    탄소중립 지표 관리 고도화
+                    장애인과 비장애인의 편견을 없애고 구성원들 간의 소속감과 유대감 형성
                   </li>
                   <li class="sub_item">
-                    기후변화 대응 및 온실가스 감축 실천 확산
+                    시각장애인가 일반인 모두를 위한 점자 도서 제작
                   </li>
                 </ul>
               </li>
               <li class="explanation_item">
                 <div class="txt_box sub_tit3">
-                  <div>친환경 상품개발</div>
+                  <div>포용적교육</div>
                   <div>02</div>
                 </div>
                 <ul class="sub_list body_txt">
                   <li class="sub_item">
-                    FSC 인증서 보유
+                    시각장애인을 위한 점자 교육 교구 제작
                   </li>
                   <li class="sub_item">
-                    전 제품 친환경 종이, Soyink 인쇄
-                  </li>
-                  <li class="sub_item">
-                    자연생분해 에코링 사용
+                    Zero Project, (Inclusive Education)과 ICT에서 전 세계 12개 혁신 솔루션 선정
                   </li>
                 </ul>
               </li>
               <li class="explanation_item">
                 <div class="txt_box sub_tit3">
-                  <div>친환경 캠페인</div>
+                  <div>공익을 위한 사회공헌</div>
                   <div>03</div>
                 </div>
                 <ul class="sub_list body_txt">
                   <li class="sub_item">
-                    자원 순환 캠페인 지속 시행
+                    시각장애인용 점자 변환 소프트웨어 '센시컨버터’ 무료 제공 협약 체결
                   </li>
                   <li class="sub_item">
-                    오프라인 행사 전반의 친환경 소재 활용 (허니콤보드 등)
-                  </li>
-                </ul>
-              </li>
-              <li class="explanation_item">
-                <div class="txt_box sub_tit3">
-                  <div>폐기물 감소 및 자원 순환 노력</div>
-                  <div>04</div>
-                </div>
-                <ul class="sub_list body_txt">
-                  <li class="sub_item">
-                    물류센터 친환경 프로세스 및 직매입 재고 기부 등 자원 순환 확대
+                    파주 점자 탁상달력 1천 개 장애인 연합회 기타
                   </li>
                 </ul>
               </li>
@@ -291,39 +291,81 @@
     <script>
       gsap.registerPlugin(ScrollTrigger);
 
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".sustainability_inner",
-          start: "top top", // 섹션이 화면 상단에 닿으면 트리거
-          end: "+=300%", // 3배 길이 동안 애니메이션이 지속됨
-          scrub: true, // 스크롤에 따라 애니메이션 진행
-          pin: true, // 섹션을 고정
-          markers: true, // 디버그용 마커
+      ScrollTrigger.matchMedia({
+        // Default animation for screens wider than 750px
+        "(min-width: 751px)": function() {
+          const tl = gsap.timeline({
+            scrollTrigger: {
+              trigger: ".sustainability_inner",
+              start: "top top",
+              end: "+=300%",
+              scrub: true,
+              pin: true,
+              markers: true,
+            }
+          });
+
+          tl.to("#content1", { opacity: 0, duration: 2 })
+            .to("#content2", { opacity: 1, duration: 2 }, "-=0.5")
+            .to("#content2", { 
+              opacity: 0, 
+              scale: 0.4,
+              duration: 2 
+            })
+            .to("#content3", { opacity: 1, duration: 2 }, "-=0.5")
+            .to("#content4", { opacity: 1, duration: 2 }, "+=0.5")
+            .to("#content3", { opacity: 0, duration: 2 })
+            .to("#esg_img_wrap", {
+              left: "50%",
+              y: "350rem",
+              scale: 10,
+              duration: 2
+            })
+            .to("#leaf_img_01", { opacity: 1, duration: 2 }, "+=0.5")
+            .to("#leaf_img_02", { opacity: 1, duration: 2 }, "+=0.5")
+            .to("#leaf_img_03", { opacity: 1, duration: 2 }, "+=0.5")
+            .to("#leaf_img_04", { opacity: 1, duration: 2 }, "+=0.5")
+            .to("#leaf_img_05", { opacity: 1, duration: 1 }, "+=1")
+            .to("#leaf_img_06", { opacity: 1, duration: 1 }, "+=1");
+        },
+
+        // Animation for screens 750px wide or less
+        "(max-width: 750px)": function() {
+          const tl = gsap.timeline({
+            scrollTrigger: {
+              trigger: ".sustainability_inner",
+              start: "top top",
+              end: "+=200%", // Adjusted length for smaller screens
+              scrub: true,
+              pin: true,
+              markers: true,
+            }
+          });
+
+          // Different or simplified animations for smaller screens
+          tl.to("#content1", { opacity: 0, duration: 1 })
+            .to("#content2", { opacity: 1, duration: 1 }, "-=0.5")
+            .to("#content2", { 
+              opacity: 0, 
+              scale: 0.6, // Smaller scaling for smaller screens
+              duration: 1 
+            })
+            .to("#content3", { opacity: 1, duration: 1 }, "-=0.5")
+            .to("#content4", { opacity: 1, duration: 1 }, "+=0.5")
+            .to("#content3", { opacity: 0, duration: 1 })
+            .to("#esg_img_wrap", {
+              left: "50%",
+              scale: 5, // Smaller scaling for smaller screens
+              duration: 1
+            })
+            .to("#leaf_img_01", { opacity: 1, duration: 1 }, "+=0.5")
+            .to("#leaf_img_02", { opacity: 1, duration: 1 }, "+=0.5")
+            .to("#leaf_img_03", { opacity: 1, duration: 1 }, "+=0.5")
+            .to("#leaf_img_04", { opacity: 1, duration: 1 }, "+=0.5")
+            .to("#leaf_img_05", { opacity: 1, duration: 0.5 }, "+=0.5")
+            .to("#leaf_img_06", { opacity: 1, duration: 0.5 }, "+=0.5");
         }
       });
-
-      tl.to("#content1", { opacity: 0, duration: 2 })
-        .to("#content2", { opacity: 1, duration: 2 }, "-=0.5")
-        .to("#content2", { 
-          opacity: 0, 
-          scale: 0.4,
-          duration: 2 // 애니메이션 지속 시간
-        })
-        .to("#content3", { opacity: 1, duration: 2 }, "-=0.5")
-        .to("#content4", { opacity: 1, duration: 2 }, "+=0.5")
-        .to("#content3", { opacity: 0, duration: 2 })
-        .to("#esg_img_wrap", {
-          left: "50%", // 왼쪽으로 200px 이동 (원하는 값으로 조정 가능)
-          y: "350rem",
-          scale: 10, // 크기를 두 배로 키움
-          duration: 2 // 애니메이션 지속 시간
-        })
-        .to("#leaf_img_01", { opacity: 1, duration: 2 }, "+=0.5")
-        .to("#leaf_img_02", { opacity: 1, duration: 2 }, "+=0.5")
-        .to("#leaf_img_03", { opacity: 1, duration: 2 }, "+=0.5")
-        .to("#leaf_img_04", { opacity: 1, duration: 2 }, "+=0.5")
-        .to("#leaf_img_05", { opacity: 1, duration: 1 }, "+=1")
-        .to("#leaf_img_06", { opacity: 1, duration: 1 }, "+=1"); 
     </script>
   </div>
 </body>
