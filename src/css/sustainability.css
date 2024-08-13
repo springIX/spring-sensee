@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/* Responsive */
+/* Ellipsis */
 .sustainability_wrap {
   overflow: hidden;
 }
@@ -8,22 +10,45 @@
   width: 100%;
   height: 100vh; /* 섹션의 높이 */
   font-size: 20rem;
-  color: #000;
-  background-color: #fff;
+  color: #000000;
+  background-color: #ffffff;
 }
 .sustainability_inner .sustainability_esg {
   position: relative;
   width: 100%;
   height: 100%;
+}
+.sustainability_inner .sustainability_esg .sustainability_contents {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.sustainability_inner .sustainability_esg .sustainability_contents .esg_inner {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  gap: 42rem;
+  padding-top: 316rem;
+}
+.sustainability_inner .sustainability_esg .sustainability_contents .esg_inner .body_txt {
+  width: 598rem;
+  align-self: flex-end;
+  margin-right: 364rem;
+}
+@media (max-width: 750px) {
+  .sustainability_inner .sustainability_esg .sustainability_contents .esg_inner .body_txt {
+    width: auto;
+    margin-left: 70px;
+    margin-right: 30px;
+  }
 }
 .sustainability_inner .sustainability_esg_contents {
   position: absolute;
   opacity: 0;
   width: 100%;
+  height: 100vh;
   text-align: center;
-  color: #000;
+  color: #000000;
 }
 .sustainability_inner .sustainability_esg_contents .esg_title {
   font-size: 500rem;
@@ -98,7 +123,7 @@
 }
 
 .sustainability_info {
-  margin-top: 430rem;
+  margin-top: 500rem;
 }
 .sustainability_info .info_wrap {
   padding-top: 295rem;
@@ -138,6 +163,87 @@
 .sustainability_info .governance_contents {
   align-self: flex-end;
   margin-top: -149rem;
+}
+
+.sustainability_explanation,
+.sustainability_management {
+  padding-top: 300rem;
+  padding-bottom: 196rem;
+}
+.sustainability_explanation .explanation_txt,
+.sustainability_management .explanation_txt {
+  padding-top: 100rem;
+  display: flex;
+  justify-content: space-between;
+}
+.sustainability_explanation .explanation_list,
+.sustainability_management .explanation_list {
+  width: 765rem;
+  display: flex;
+  flex-direction: column;
+  gap: 140rem;
+}
+.sustainability_explanation .explanation_list .explanation_item,
+.sustainability_management .explanation_list .explanation_item {
+  display: flex;
+  flex-direction: column;
+  gap: 80rem;
+  padding-top: 24rem;
+  border-top: 1px solid #000000;
+}
+.sustainability_explanation .explanation_list .explanation_item .txt_box,
+.sustainability_management .explanation_list .explanation_item .txt_box {
+  display: flex;
+  justify-content: space-between;
+}
+.sustainability_explanation .explanation_list .explanation_item .sub_list .sub_item,
+.sustainability_management .explanation_list .explanation_item .sub_list .sub_item {
+  padding-left: 20rem;
+  position: relative;
+}
+.sustainability_explanation .explanation_list .explanation_item .sub_list .sub_item::before,
+.sustainability_management .explanation_list .explanation_item .sub_list .sub_item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 13rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: #000000;
+}
+
+.sustainability_glacier {
+  position: relative;
+}
+.sustainability_glacier .glacier_contents .glacier_img {
+  transform: translateX(0);
+  transition: transform 1s ease-in-out;
+}
+.sustainability_glacier .glacier_contents .glacier_img img {
+  width: 105%;
+}
+.sustainability_glacier .glacier_contents .floating_txt {
+  color: #ffffff;
+  font-size: 200rem;
+  font-weight: 700;
+  top: 690rem;
+}
+
+.sustainability_management {
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 130rem;
+}
+.sustainability_management .tit_wtap {
+  width: 829rem;
+  align-self: flex-end;
+  margin-right: 129rem;
+}
+.sustainability_management .tit_wtap .h3_ {
+  padding-bottom: 40rem;
 }
 
 #content1 {
