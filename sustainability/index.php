@@ -25,7 +25,7 @@
             'media-alt' => '', // required
             'dimmed' => 'circle', // required
             'title' => 'Sustainability', // required
-            'desc' => '센시는 환경적 가치와 함께 장애인과 비장애인의 편견을 없애는 공평한 사회 추구, <br class="pc">포용적 교육, 공익을 위한 사회공헌등 모두가 평등한 사회를 위한 경영철학을 가지고 있습니다. ', // option
+            'desc' => '센시는 환경적 가치와 함께 장애인과 비장애인의 편견을 없애는 공평한 사회 추구, <br class="pc">포용적 교육, 공익을 위한 사회 공헌 등 모두가 평등한 사회를 위한 경영철학을 가지고 있습니다. ', // option
           );
           printKeyvisual();
       ?>
@@ -35,18 +35,18 @@
           <div class="<?=$menuClass?>_contents" id="content1">
             <div class="esg_inner layout_inner_l">
               <div class="section_tit">
-                <div class="eye">ESG</div>
-                <h3 class="h3_">작은 실천으로 더 큰 꿈을 향해</h3>
+                <div class="h5_">ESG</div>
+                <h3 class="h3_">작은 실천으로<br> 더 큰 꿈을 향해</h3>
               </div>
-              <div class="txt_box">
-                센시는 KC 인증, FSC 인증을 받은 제품을 친환경 소재를 사용하여<br class="pc">
+              <div class="body_txt">
+                SENSEE는 KC 인증, FSC 인증을 받은 제품을 친환경 소재를 사용하여<br class="pc">
                 생산하고 있습니다. 환경을 위해 다양한 활동을 추진함으로써,<br class="pc">
-                보다 깨끗하고 건강한 지구를 만드는데 기여하고자 합니다.<br class="pc">
+                보다 깨끗하고 건강한 지구를 만드는 데 기여하고자 합니다.<br class="pc">
               </div>
             </div>
           </div>
           <div class="<?=$menuClass?>_esg_contents" id="content2">
-            <div class="f_center">
+            <div class="p_center">
               <h3 class="esg_title">ESG</h3>
             </div>
           </div>
@@ -113,10 +113,181 @@
           </div>
         </div>
       </section>
+      <section class="<?=$menuClass?>_explanation">
+        <div class="explanation_contents layout_inner">
+          <div class="explanation_img">
+            <img src="<?=$img?>eco_friendly.jpg" alt="" />
+          </div>
+          <div class="explanation_txt">
+            <div class="explanation_tit sub_tit">
+              <p>친환경 소재, 양각형태,</p>
+              <p>점자 삽입을 통한</p>
+              <p>ESG 지표제공</p>
+            </div>
+            <ul class="explanation_list">
+              <li class="explanation_item">
+                <div class="txt_box sub_tit3">
+                  <div>탄소중립실천</div>
+                  <div>01</div>
+                </div>
+                <ul class="sub_list body_txt">
+                  <li class="sub_item">
+                    탄소중립 중장기 로드맵 수립
+                  </li>
+                  <li class="sub_item">
+                    탄소중립 지표 관리 고도화
+                  </li>
+                  <li class="sub_item">
+                    기후변화 대응 및 온실가스 감축 실천 확산
+                  </li>
+                </ul>
+              </li>
+              <li class="explanation_item">
+                <div class="txt_box sub_tit3">
+                  <div>친환경 상품개발</div>
+                  <div>02</div>
+                </div>
+                <ul class="sub_list body_txt">
+                  <li class="sub_item">
+                    FSC 인증서 보유
+                  </li>
+                  <li class="sub_item">
+                    전 제품 친환경 종이, Soyink 인쇄
+                  </li>
+                  <li class="sub_item">
+                    자연생분해 에코링 사용
+                  </li>
+                </ul>
+              </li>
+              <li class="explanation_item">
+                <div class="txt_box sub_tit3">
+                  <div>친환경 캠페인</div>
+                  <div>03</div>
+                </div>
+                <ul class="sub_list body_txt">
+                  <li class="sub_item">
+                    자원 순환 캠페인 지속 시행
+                  </li>
+                  <li class="sub_item">
+                    오프라인 행사 전반의 친환경 소재 활용 (허니콤보드 등)
+                  </li>
+                </ul>
+              </li>
+              <li class="explanation_item">
+                <div class="txt_box sub_tit3">
+                  <div>폐기물 감소 및 자원 순환 노력</div>
+                  <div>04</div>
+                </div>
+                <ul class="sub_list body_txt">
+                  <li class="sub_item">
+                    물류센터 친환경 프로세스 및 직매입 재고 기부 등 자원 순환 확대
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="<?=$menuClass?>_glacier">
+        <div class="glacier_contents">
+          <div class="glacier_img">
+            <img src="<?=$img?>glacier.png" alt="" />
+          </div>
+          <div class="floating_txt p_center pps">
+            Sustainability
+          </div>
+        </div>
+      </section>
+      <section class="<?=$menuClass?>_management">
+        <div class="tit_wtap">
+          <span class="h5_">De&I</span>
+          <h3 class="h3_">
+            <p>Diversity,</p>
+            <p>Equity and</p>
+            <p>Inclusion</p>
+          </h3>
+          <div class="body_txt">
+            경영철학은 조직 내외의 모든 이해관계자들에게 포용적이고 공평한 기회를 제공함으로써,<br class="pc"> 더 나은 사회를 만들기 위한 노력을 지속합니다. 이를 통해 센시는 장애인과 비장애인의 경계를 넘어,<br class="pc"> 모든 사람이 동등하게 참여하고 성장할 수 있는 세상을 지향합니다.
+          </div>
+        </div>
+        <div class="explanation_contents layout_inner">
+          <div class="explanation_img">
+            <img src="<?=$img?>management.jpg" alt="" />
+          </div>
+          <div class="explanation_txt">
+            <div class="explanation_tit sub_tit">
+              <p>다양성을 존중하고 모두에게</p>
+              <p>포용적인 문화를 만드는 것을</p>
+              <p>핵심으로 합니다.</p>
+            </div>
+            <ul class="explanation_list">
+              <li class="explanation_item">
+                <div class="txt_box sub_tit3">
+                  <div>탄소중립실천</div>
+                  <div>01</div>
+                </div>
+                <ul class="sub_list body_txt">
+                  <li class="sub_item">
+                    탄소중립 중장기 로드맵 수립
+                  </li>
+                  <li class="sub_item">
+                    탄소중립 지표 관리 고도화
+                  </li>
+                  <li class="sub_item">
+                    기후변화 대응 및 온실가스 감축 실천 확산
+                  </li>
+                </ul>
+              </li>
+              <li class="explanation_item">
+                <div class="txt_box sub_tit3">
+                  <div>친환경 상품개발</div>
+                  <div>02</div>
+                </div>
+                <ul class="sub_list body_txt">
+                  <li class="sub_item">
+                    FSC 인증서 보유
+                  </li>
+                  <li class="sub_item">
+                    전 제품 친환경 종이, Soyink 인쇄
+                  </li>
+                  <li class="sub_item">
+                    자연생분해 에코링 사용
+                  </li>
+                </ul>
+              </li>
+              <li class="explanation_item">
+                <div class="txt_box sub_tit3">
+                  <div>친환경 캠페인</div>
+                  <div>03</div>
+                </div>
+                <ul class="sub_list body_txt">
+                  <li class="sub_item">
+                    자원 순환 캠페인 지속 시행
+                  </li>
+                  <li class="sub_item">
+                    오프라인 행사 전반의 친환경 소재 활용 (허니콤보드 등)
+                  </li>
+                </ul>
+              </li>
+              <li class="explanation_item">
+                <div class="txt_box sub_tit3">
+                  <div>폐기물 감소 및 자원 순환 노력</div>
+                  <div>04</div>
+                </div>
+                <ul class="sub_list body_txt">
+                  <li class="sub_item">
+                    물류센터 친환경 프로세스 및 직매입 재고 기부 등 자원 순환 확대
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
     </div>        
     <?php include $path."/src/inc/footer.php"; ?>
-    <!-- <script src="<?=$path?>src/js/sustainability.js"></script> -->
+    <script src="<?=$path?>src/js/sustainability.js"></script>
     <script>
       gsap.registerPlugin(ScrollTrigger);
 
