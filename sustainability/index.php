@@ -116,9 +116,6 @@
       <section class="<?=$menuClass?>_explanation">
         <div class="explanation_contents layout_inner">
           <div class="explanation_img">
-            <img src="<?=$img?>eco_friendly.jpg" alt="" />
-          </div>
-          <div class="explanation_img">
             <picture>
               <source media="(min-width: <?=$min_width_d?>px)" srcset="<?=$img?>eco_friendly-d.jpg" />
               <source media="(max-width: <?=$max_width_m?>px)" srcset="<?=$img?>eco_friendly-m" />
@@ -225,9 +222,6 @@
               <img src="<?=$img?>management-d" data-src="<?=$img?>management-d" alt="" />
             </picture>
           </div>
-          <div class="explanation_img">
-            <img src="<?=$img?>management.jpg" alt="" />
-          </div>
           <div class="explanation_txt">
             <div class="explanation_tit sub_tit">
               <p>다양성을 존중하고 모두에게</p>
@@ -301,7 +295,7 @@
               end: "+=300%",
               scrub: true,
               pin: true,
-              markers: true,
+              markers: false,
             }
           });
 
@@ -338,7 +332,7 @@
               end: "+=200%", // Adjusted length for smaller screens
               scrub: true,
               pin: true,
-              markers: true,
+              markers: false,
             }
           });
 

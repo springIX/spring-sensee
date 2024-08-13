@@ -180,7 +180,7 @@
     width: 134.587px;
     height: 117.913px;
     bottom: -45px;
-    right: 10px;
+    right: -35px;
     filter: blur(2.5px);
   }
 }
@@ -252,6 +252,13 @@
   font-size: 16rem;
   font-weight: 600;
   line-height: 1.75;
+}
+@media (max-width: 750px) {
+  .sustainability_info .info_contents .info_txt .info_desc {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+  }
 }
 .sustainability_info .environment_contents {
   align-self: flex-end;
@@ -358,7 +365,7 @@
   display: block;
   position: absolute;
   left: 0;
-  top: 13rem;
+  top: 12rem;
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
