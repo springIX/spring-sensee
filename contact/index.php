@@ -30,26 +30,55 @@
           printKeyvisual();
       ?>
       <!-- // Key visual -->
+      <section class="<?=$menuClass?>_location">
+        <div class="layout_inner">
+          <div class="tit_wrap">
+            <h3 class="h3_ pps">Location</h3>
+          </div>
+          <div class="tab_contents">
+              <div class="tab_buttons">
+                  <button class="tab_button active" data-tab="tab1">Head Office</button>
+                  <button class="tab_button" data-tab="tab2">Seoul</button>
+                  <button class="tab_button" data-tab="tab3">Printing</button>
+                  <button class="tab_button" data-tab="tab4">R&D Center</button>
+              </div>
+              <div class="tab_content active" id="tab1">
+                  <p>This is the content of Tab 1.</p>
+              </div>
+              <div class="tab_content" id="tab2">
+                  <p>This is the content of Tab 2.</p>
+              </div>
+              <div class="tab_content" id="tab3">
+                  <p>This is the content of Tab 3.</p>
+              </div>
+              <div class="tab_content" id="tab4">
+                  <p>This is the content of Tab 3.</p>
+              </div>
+          </div>
+        </div>
+      </section>
       <section>
-        <form id="contactForm" method="POST" action="path/to/send_mail.php">
-          <label for="name">이름:</label><br>
-          <input type="text" id="name" name="name" required><br><br>
-
-          <label for="phone">전화번호:</label><br>
-          <input type="tel" id="phone" name="phone" required><br><br>
-
-          <label for="category">Category:</label><br>
-          <select id="category" name="category" required>
-              <option value="General Inquiry">일반 문의</option>
-              <option value="Support">지원</option>
-              <option value="Feedback">피드백</option>
-          </select><br><br>
-
-          <label for="email">이메일:</label><br>
-          <input type="email" id="email" name="email" required><br><br>
-
-          <button type="submit">보내기</button>
-        </form>
+        <div class="layout_inner">
+          <form id="contactForm" method="POST" action="contact/send_mail.php">
+            <label for="name">이름:</label><br>
+            <input type="text" id="name" name="name" required><br>
+  
+            <label for="phone">전화번호:</label><br>
+            <input type="tel" id="phone" name="phone" required><br>
+  
+            <label for="category">Category:</label><br>
+            <select id="category" name="category" required>
+                <option value="도입 문의">도입 문의</option>
+                <option value="투자 문의">투자 문의</option>
+                <option value="기타 문의">기타 문의</option>
+            </select><br>
+  
+            <label for="email">이메일:</label><br>
+            <input type="email" id="email" name="email" required><br>
+  
+            <button type="submit">보내기</button>
+          </form>
+        </div>
       </section>
 
 

@@ -1,4 +1,39 @@
 @charset "UTF-8";
+.tab_contents {
+  width: 100%;
+  margin: 50px auto;
+}
+
+.tab_buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.tab_button {
+  flex: 1;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tab_button.active {
+  background-color: #ccc;
+}
+
+.tab_content {
+  display: none;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+}
+
+.tab_content.active {
+  display: block;
+}
+
 /* 팝업 스타일 */
 #popup {
   display: none;
@@ -22,7 +57,7 @@
 
 #popup button {
   padding: 10px 20px;
-  background-color: #007BFF;
+  background-color: #007bff;
   color: white;
   border: none;
   border-radius: 5px;
@@ -31,4 +66,4 @@
 
 #popup button:hover {
   background-color: #0056b3;
-}/*# sourceMappingURL=contact.css.map */
+}

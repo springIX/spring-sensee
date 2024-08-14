@@ -1,21 +1,25 @@
-// 폼 전송 후 결과에 따라 팝업 표시
-document.getElementById('contactForm').onsubmit = function(event) {
-  event.preventDefault(); // 폼의 기본 전송 방지
+document.addEventListener('DOMContentLoaded', function() {
+  const tabs = document.querySelectorAll('.tab_button');
+  const contents = document.querySelectorAll('.tab_content');
 
-  // AJAX 요청
-  const formData = new FormData(this);
-  fetch('send_mail.php', {
-      method: 'POST',
-      body: formData
-  })
-  .then(response => response.text())
-  .then(data => {
-      showPopup(data); // 서버 응답에 따라 팝업 표시
-  })
-  .catch(error => {
-      showPopup('죄송합니다. 메시지 전송 중 오류가 발생했습니다.');
+  tabs.forEach(tab => {
+      tab.addEventListener('click', function() {
+          // 모든 탭 버튼에서 active 클래스 제거
+          tabs.forEach(t => t.classList.remove('active'));
+
+          // 모든 탭 컨텐츠에서 active 클래스 제거
+          contents.forEach(content => content.classList.remove('active'));
+
+          // 클릭된 탭에 active 클래스 추가
+          tab.classList.add('active');
+
+          // 클릭된 탭에 대응하는 컨텐츠 보여줌
+          const activeContent = document.getElementById(tab.dataset.tab);
+          activeContent.classList.add('active');
+      });
   });
-};
+});
+
 
 // 팝업 열기
 function showPopup(message) {
@@ -27,3 +31,4 @@ function showPopup(message) {
 function closePopup() {
   document.getElementById('popup').style.display = 'none';
 }
+
