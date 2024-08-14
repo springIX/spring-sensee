@@ -407,6 +407,8 @@
       position: relative;
       z-index: 5;
       margin-left: 11rem;
+      touch-action: none;
+      pointer-events: none;
       @include screen("tb") {
         position: fixed;
         right: 20rem;
@@ -563,11 +565,15 @@
             transform: translate(-50%, -50%) rotate(-45deg);
           }
         }
-        .lang_wrap .lang_link {
-          opacity: 1;
-          touch-action: auto;
-          pointer-events: auto;
-          transform: translateY(0);
+        .lang_wrap {
+          touch-action: none;
+          pointer-events: none;
+          .lang_link {
+            opacity: 1;
+            touch-action: auto;
+            pointer-events: auto;
+            transform: translateY(0);
+          }
         }
       }
     }

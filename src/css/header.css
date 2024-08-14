@@ -385,6 +385,8 @@
   position: relative;
   z-index: 5;
   margin-left: 11rem;
+  touch-action: none;
+  pointer-events: none;
 }
 @media (max-width: 1280px) {
   .header .setting_box .lang_wrap {
@@ -544,6 +546,10 @@
   }
   .header.on .setting_box .all_menu_btn i:nth-child(3) {
     transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  .header.on .setting_box .lang_wrap {
+    touch-action: none;
+    pointer-events: none;
   }
   .header.on .setting_box .lang_wrap .lang_link {
     opacity: 1;
