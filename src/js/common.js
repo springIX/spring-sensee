@@ -1,7 +1,7 @@
 $(function () { 
   const win = $(window);
   
-  /************** BTN FUNCTION **************/
+  /********* BTN FUNCTION *********/
   $('[data-btn]').click(function () { 
     let btn_val = $(this).data('btn');
     $(`[data-view=${btn_val}]`).toggleClass('on');
@@ -73,6 +73,20 @@ $(function () {
       sessionStorage.setItem("txtColor", colorVal);
       $(this).addClass('on').siblings().removeClass('on');
     });
+  });
+
+  /************** FOOTER **************/
+  /* SCROLL TOP BTN */
+  win.on("scroll", function () {
+    if ($(this).scrollTop() > $(window).height()/2) {
+      $('.scr_top').fadeIn(500);
+    } else { 
+      $('.scr_top').fadeOut(500);
+    }
+  });
+  $('.scr_top').click(function () { 
+    $('html, body').animate({'scrollTop' : 0}, 700);
+    return false;
   });
 
   /* AOS */

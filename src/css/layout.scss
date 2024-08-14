@@ -230,6 +230,13 @@ body {
     padding-right: $layout_inner_m !important;
   }
 }
+@include screen("mo") {
+  .layout_inner_m {
+    position: relative;
+    padding-left: $layout_inner_m !important;
+    padding-right: $layout_inner_m !important;
+  }
+}
 
 .f_center {
   display: flex;

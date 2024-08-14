@@ -248,6 +248,13 @@ body.black_yellow header {
   }
 }
 
+@media (max-width: 750px) {
+  .layout_inner_m {
+    position: relative;
+    padding-left: 20rem !important;
+    padding-right: 20rem !important;
+  }
+}
 .f_center {
   display: flex;
   justify-content: center;

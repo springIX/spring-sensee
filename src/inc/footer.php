@@ -1,3 +1,4 @@
+<a href="#" class="scr_top"></a>
 <footer class="footer">
   <h1 class="logo">
     <a href="/">
@@ -5,10 +6,13 @@
     </a>
   </h1>
   <div class="family_site pps">
-    <select title="" onchange="window.open(value,'_target');">
-      <option value="/" selected>Family site</option>
-      <option value="https://3dcoloring.co.kr/">SENSEE 3DColoring</option>
-    </select>
+    <div class="family_site_select" data-btn="fam_site" data-view="fam_site">
+      <span>Family site</span>
+      <div class="link_list">
+        <a href="https://3dcoloring.co.kr/" target="_blank">SENSEE 3DColoring</a>
+        <a href="https://3dcoloring.co.kr/" target="_blank">SENSEE 3DColoring</a>
+      </div>
+    </div>
   </div>
   <div class="cymbol">
     <img src="<?=$icon?>logo_cymbol.svg" alt="센시 로고 심볼">
