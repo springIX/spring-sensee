@@ -157,16 +157,19 @@ picture {
   width: 100%;
   height: 100%;
 }
-.keyvisual .image_area {
+.keyvisual .image_area,
+.keyvisual picture {
   width: 100%;
   height: 100%;
 }
-.keyvisual .image_area img {
+.keyvisual .image_area img,
+.keyvisual picture img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.keyvisual .image_area .dimmed {
+.keyvisual .image_area .dimmed,
+.keyvisual picture .dimmed {
   display: block;
   position: absolute;
   top: 0;
@@ -176,10 +179,12 @@ picture {
   z-index: 1;
   opacity: 0.4;
 }
-.keyvisual .image_area .circle {
+.keyvisual .image_area .circle,
+.keyvisual picture .circle {
   background: radial-gradient(circle, transparent 0%, #000000 100%);
 }
-.keyvisual .image_area .all {
+.keyvisual .image_area .all,
+.keyvisual picture .all {
   background-color: #000000;
 }
 .keyvisual .floating_area {

@@ -454,6 +454,21 @@ body.black_yellow path {
   transform: translate(-50%, -50%) scale(1);
 }
 
+.x_scrollbar {
+  overflow-x: auto;
+}
+.x_scrollbar::-webkit-scrollbar {
+  display: block;
+  height: 5px;
+}
+.x_scrollbar::-webkit-scrollbar-thumb {
+  transition: 0.5s ease;
+  background-color: transparent;
+}
+.x_scrollbar.on::-webkit-scrollbar-thumb {
+  background-color: #d9d9d9;
+}
+
 @media (min-width: 751px) {
   .mo {
     display: none !important;

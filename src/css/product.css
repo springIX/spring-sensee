@@ -239,11 +239,7 @@
     flex-direction: row;
     justify-content: flex-start;
     padding: 20rem;
-    overflow-x: auto;
     position: relative;
-  }
-  .product_container .product_book_types .type_pagi .pagi_inner::-webkit-scrollbar {
-    display: none;
   }
 }
 .product_container .product_book_types .type_pagi .pagi_inner a {

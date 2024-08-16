@@ -433,6 +433,22 @@ body {
   }
 }
 
+// X Scrollbar
+.x_scrollbar {
+  overflow-x: auto;
+  &::-webkit-scrollbar {
+    display: block;
+    height: 5px;
+  }
+  &::-webkit-scrollbar-thumb {
+    transition: 0.5s ease;
+    background-color: transparent;
+  }
+  &.on::-webkit-scrollbar-thumb {
+    background-color: $color-gray2;
+  }
+}
+
 // Responsive
 @include screen("pc") {
   .mo {

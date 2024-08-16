@@ -88,15 +88,22 @@ $(function () {
     });
     
     keyvisual
-    .to('.keyvisual',{padding:"0 20rem", height: "50vh"},'group1')
+    .to('.keyvisual',{padding:"0 20rem"},'group1')
     .to('.keyvisual .image_area img',{y:"20%"},'group1')
   }
 
+  /************** X SCROLLBAR **************/
+  $('.x_scrollbar').on('touchstart mousedown', function(e) {
+    $(this).addClass('on');
+  });
+  $('.x_scrollbar').on('touchend mouseup', function(e) {
+    $(this).removeClass('on');
+  });
+  
   /************** FOOTER **************/
   /* SCROLL TOP BTN */
   win.on("scroll", function () {
     let scrTop = $(this).scrollTop();
-    console.log( scrTop,',',$('body').height() - $('footer').height());
     if (scrTop < $(window).height() / 2 || scrTop > $('body').height() - $('footer').height()) {
       $('.scr_top').fadeOut(500);
     }else { 
@@ -151,8 +158,6 @@ $(function () {
   /* AOS */
   AOS.init({ duration: 1000, offset: 100, easing: 'cubic-bezier(0.25, 1, 0.5, 1);' });
   win.scrollTop(function () { 
-    setTimeout(function () { 
-      AOS.refresh();
-    }, 300);
+    AOS.refresh();
   });
 });

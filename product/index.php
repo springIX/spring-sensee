@@ -57,7 +57,7 @@
 
       <section class="<?=$menuClass?>_book_types">
         <div class="type_pagi sub_head pps" data-aos="">
-          <div class="pagi_inner">
+          <div class="pagi_inner x_scrollbar">
             <a href="#braille_book">Braille Books</a>
             <a href="#tactile_book">Tactile Books</a>
             <a href="#coloring_book">Coloring Books</a>
