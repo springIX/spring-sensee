@@ -15,7 +15,7 @@
 <body>
   <div class="<?=$menuClass?>_wrap">
     <?php include $path."/src/inc/header.php"; ?>
-    <div class="<?=$menuClass?>_container">
+    <div id="contents" class="<?=$menuClass?>_container">
       <?php
         $Keyvisual = array(
           'media-type' => 'image', // required, image or video
@@ -24,7 +24,7 @@
           'media-alt' => '', // required
           'dimmed' => 'circle', // required
           'title' => 'Product', // required
-          'desc' => '센시의 기술은 시각 장애인을 위한 점자와 비장애인을 위한 일반 텍스트 및 <br>이미지를 통합하여 한 권의 책에서 모두 접근할 수 있게 합니다.', // option
+          'desc' => '센시의 기술은 시각 장애인을 위한 점자와 비장애인을 위한 일반 텍스트 및 <br class="pc">이미지를 통합하여 한 권의 책에서 모두 접근할 수 있게 합니다.', // option
         );
         printKeyvisual();
       ?>

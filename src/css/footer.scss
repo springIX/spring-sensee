@@ -7,11 +7,14 @@
   grid-template-columns: 1fr 1fr;
   gap: 172rem 0;
   padding: 60rem 0;
-  z-index: 100;
-  position: relative;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   @include screen("mo") {
     display: block;
     padding: 30rem 0 40rem;
+    position: relative;
     > * {
       padding: 0 20rem !important;
     }
@@ -19,12 +22,12 @@
   .logo,
   .family_site {
     border-bottom: 1px solid rgba($color: $color-white, $alpha: 0.2);
-    > * {
-      padding-bottom: 30rem;
-    }
   }
   .logo {
-    padding-left: 45rem;
+    padding: 0 0 30rem 45rem;
+    @include screen("mo") {
+      padding-bottom: 30rem !important;
+    }
     a {
       width: 112rem;
     }
@@ -51,6 +54,10 @@
         text-align: left;
         background: url(/src/images/common/arr_select.svg) no-repeat right top
           8rem / 10rem auto;
+        padding-bottom: 30rem;
+        @include screen("mo") {
+          padding-bottom: 20rem !important;
+        }
       }
       .link_list {
         display: none;
@@ -78,7 +85,7 @@
   }
   .cymbol {
     padding-left: 211rem;
-    img {
+    svg {
       width: 480rem;
       @include screen("mo") {
         width: 112rem;
@@ -114,13 +121,10 @@
         @include screen("mo") {
           margin-bottom: 50rem;
         }
-        &::after {
-          content: "";
+        svg {
           display: inline-block;
           width: 12rem;
           height: 12rem;
-          background: url(/src/images/common/arr_link02.svg) no-repeat center /
-            contain;
           margin-left: 49rem;
           transform: translateY(1rem);
           @include screen("mo") {

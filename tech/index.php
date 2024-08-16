@@ -15,7 +15,7 @@
 <body>
   <div class="<?=$menuClass?>_wrap">
     <?php include $path."/src/inc/header.php"; ?>
-    <div class="<?=$menuClass?>_container">
+    <div id="contents" class="<?=$menuClass?>_container">
       <?php
         $Keyvisual = array(
           'media-type' => 'image', // required, image or video
@@ -24,7 +24,7 @@
           'media-alt' => '', // required
           'dimmed' => 'circle', // required
           'title' => 'Technology', // required
-          'desc' => '센시는 빅데이터 기반 AI 기술과 특수인쇄기술을 기반으로 독보적인 기술로 다양한 플랫폼 & <br>콘텐츠의 점자 인쇄를 통해 모든 사람을 위한 세상을 만들고자 합니다.', // option
+          'desc' => '센시는 빅데이터 기반 AI 기술과 특수인쇄기술을 기반으로 독보적인 기술로 다양한 플랫폼 & <br class="pc">콘텐츠의 점자 인쇄를 통해 모든 사람을 위한 세상을 만들고자 합니다.', // option
         );
         printKeyvisual();
       ?>

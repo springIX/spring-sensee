@@ -1,6 +1,4 @@
 $(function () {
-<<<<<<< HEAD
-=======
   let aniTxt = document.querySelectorAll(".ani_txt");
   for (idx = 0; idx < aniTxt.length; idx++) {
     let aniTxtStr = aniTxt[idx].textContent;
@@ -32,6 +30,5 @@ $(function () {
       }
     }
   });
->>>>>>> sub
   
 });

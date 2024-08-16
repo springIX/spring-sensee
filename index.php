@@ -15,7 +15,7 @@
 <body>
   <div class="<?=$menuClass?>_wrap">
     <?php include $path."/src/inc/header.php"; ?>
-    <main class="<?=$menuClass?>_container">
+    <main id="contents" class="<?=$menuClass?>_container">
       <section class="<?=$menuClass?>_visual" style="height:100vh;">
       </section>
       <section class="<?=$menuClass?>_intro">
@@ -23,9 +23,7 @@
           <h5 class="h5_">sensee</h5>
           <h2 class="h3_">더 나은 <br class="mo"/>세상을 위한 노력</h2>
           <p class="body_txt">
-            센시는 <br>
-            장애인과 비장애인, 남녀노소 누구나 겪을 수 있는 정보접근에 대한 <br>
-            문제 해결을 위해 만들어졌습니다.
+          센시는 장애인과 비장애인, 남녀노소 누구나 겪을 수 있는 정보접근에 대한 <br>문제 해결을 위해 만들어졌습니다.
           </p>
         </div>
         <div class="<?=$menuClass?>_intro_visual">
@@ -56,12 +54,12 @@
                 점자책의 변화를 넘어서 디지털 콘텐츠 플랫폼을  <br>
                 구축하고, 이를 통해 비장애인과 장애인들이  <br>
                 정보를 교류하고 즐기는 세상을 만들고자 합니다. <br>
-                점자책의 다양한 콘텐츠를 통해  <br>
-                장애와 비장애의 경계가 없는 세상, <br>
+                점자책의 다양한 콘텐츠를 통해 <br>
+                장애인과 비장애인의 경계가 없는 세상,<br>
                 그것이 센시가 꿈꾸는 세상입니다.
               </p>
             </div>
-            <a href="" class="btn_more" data-aos="fade-up"></a>
+            <a href="/about/" class="btn_more" data-aos="fade-up"></a>
           </div>
         </div>
         <div class="<?=$menuClass?>_brand_visual">
@@ -80,7 +78,7 @@
               <p data-aos="fade-up">
                 일상의 순간들을 읽어내고,  <br>
                 일상의 경계를 지우며 확장시키는 온전한 삶을, <br>
-                모두가 윤리적인 삶을 누릴 수 있는세상을  <br>
+                모두가 윤리적인 삶을 누릴 수 있는 세상을  <br>
                 센시가 만들어 갑니다.
               </p>
             </div>
@@ -91,8 +89,8 @@
         <div class="section_tit taC layout_inner" data-aos="fade-up">
           <h5 class="h5_">TECHNOLOGY</h5>
           <h5 class="h3_">모두를 위한 기술, 함께하는 세상</h5>
-          <h5 class="body_txt">센시는 빅데이터 기반 AI기술과 특수인쇄기술을 기반으로 독보적인 기술로 <br class="pc">다양한 플랫폼 & 콘텐츠의 점자인쇄를 통해 모든 사람을 위한 세상을 만들고자 합니다.</h5>
-          <a href="" class="btn_more"></a>
+          <h5 class="body_txt">센시는 빅데이터 기반 AI 기술과 특수인쇄기술을 기반으로 독보적인 기술로 <br class="pc">다양한 플랫폼 & 콘텐츠의 점자 인쇄를 통해 모든 사람을 위한 세상을 만들고자 합니다.</h5>
+          <a href="/tech/" class="btn_more"></a>
         </div>
         <div class="tech_visual" data-aos="">
           <div class="visual_wrap">
@@ -124,11 +122,11 @@
                   <img src="<?=$img?>sustain01.jpg" alt="" data-aos="clip-up">
                 </div>
                 <p data-aos="fade-up">
-                  센시는 글로벌 제조 기업으로서 기후위기 대응에 <br>
-                  무거운 책임감과 의지를 갖고 있습니다.<br>
-                  KC인증, FSC인증을 받은 제품을 친환경 소재를 사용하여 <br>
-                  생산하고 있으며 환경을 위해 다양한 활동을 추진함으로써, <br>
-                  보다 깨끗하고 건강한 지구를 만드는데 <br>
+                  센시는 글로벌 제조 기업으로서 기후 위기 대응에 <br>
+                  무거운 책임감과 의지를 갖고 있습니다. <br>
+                  KC 인증, FSC 인증을 받은 제품을 친환경 소재를 사용하여 <br>
+                  생산하고 있으며 환경을 위해 다양한 활동을 추진함으로써, <br> 
+                  보다 깨끗하고 건강한 지구를 만드는 데 <br>
                   기여하고자 합니다.
                 </p>
               </li>
@@ -139,12 +137,12 @@
                 <p data-aos="fade-up" data-aos-delay="100">
                   센시는 환경적 가치와 함께 <br>
                   장애인과 비장애인의 편견을 없애는 공평한 사회 추구, <br>
-                  포용적 교육, 공익을 위한 사회공헌등 <br>
+                  포용적 교육, 공익을 위한 사회 공헌 등 <br>
                   모두가 평등한 사회를 위한 경영철학을 가지고 있습니다. 
                 </p>
               </li>
             </ul>
-            <a href="" class="btn_more" data-aos="fade-up"></a>
+            <a href="/sustainability/" class="btn_more" data-aos="fade-up"></a>
           </div>
         </div>
       </section>

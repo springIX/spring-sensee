@@ -15,7 +15,7 @@
 <body>
   <div class="<?=$menuClass?>_wrap">
     <?php include $path."/src/inc/header.php"; ?>
-    <div class="<?=$menuClass?>_container">
+    <div id="contents" class="<?=$menuClass?>_container">
       <?php
         $Keyvisual = array(
           'media-type' => 'image', // required, image or video

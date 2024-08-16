@@ -31,6 +31,7 @@ $(function () {
     $('body').css('zoom', txtZoom + '%');
     sessionStorage.setItem("zoom", txtZoom);
   }
+  
   $('body').css('zoom', crntZoom + '%');
   
   txtBtn.click(function () { 
@@ -75,20 +76,83 @@ $(function () {
     });
   });
 
+  /************** KEY VISUAL ANI **************/
+  if ($('.keyvisual')) { 
+    let keyvisual = gsap.timeline({
+      scrollTrigger: { 
+        trigger: '.keyvisual',
+        start: "top top",
+        end: "bottom top",
+        scrub: true,
+      },
+    });
+    
+    keyvisual
+    .to('.keyvisual',{padding:"0 20rem", height: "50vh"},'group1')
+    .to('.keyvisual .image_area img',{y:"20%"},'group1')
+  }
+
   /************** FOOTER **************/
   /* SCROLL TOP BTN */
   win.on("scroll", function () {
-    if ($(this).scrollTop() > $(window).height()/2) {
-      $('.scr_top').fadeIn(500);
-    } else { 
+    let scrTop = $(this).scrollTop();
+    console.log( scrTop,',',$('body').height() - $('footer').height());
+    if (scrTop < $(window).height() / 2 || scrTop > $('body').height() - $('footer').height()) {
       $('.scr_top').fadeOut(500);
+    }else { 
+      $('.scr_top').fadeIn(500);
     }
   });
   $('.scr_top').click(function () { 
     $('html, body').animate({'scrollTop' : 0}, 700);
     return false;
   });
+  
+  /* 커서 */
+  cursor = $(".cursor"); 
+  if ($(window).width() >= 750) {
+    $('body').css('padding-bottom', $('footer').outerHeight());
+    
+    var posX = 0,
+      posY = 0;
+    var mouseX = 0,
+      mouseY = 0;
+    TweenMax.to({}, 0.01, {
+      repeat: -1,
+      onRepeat: function() {
+        posX += (mouseX - posX) / 9;
+        posY += (mouseY - posY) / 9;
+        TweenMax.set(cursor, {
+          css: {
+          left: mouseX,
+          top: mouseY
+          }
+        });
+      }
+    });
+
+    // 커서가 활성화되는 영역
+    $("html,body").on("mousemove", function(e) {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    }).on("mouseenter", function(e) {
+      cursor.css('opacity', 1);
+    }).on("mouseleave", function(e) {
+      cursor.css('opacity', 0);
+    });
+  }
+  
+  $("input, a, input, button").on("mouseenter", function() {
+    cursor.addClass("on");
+  }).on("mouseleave", function() {
+    cursor.removeClass("on");
+  });
 
   /* AOS */
   AOS.init({ duration: 1000, offset: 100, easing: 'cubic-bezier(0.25, 1, 0.5, 1);' });
+  win.scrollTop(function () { 
+    setTimeout(function () { 
+      AOS.refresh();
+    }, 300);
+  });
 });

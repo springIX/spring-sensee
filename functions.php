@@ -13,7 +13,7 @@ function printKeyvisual() {
 
     echo '<section class="keyvisual">';
     echo '  <div class="container">';
-    echo '    <div class="image_area">';
+    echo '    <div class="image_area" data-aos="zoom-out">';
     if ($Keyvisual['media-type'] == 'image') {
       echo '<picture>';
       echo '<source media="(min-width: '.$min_width_d.'px)" srcset="'.$Keyvisual['media-d'].'" />';
@@ -37,15 +37,15 @@ function printKeyvisual() {
     echo '    </div>';
     echo '    <div class="floating_area">';
     echo '     <div class="floating_txt layout_inner_w">';
-    echo '        <h2 class="kv_tit h2_">'.$Keyvisual['title'].'</h2>';
+    echo '        <h2 class="kv_tit h2_"><span data-aos="">'.$Keyvisual['title'].'</span></h2>';
     echo '        <div class="infor_txt">';
-    echo '          <div class="sensee_symbol_logo">';
+    echo '          <div class="sensee_symbol_logo" data-aos="fade-up">';
     echo '            <img src="'.$aPath.'/src/images/common/logo_cymbol.svg" class="lazy icon-white" alt="센시 심볼 로고" />';
     echo '          </div>';
-    echo '          <div class="kv_desc">'.$Keyvisual['desc'].'</div>';
+    echo '          <div class="kv_desc" data-aos=""><p>'.$Keyvisual['desc'].'</p></div>';
     echo '        </div>';
     echo '      </div>';
-    echo '      <div class="kv_line"></div>';
+    echo '      <div class="kv_line" data-aos=""></div>';
     echo '    </div>';
     echo '  </div>';
     echo '</section>';

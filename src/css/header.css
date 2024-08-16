@@ -51,17 +51,8 @@
   position: relative;
   z-index: 6;
 }
-.header .logo a img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  position: absolute;
-  left: 0;
-  top: 0;
+.header .logo a svg path {
   transition: 0.3s ease;
-}
-.header .logo a img.logo_b {
-  opacity: 0;
 }
 @media (max-width: 1280px) {
   .header .logo {
@@ -81,12 +72,10 @@
   display: flex;
   gap: 60rem;
 }
-.header .gnb ul li.outlink a::after {
-  content: "";
+.header .gnb ul li svg {
   display: inline-block;
   width: 16rem;
   height: 16rem;
-  background: url(/src/images/common/arr_link.svg) no-repeat center center/contain;
   transform: rotate(-45deg) translateY(4rem);
 }
 @media (max-width: 1280px) {
@@ -123,11 +112,13 @@
   .header .gnb ul li {
     transition: 0.3s ease;
   }
-  .header .gnb ul li.outlink a::after {
-    filter: brightness(0);
+  .header .gnb ul li svg {
     width: 33rem;
     height: 33rem;
-    transform: rotate(-45deg) translateY(6rem);
+    transform: rotate(-45deg) translateY(10rem);
+  }
+  .header .gnb ul li svg path {
+    fill: #000000 !important;
   }
   .header .gnb ul li:hover {
     transform: translateX(5rem);
@@ -385,8 +376,6 @@
   position: relative;
   z-index: 5;
   margin-left: 11rem;
-  touch-action: none;
-  pointer-events: none;
 }
 @media (max-width: 1280px) {
   .header .setting_box .lang_wrap {
@@ -395,6 +384,8 @@
     bottom: 40rem;
     margin-left: 0;
     color: #000000;
+    touch-action: none;
+    pointer-events: none;
   }
 }
 .header .setting_box .lang_wrap .lang_btn {
@@ -524,11 +515,8 @@
     background-color: rgba(0, 0, 0, 0.1);
     z-index: 6;
   }
-  .header.on .logo a img.logo_w {
-    opacity: 0;
-  }
-  .header.on .logo a img.logo_b {
-    opacity: 1;
+  .header.on .logo a svg path {
+    fill: #000000;
   }
   .header.on .gnb {
     transform: translateY(0);

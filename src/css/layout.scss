@@ -1,5 +1,11 @@
 @import "var";
 
+#contents {
+  position: relative;
+  z-index: 2;
+  background-color: $color-white;
+}
+
 // poppins font
 .pps {
   font-family: $font-en;
@@ -21,7 +27,8 @@ body {
     .caption,
     p,
     strong,
-    header {
+    header,
+    footer {
       background-color: $color-black !important;
       color: $color-white !important;
     }
@@ -40,9 +47,14 @@ body {
     .caption,
     p,
     strong,
-    header {
+    header,
+    footer {
       background-color: $color-blue !important;
       color: $color-yellow !important;
+    }
+    path {
+      fill: $color-yellow !important;
+      stroke: $color-yellow !important;
     }
   }
   &.black_yellow {
@@ -59,9 +71,14 @@ body {
     .caption,
     p,
     strong,
-    header {
+    header,
+    footer {
       background-color: $color-black !important;
       color: $color-yellow !important;
+    }
+    path {
+      fill: $color-yellow !important;
+      stroke: $color-yellow !important;
     }
   }
 }
@@ -391,6 +408,28 @@ body {
     margin: auto;
     left: 1rem;
     display: block;
+  }
+}
+
+// Cursor
+.cursor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  background-color: $color-black;
+  width: 93rem;
+  height: 93rem;
+  border-radius: 50%;
+  transition: 0.5s ease, 1s cubic-bezier(0.75, -0.27, 0.3, 1.33) transform,
+    0.2s ease left, 0.2s ease top;
+  user-select: none;
+  pointer-events: none;
+  z-index: 999999;
+  transform: translate(-50%, -50%) scale(0.28);
+  mix-blend-mode: difference;
+  &.on {
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 

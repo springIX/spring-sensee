@@ -7,13 +7,16 @@
   grid-template-columns: 1fr 1fr;
   gap: 172rem 0;
   padding: 60rem 0;
-  z-index: 100;
-  position: relative;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 @media (max-width: 750px) {
   .footer {
     display: block;
     padding: 30rem 0 40rem;
+    position: relative;
   }
   .footer > * {
     padding: 0 20rem !important;
@@ -23,12 +26,13 @@
 .footer .family_site {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-.footer .logo > *,
-.footer .family_site > * {
-  padding-bottom: 30rem;
-}
 .footer .logo {
-  padding-left: 45rem;
+  padding: 0 0 30rem 45rem;
+}
+@media (max-width: 750px) {
+  .footer .logo {
+    padding-bottom: 30rem !important;
+  }
 }
 .footer .logo a {
   width: 112rem;
@@ -60,6 +64,12 @@
   width: 100%;
   text-align: left;
   background: url(/src/images/common/arr_select.svg) no-repeat right top 8rem/10rem auto;
+  padding-bottom: 30rem;
+}
+@media (max-width: 750px) {
+  .footer .family_site .family_site_select span {
+    padding-bottom: 20rem !important;
+  }
 }
 .footer .family_site .family_site_select .link_list {
   display: none;
@@ -83,11 +93,11 @@
 .footer .cymbol {
   padding-left: 211rem;
 }
-.footer .cymbol img {
+.footer .cymbol svg {
   width: 480rem;
 }
 @media (max-width: 750px) {
-  .footer .cymbol img {
+  .footer .cymbol svg {
     width: 112rem;
     padding: 80rem 0 16rem;
   }
@@ -125,17 +135,15 @@
     margin-bottom: 50rem;
   }
 }
-.footer .info .ft_contact .insta::after {
-  content: "";
+.footer .info .ft_contact .insta svg {
   display: inline-block;
   width: 12rem;
   height: 12rem;
-  background: url(/src/images/common/arr_link02.svg) no-repeat center/contain;
   margin-left: 49rem;
   transform: translateY(1rem);
 }
 @media (max-width: 750px) {
-  .footer .info .ft_contact .insta::after {
+  .footer .info .ft_contact .insta svg {
     width: 10rem;
     height: 10rem;
     margin-left: 28rem;
