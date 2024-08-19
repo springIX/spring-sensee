@@ -76,9 +76,9 @@
         <div class="info_wrap">
           <div class="info_contents environment_contents">
             <div class="info_img">
-              <img src="<?=$img?>environment.jpg" alt="" />
+              <img src="<?=$img?>environment.jpg" alt="" data-aos="clip-up"/>
             </div>
-            <div class="info_txt">
+            <div class="info_txt" data-aos="fade-up">
               <div class="info_tit pps">Environment</div>
               <p class="info_desc">
                 SENSEE는 글로벌 제조 기업으로서 기후위기 대응에 무거운 책임감과 의지를 갖고 있습니다. KC인증, FSC인증을 받은 제품을 친환경 소재를 사용하여 생산하고 있으며 환경을 위해 다양한 활동을 추진함으로써, 보다 깨끗하고 건강한 지구를 만드는데 기여하고자 합니다.
@@ -87,9 +87,9 @@
           </div>
           <div class="info_contents social_contents">
             <div class="info_img">
-              <img src="<?=$img?>social.jpg" alt="" />
+              <img src="<?=$img?>social.jpg" alt="" data-aos="clip-up"/>
             </div>
-            <div class="info_txt">
+            <div class="info_txt" data-aos="fade-up">
               <div class="info_tit pps">Social</div>
               <p class="info_desc">
                 SENSEE는 이해관계자의 인권침해를 예방하고
@@ -100,9 +100,9 @@
           </div>
           <div class="info_contents governance_contents">
             <div class="info_img">
-              <img src="<?=$img?>governance.jpg" alt="" />
+              <img src="<?=$img?>governance.jpg" alt="" data-aos="clip-up"/>
             </div>
-            <div class="info_txt">
+            <div class="info_txt" data-aos="fade-up">
               <div class="info_tit pps">Governance</div>
               <p class="info_desc">
                 SENSEE는 경제적, 법적 책임 준수는 물론이고 사회가 요구하는 
@@ -115,7 +115,7 @@
       </section>
       <section class="<?=$menuClass?>_explanation">
         <div class="explanation_contents layout_inner">
-          <div class="explanation_img">
+          <div class="explanation_img" data-aos="clip-up">
             <picture>
               <source media="(min-width: <?=$min_width_d?>px)" srcset="<?=$img?>eco_friendly-d.jpg" />
               <source media="(max-width: <?=$max_width_m?>px)" srcset="<?=$img?>eco_friendly-m" />
@@ -123,13 +123,13 @@
             </picture>
           </div>
           <div class="explanation_txt">
-            <div class="explanation_tit sub_tit">
+            <div class="explanation_tit sub_tit" data-aos="fade-up">
               <p>친환경 소재, 양각형태,</p>
               <p>점자 삽입을 통한</p>
               <p>ESG 지표제공</p>
             </div>
             <ul class="explanation_list">
-              <li class="explanation_item">
+              <li class="explanation_item" data-aos="fade-up">
                 <div class="txt_box sub_tit3">
                   <div>탄소중립실천</div>
                   <div>01</div>
@@ -146,7 +146,7 @@
                   </li>
                 </ul>
               </li>
-              <li class="explanation_item">
+              <li class="explanation_item" data-aos="fade-up">
                 <div class="txt_box sub_tit3">
                   <div>친환경 상품개발</div>
                   <div>02</div>
@@ -163,7 +163,7 @@
                   </li>
                 </ul>
               </li>
-              <li class="explanation_item">
+              <li class="explanation_item" data-aos="fade-up">
                 <div class="txt_box sub_tit3">
                   <div>친환경 캠페인</div>
                   <div>03</div>
@@ -177,7 +177,7 @@
                   </li>
                 </ul>
               </li>
-              <li class="explanation_item">
+              <li class="explanation_item" data-aos="fade-up">
                 <div class="txt_box sub_tit3">
                   <div>폐기물 감소 및<br class="mo"> 자원 순환 노력</div>
                   <div>04</div>
@@ -194,7 +194,7 @@
       </section>
       <section class="<?=$menuClass?>_glacier">
         <div class="glacier_contents">
-          <div class="glacier_img">
+          <div class="glacier_img" data-aos="fade-left">
             <img src="<?=$img?>glacier.png" alt="" />
           </div>
           <div class="floating_txt p_center pps">
@@ -203,7 +203,7 @@
         </div>
       </section>
       <section class="<?=$menuClass?>_management">
-        <div class="tit_wtap">
+        <div class="tit_wtap" data-aos="fade-up">
           <span class="h5_">De&I</span>
           <h3 class="h3_">
             <p>Diversity,</p>
@@ -215,7 +215,7 @@
           </div>
         </div>
         <div class="explanation_contents layout_inner">
-          <div class="explanation_img">
+          <div class="explanation_img" data-aos="clip-up">
             <picture>
               <source media="(min-width: <?=$min_width_d?>px)" srcset="<?=$img?>management-d" />
               <source media="(max-width: <?=$max_width_m?>px)" srcset="<?=$img?>management-m" />
@@ -223,13 +223,13 @@
             </picture>
           </div>
           <div class="explanation_txt">
-            <div class="explanation_tit sub_tit">
+            <div class="explanation_tit sub_tit" data-aos="fade-up">
               <p>다양성을 존중하고 모두에게</p>
               <p>포용적인 문화를 만드는 것을</p>
               <p>핵심으로 합니다.</p>
             </div>
             <ul class="explanation_list">
-              <li class="explanation_item">
+              <li class="explanation_item" data-aos="fade-up">
                 <div class="txt_box sub_tit3">
                   <div>공평한 사회 추구</div>
                   <div>01</div>
@@ -246,7 +246,7 @@
                   </li>
                 </ul>
               </li>
-              <li class="explanation_item">
+              <li class="explanation_item" data-aos="fade-up">
                 <div class="txt_box sub_tit3">
                   <div>포용적교육</div>
                   <div>02</div>
@@ -260,7 +260,7 @@
                   </li>
                 </ul>
               </li>
-              <li class="explanation_item">
+              <li class="explanation_item" data-aos="fade-up">
                 <div class="txt_box sub_tit3">
                   <div>공익을 위한 사회공헌</div>
                   <div>03</div>
@@ -282,85 +282,6 @@
     </div>        
     <?php include $path."/src/inc/footer.php"; ?>
     <script src="<?=$path?>src/js/sustainability.js"></script>
-    <script>
-      gsap.registerPlugin(ScrollTrigger);
-
-      ScrollTrigger.matchMedia({
-        // Default animation for screens wider than 750px
-        "(min-width: 751px)": function() {
-          const tl = gsap.timeline({
-            scrollTrigger: {
-              trigger: ".sustainability_inner",
-              start: "top top",
-              end: "+=300%",
-              scrub: true,
-              pin: true,
-              markers: false,
-            }
-          });
-
-          tl.to("#content1", { opacity: 0, duration: 2 })
-            .to("#content2", { opacity: 1, duration: 2 }, "-=0.5")
-            .to("#content2", { 
-              opacity: 0, 
-              scale: 0.4,
-              duration: 2 
-            })
-            .to("#content3", { opacity: 1, duration: 2 }, "-=0.5")
-            .to("#content4", { opacity: 1, duration: 2 }, "+=0.5")
-            .to("#content3", { opacity: 0, duration: 2 })
-            .to("#esg_img_wrap", {
-              left: "50%",
-              y: "350rem",
-              scale: 10,
-              duration: 2
-            })
-            .to("#leaf_img_01", { opacity: 1, duration: 2 }, "+=0.5")
-            .to("#leaf_img_02", { opacity: 1, duration: 2 }, "+=0.5")
-            .to("#leaf_img_03", { opacity: 1, duration: 2 }, "+=0.5")
-            .to("#leaf_img_04", { opacity: 1, duration: 2 }, "+=0.5")
-            .to("#leaf_img_05", { opacity: 1, duration: 1 }, "+=1")
-            .to("#leaf_img_06", { opacity: 1, duration: 1 }, "+=1");
-        },
-
-        // Animation for screens 750px wide or less
-        "(max-width: 750px)": function() {
-          const tl = gsap.timeline({
-            scrollTrigger: {
-              trigger: ".sustainability_inner",
-              start: "top top",
-              end: "+=200%", // Adjusted length for smaller screens
-              scrub: true,
-              pin: true,
-              markers: false,
-            }
-          });
-
-          // Different or simplified animations for smaller screens
-          tl.to("#content1", { opacity: 0, duration: 1 })
-            .to("#content2", { opacity: 1, duration: 1 }, "-=0.5")
-            .to("#content2", { 
-              opacity: 0, 
-              scale: 0.6, // Smaller scaling for smaller screens
-              duration: 1 
-            })
-            .to("#content3", { opacity: 1, duration: 1 }, "-=0.5")
-            .to("#content4", { opacity: 1, duration: 1 }, "+=0.5")
-            .to("#content3", { opacity: 0, duration: 1 })
-            .to("#esg_img_wrap", {
-              left: "50%",
-              scale: 5, // Smaller scaling for smaller screens
-              duration: 1
-            })
-            .to("#leaf_img_01", { opacity: 1, duration: 1 }, "+=0.5")
-            .to("#leaf_img_02", { opacity: 1, duration: 1 }, "+=0.5")
-            .to("#leaf_img_03", { opacity: 1, duration: 1 }, "+=0.5")
-            .to("#leaf_img_04", { opacity: 1, duration: 1 }, "+=0.5")
-            .to("#leaf_img_05", { opacity: 1, duration: 0.5 }, "+=0.5")
-            .to("#leaf_img_06", { opacity: 1, duration: 0.5 }, "+=0.5");
-        }
-      });
-    </script>
   </div>
 </body>
 

@@ -19,48 +19,6 @@ $(function () {
     }
   });
 
-  /* 텍스트 조절 버튼(보완필요) */
-  let txtBtn = $('.setting_box .ctrl_txt .txt_size button');
-  let txtZoom = 100; // 기본값
-  let txtZoomVar = 5; // 버튼 누를때마다 텍스트 증감 값
-  let txtZoomMax = txtZoom + txtZoomVar * 3; // 마지막 숫자가 최대 클릭 수)
-  let txtZoomMin = txtZoom - txtZoomVar * 3; // 마지막 숫자가 최소 클릭 수)
-  let crntZoom = window.sessionStorage.getItem('zoom'); 
-  
-  function txtSizeCtrl(txtZoom) {
-    $('body').css('zoom', txtZoom + '%');
-    sessionStorage.setItem("zoom", txtZoom);
-  }
-  
-  $('body').css('zoom', crntZoom + '%');
-  
-  txtBtn.click(function () { 
-    if ($(this).hasClass('size_up')) {
-      // 증가 버튼
-      txtZoom = txtZoom + txtZoomVar;
-      if (txtZoom >= txtZoomMax) {
-        txtZoom = txtZoomMax;
-      }
-      txtSizeCtrl(txtZoom);
-    } else { 
-      // 감소 버튼
-      txtZoom = txtZoom - txtZoomVar;
-      if (txtZoom <= txtZoomMin) {
-        txtZoom = txtZoomMin;
-      }
-      txtSizeCtrl(txtZoom);
-    }
-
-    // 상한선에서 버튼 막기
-    if (txtZoom >= txtZoomMax) {
-      txtBtn.siblings('.size_up').addClass('disabled');
-    } else if (txtZoom <= txtZoomMin) {
-      txtBtn.siblings('.size_down').addClass('disabled');
-    } else { 
-      txtBtn.removeClass('disabled');
-    }
-  });
-
   /* 텍스트 색상 버튼 */
   let txtColorBtn = $('.setting_box .txt_color .btn_wrap button');
   let crntColor = window.sessionStorage.getItem('txtColor'); 
@@ -89,7 +47,7 @@ $(function () {
     
     keyvisual
     .to('.keyvisual',{padding:"0 20rem"},'group1')
-    .to('.keyvisual .image_area img',{y:"50%"},'group1')
+    .to('.keyvisual .image_area img',{y:"20%"},'group1')
   }
 
   /************** X SCROLLBAR **************/
@@ -119,13 +77,10 @@ $(function () {
   cursor = $(".cursor"); 
   if ($(window).width() >= 750) {
     $('body').css('padding-bottom', $('footer').outerHeight());
-    $( window ).resize( function() {
-      $('body').css('padding-bottom', $('footer').outerHeight());
-    });
     
-    let posX = 0,
+    var posX = 0,
       posY = 0;
-    let mouseX = 0,
+    var mouseX = 0,
       mouseY = 0;
     TweenMax.to({}, 0.01, {
       repeat: -1,
@@ -141,6 +96,7 @@ $(function () {
       }
     });
 
+    // 커서가 활성화되는 영역
     $("html,body").on("mousemove", function(e) {
       mouseX = e.clientX;
       mouseY = e.clientY;
@@ -149,8 +105,6 @@ $(function () {
     }).on("mouseleave", function(e) {
       cursor.css('opacity', 0);
     });
-  }else{
-    $('body').css('padding-bottom', 0);
   }
   
   $("input, a, input, button").on("mouseenter", function() {
@@ -165,3 +119,65 @@ $(function () {
     AOS.refresh();
   });
 });
+
+// HTML 요소를 변수로 저장
+const increaseButton = document.getElementById('increase_font');
+const decreaseButton = document.getElementById('decrease_font');
+const body = document.body;
+// 폰트 크기의 최소값과 최대값 설정
+const minFontSize = 0.85;
+const maxFontSize = 1.15;
+// 현재 폰트 크기를 추출하는 함수
+function getFontSize() {
+  return parseFloat(window.getComputedStyle(body).zoom);
+}
+// 폰트 크기를 세션 스토리지에 저장하는 함수
+function saveFontSize(fontSize) {
+  sessionStorage.setItem('fontSize', fontSize.toFixed(2));
+}
+// 저장된 폰트 크기를 불러오는 함수
+function loadFontSize() {
+  const savedFontSize = sessionStorage.getItem('fontSize');
+  if (savedFontSize) {
+    body.style.zoom = savedFontSize;
+  }
+  if(savedFontSize == maxFontSize){
+    increaseButton.classList.add('disabled');
+  }else if(savedFontSize == minFontSize){
+    decreaseButton.classList.add('disabled');
+  }else{
+    increaseButton.classList.remove('disabled');
+    decreaseButton.classList.remove('disabled');
+  }
+}
+// 폰트 크기를 증가시키는 함수
+function increaseFontSize() {
+  let fontSize = getFontSize();
+  if (fontSize < maxFontSize) {
+    fontSize += 0.05; // 폰트 크기를 1px씩 증가
+    body.style.zoom = fontSize;
+    saveFontSize(fontSize);
+    increaseButton.classList.remove('disabled');
+    decreaseButton.classList.remove('disabled');
+  }else{
+    increaseButton.classList.add('disabled');
+  }
+}
+// 폰트 크기를 감소시키는 함수
+function decreaseFontSize() {
+  let fontSize = getFontSize();
+  if (fontSize > minFontSize) {
+    fontSize -= 0.05; // 폰트 크기를 1px씩 감소
+    body.style.zoom = fontSize;
+    saveFontSize(fontSize);
+    decreaseButton.classList.remove('disabled');
+    increaseButton.classList.remove('disabled');
+  }else{
+    decreaseButton.classList.add('disabled');
+  }
+}
+// 버튼 클릭 이벤트 리스너 추가
+increaseButton.addEventListener('click', increaseFontSize);
+decreaseButton.addEventListener('click', decreaseFontSize);
+// 페이지 로드 시 저장된 폰트 크기를 불러오기
+window.addEventListener('load', loadFontSize);

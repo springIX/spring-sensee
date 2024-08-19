@@ -85,7 +85,6 @@
     .sustainability_leaf_img {
       position: absolute;
       opacity: 0;
-
     }
     .leaf_img_wrap {
       width: 100%;
@@ -95,7 +94,7 @@
         height: 300px;
       }
     }
-    #leaf_img_01 {      
+    #leaf_img_01 {
       width: 304rem;
       height: 266rem;
       top: 0;
@@ -107,7 +106,7 @@
         right: 6.2px;
       }
     }
-    #leaf_img_02 {      
+    #leaf_img_02 {
       width: 69.11rem;
       height: 60.25rem;
       top: 380rem;
@@ -120,7 +119,7 @@
         left: -30px;
       }
     }
-    #leaf_img_03 {      
+    #leaf_img_03 {
       width: 160.7rem;
       height: 140.1rem;
       top: 467rem;
@@ -133,7 +132,7 @@
         left: 162.7px;
       }
     }
-    #leaf_img_04 {      
+    #leaf_img_04 {
       width: 87.29rem;
       height: 76.1rem;
       top: 626rem;
@@ -146,7 +145,7 @@
         left: 10.3px;
       }
     }
-    #leaf_img_05 {      
+    #leaf_img_05 {
       width: 678rem;
       height: 594rem;
       bottom: -720rem;
@@ -161,7 +160,7 @@
         filter: blur(2.5px);
       }
     }
-    #leaf_img_06 {      
+    #leaf_img_06 {
       width: 117rem;
       height: 102rem;
       bottom: -200rem;
@@ -187,9 +186,17 @@
     padding-right: 336rem;
     display: flex;
     flex-direction: column;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 100rem;
+    color: $color-white;
     @include screen("mo") {
       gap: 100px;
       padding: 0 20px;
+      position: relative;
+      bottom: 0;
+      color: $color-black;
     }
   }
   .info_contents {
@@ -269,7 +276,7 @@
     gap: 140rem;
     @include screen("mo") {
       width: auto;
-      padding-left:79px;
+      padding-left: 79px;
       gap: 40px;
     }
     .explanation_item {
@@ -317,17 +324,13 @@
     }
   }
 }
-.sustainability_glacier{
+.sustainability_glacier {
   position: relative;
   .glacier_contents {
     .glacier_img {
-      transform: translateX(0);
-      transition: transform 0.5s ease-in-out;
       img {
-        width: 105%;
-        @include screen("mo") {
-          width: 120%;
-        }
+        width: calc(100% + 100px);
+        margin-left: -100px;
       }
     }
     .floating_txt {
@@ -359,7 +362,7 @@
       width: auto;
       padding-left: 91px;
       padding-right: 15px;
-      margin-right: 0
+      margin-right: 0;
     }
     .h3_ {
       padding-bottom: 40rem;

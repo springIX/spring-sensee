@@ -530,6 +530,7 @@
   pointer-events: none;
   opacity: 0;
   transition: 0.3s ease;
+  background-color: #f0f4f7;
 }
 .popup.on {
   touch-action: auto;
@@ -545,8 +546,13 @@
   top: 60rem;
   z-index: 10;
 }
-.popup[data-view=ceo] {
-  background-color: #f0f4f7;
+@media (max-width: 750px) {
+  .popup .close {
+    width: 52rem;
+    height: 52rem;
+    right: 20rem;
+    top: 20rem;
+  }
 }
 .popup[data-view=ceo] .txt_box {
   display: flex;
@@ -554,6 +560,12 @@
   justify-content: space-between;
   padding: 180rem 0 150rem 616rem;
   height: 100%;
+}
+@media (max-width: 750px) {
+  .popup[data-view=ceo] .txt_box {
+    display: block;
+    padding: 95rem 0 0;
+  }
 }
 .popup[data-view=ceo] .txt_box > * {
   transform: translateY(50rem);
@@ -575,6 +587,11 @@
   background-color: #000000;
   margin-bottom: 10rem;
 }
+@media (max-width: 750px) {
+  .popup[data-view=ceo] .txt_box .name {
+    margin-top: 40rem;
+  }
+}
 .popup[data-view=ceo] .ceo_img {
   width: 794rem;
   position: absolute;
@@ -582,6 +599,14 @@
   bottom: -60rem;
   transform: translateY(50rem);
   transition: 0.5s ease;
+}
+@media (max-width: 750px) {
+  .popup[data-view=ceo] .ceo_img {
+    width: 100%;
+    bottom: 0;
+    max-width: 450rem;
+    left: -25rem;
+  }
 }
 .popup[data-view=ceo].on .txt_box > * {
   transform: translateY(0);
@@ -601,6 +626,11 @@
   transform: scale(1.1);
   opacity: 0;
   transition: 0.5s ease;
+}
+@media (max-width: 750px) {
+  .popup[data-view=brand_movie] video {
+    object-fit: contain;
+  }
 }
 .popup[data-view=brand_movie].on video {
   transform: scale(1);

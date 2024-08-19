@@ -27,7 +27,7 @@
       <li><a href="/tech/">TECHNOLOGY</a></li>
       <li><a href="/product/">PRODUCT</a></li>
       <li><a href="/sustainability/">SUSTAINABILITY</a></li>
-      <li><a href="/media/">MEDIA ROOM</a></li>
+      <!-- <li><a href="/media/">MEDIA ROOM</a></li> -->
       <li><a href="/contact/">CONTACT US</a></li>
       <li>
         <a href="https://3dcoloring.co.kr/" target="_blank">SHOP 

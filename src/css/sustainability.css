@@ -214,11 +214,19 @@
   padding-right: 336rem;
   display: flex;
   flex-direction: column;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: 100rem;
+  color: #ffffff;
 }
 @media (max-width: 750px) {
   .sustainability_info .info_wrap {
     gap: 100px;
     padding: 0 20px;
+    position: relative;
+    bottom: 0;
+    color: #000000;
   }
 }
 .sustainability_info .info_contents {
@@ -383,17 +391,9 @@
 .sustainability_glacier {
   position: relative;
 }
-.sustainability_glacier .glacier_contents .glacier_img {
-  transform: translateX(0);
-  transition: transform 0.5s ease-in-out;
-}
 .sustainability_glacier .glacier_contents .glacier_img img {
-  width: 105%;
-}
-@media (max-width: 750px) {
-  .sustainability_glacier .glacier_contents .glacier_img img {
-    width: 120%;
-  }
+  width: calc(100% + 100px);
+  margin-left: -100px;
 }
 .sustainability_glacier .glacier_contents .floating_txt {
   color: #ffffff;

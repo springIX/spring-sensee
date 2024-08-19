@@ -497,6 +497,8 @@
   pointer-events: none;
   opacity: 0;
   transition: 0.3s ease;
+  background-color: $color-bg;
+
   &.on {
     touch-action: auto;
     pointer-events: auto;
@@ -511,15 +513,24 @@
     right: 46rem;
     top: 60rem;
     z-index: 10;
+    @include screen("mo") {
+      width: 52rem;
+      height: 52rem;
+      right: 20rem;
+      top: 20rem;
+    }
   }
   &[data-view="ceo"] {
-    background-color: $color-bg;
     .txt_box {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       padding: 180rem 0 150rem 616rem;
       height: 100%;
+      @include screen("mo") {
+        display: block;
+        padding: 95rem 0 0;
+      }
       > * {
         transform: translateY(50rem);
         opacity: 0;
@@ -539,6 +550,9 @@
           margin-bottom: 10rem;
         }
         line-height: 1.6;
+        @include screen("mo") {
+          margin-top: 40rem;
+        }
       }
     }
     .ceo_img {
@@ -548,6 +562,12 @@
       bottom: -60rem;
       transform: translateY(50rem);
       transition: 0.5s ease;
+      @include screen("mo") {
+        width: 100%;
+        bottom: 0;
+        max-width: 450rem;
+        left: -25rem;
+      }
     }
     &.on {
       .txt_box > * {
@@ -571,6 +591,9 @@
       transform: scale(1.1);
       opacity: 0;
       transition: 0.5s ease;
+      @include screen("mo") {
+        object-fit: contain;
+      }
     }
     &.on video {
       transform: scale(1);

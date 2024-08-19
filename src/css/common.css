@@ -25,6 +25,7 @@ body {
   word-break: keep-all;
   background-color: #ffffff;
   position: relative;
+  zoom: 1;
 }
 
 body,

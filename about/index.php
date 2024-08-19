@@ -24,7 +24,7 @@
           'media-alt' => '', // required
           'dimmed' => 'all', // required
           'title' => 'About Us', // required
-          'desc' => '센시는 비장애인과 장애인이 함께 보고 즐길 수 있는 세상을 만들기 위해 <br>지속적인 연구를 수행하며, 근본적인 문제를 해결하기 위해 끊임없이 도전합니다.', // option
+          'desc' => '센시는 비장애인과 장애인이 함께 보고 즐길 수 있는 세상을 만들기 위해 <br class="pc">지속적인 연구를 수행하며, 근본적인 문제를 해결하기 위해 끊임없이 도전합니다.', // option
         );
         printKeyvisual();
       ?>
@@ -240,7 +240,7 @@
     <!-- BRAND MOVIE POPUP -->
     <div class="popup" data-view="brand_movie">
       <button class="close" data-btn="brand_movie"></button>
-      <video src="<?=$img?>ceo.mp4"></video>
+      <video src="<?=$img?>ceo.mp4" autoplay inlinesplay></video>
     </div>
     <?php include $path."/src/inc/footer.php"; ?>
     <script src="<?=$path?>src/js/<?=$menuClass?>.js"></script>
