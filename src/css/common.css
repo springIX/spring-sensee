@@ -134,7 +134,7 @@ picture {
 
 @media (max-width: 1280px) {
   body {
-    font-size: 20rem;
+    font-size: clamp(10px, 20rem, 999rem);
   }
 }
 @media (max-width: 750px) {
@@ -142,7 +142,7 @@ picture {
     font-size: 1px;
   }
   body {
-    font-size: 14rem;
+    font-size: clamp(10px, 14rem, 999rem);
     line-height: 1.72;
   }
 }
@@ -157,19 +157,16 @@ picture {
   width: 100%;
   height: 100%;
 }
-.keyvisual .image_area,
-.keyvisual picture {
+.keyvisual .image_area {
   width: 100%;
   height: 100%;
 }
-.keyvisual .image_area img,
-.keyvisual picture img {
+.keyvisual .image_area img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.keyvisual .image_area .dimmed,
-.keyvisual picture .dimmed {
+.keyvisual .image_area .dimmed {
   display: block;
   position: absolute;
   top: 0;
@@ -179,12 +176,10 @@ picture {
   z-index: 1;
   opacity: 0.4;
 }
-.keyvisual .image_area .circle,
-.keyvisual picture .circle {
+.keyvisual .image_area .circle {
   background: radial-gradient(circle, transparent 0%, #000000 100%);
 }
-.keyvisual .image_area .all,
-.keyvisual picture .all {
+.keyvisual .image_area .all {
   background-color: #000000;
 }
 .keyvisual .floating_area {

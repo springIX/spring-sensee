@@ -44,14 +44,14 @@
       <button class="ctrl_btn" title="텍스트 크기, 색상 조정 팝업이 열리는 버튼" data-btn="ctrl_txt">Text <span class="flex"><i></i></span></button>
       <div class="ctrl_box" data-view="ctrl_txt">
         <button class="close_btn" title="텍스트 크기, 색상 조정 팝업이 닫히는 버튼" data-btn="ctrl_txt"></button>
-        <div class="txt_size flex_cnt" data-btn="text_ctrl">
+        <div class="txt_size flex_cnt">
           <span>Text size</span>
           <div class="btn_wrap">
-            <button id="increaseTextSize" class="size_up" title="텍스트 크게 보기"></button>
-            <button id="decreaseTextSize" class="size_down" title="텍스트 작게 보기"></button>
+            <button id="increase_font" class="size_up" title="텍스트 크게 보기"></button>
+            <button id="decrease_font" class="size_down" title="텍스트 작게 보기"></button>
           </div>
         </div>
-        <div class="txt_color" data-view="text_ctrl">
+        <div class="txt_color">
           <span>Text color</span>
           <div class="btn_wrap pps flex">
             <button data-color="white_black" class="on" title="하얀색 배경에 검정색 텍스트로 변경"><span>S</span></button>

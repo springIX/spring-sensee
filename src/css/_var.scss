@@ -4,6 +4,10 @@
 $font-kr: "Noto Sans KR", sans-serif;
 $font-en: "Poppins", sans-serif;
 
+@mixin fontSize($size) {
+  font-size: clamp(10px, $size, 999rem);
+}
+
 // Layout inner
 $layout_inner: 198rem;
 $layout_inner_m: 20rem;

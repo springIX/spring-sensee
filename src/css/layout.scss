@@ -86,7 +86,7 @@ body {
 // headline component
 .h2_ {
   font-family: $font-en;
-  font-size: 150rem;
+  @include fontSize(150rem);
   font-weight: 400;
   line-height: 1.07;
   @include screen("mo") {
@@ -97,7 +97,7 @@ body {
 
 .h3_ {
   font-weight: 700;
-  font-size: 100rem;
+  @include fontSize(100rem);
   line-height: 1.44;
   &.pps {
     font-weight: 600;
@@ -111,7 +111,7 @@ body {
 
 .h4_ {
   font-weight: 400;
-  font-size: 80rem;
+  @include fontSize(80rem);
   line-height: 1.25;
   @include screen("mo") {
     font-size: 32rem;
@@ -122,7 +122,7 @@ body {
 .h5_ {
   font-family: $font-en;
   font-weight: 700;
-  font-size: 24rem;
+  @include fontSize(24rem);
   line-height: 1.5;
   letter-spacing: 7px;
   @include screen("mo") {
@@ -134,7 +134,7 @@ body {
 // contents component
 .sub_head {
   font-weight: 900;
-  font-size: 16rem;
+  @include fontSize(16rem);
   line-height: 1.75;
   @include screen("mo") {
     font-size: 12rem;
@@ -145,7 +145,7 @@ body {
 } // 서브 헤드라인
 
 .sub_tit {
-  font-size: 48rem;
+  @include fontSize(48rem);
   line-height: 1.5;
   font-weight: 400;
   @include screen("mo") {
@@ -156,7 +156,7 @@ body {
 } // 설명형 타이틀1
 
 .sub_tit2 {
-  font-size: 40rem;
+  @include fontSize(40rem);
   font-weight: 400;
   line-height: 1.47;
   @include screen("mo") {
@@ -171,7 +171,7 @@ body {
 
 .sub_tit3 {
   font-weight: 700;
-  font-size: 24rem;
+  @include fontSize(24rem);
   line-height: 1.5;
   @include screen("mo") {
     font-size: 16rem;
@@ -185,7 +185,7 @@ body {
 
 .sub_tit4 {
   font-weight: 700;
-  font-size: 16rem;
+  @include fontSize(16rem);
   line-height: 1.55;
   @include screen("mo") {
     // font-size: 14rem;
@@ -193,7 +193,7 @@ body {
 } // 설명형 타이틀4
 
 .body_txt {
-  font-size: 20rem;
+  @include fontSize(20rem);
   line-height: 1.52;
   font-weight: 400;
   @include screen("mo") {
@@ -204,7 +204,7 @@ body {
 
 .caption {
   font-weight: 400;
-  font-size: 14rem;
+  @include fontSize(14rem);
   line-height: 1.43;
   @include screen("tb") {
     font-size: 21rem;

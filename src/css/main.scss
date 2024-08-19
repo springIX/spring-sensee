@@ -1,7 +1,7 @@
 @import "var";
 
 .main_container {
-  background-color: $color-bg;
+  background-color: $color-bg !important;
   overflow: hidden;
   .main_visual {
     width: 100%;

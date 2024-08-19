@@ -89,7 +89,7 @@ $(function () {
     
     keyvisual
     .to('.keyvisual',{padding:"0 20rem"},'group1')
-    .to('.keyvisual .image_area img',{y:"20%"},'group1')
+    .to('.keyvisual .image_area img',{y:"50%"},'group1')
   }
 
   /************** X SCROLLBAR **************/
@@ -119,10 +119,13 @@ $(function () {
   cursor = $(".cursor"); 
   if ($(window).width() >= 750) {
     $('body').css('padding-bottom', $('footer').outerHeight());
+    $( window ).resize( function() {
+      $('body').css('padding-bottom', $('footer').outerHeight());
+    });
     
-    var posX = 0,
+    let posX = 0,
       posY = 0;
-    var mouseX = 0,
+    let mouseX = 0,
       mouseY = 0;
     TweenMax.to({}, 0.01, {
       repeat: -1,
@@ -138,7 +141,6 @@ $(function () {
       }
     });
 
-    // 커서가 활성화되는 영역
     $("html,body").on("mousemove", function(e) {
       mouseX = e.clientX;
       mouseY = e.clientY;
@@ -147,6 +149,8 @@ $(function () {
     }).on("mouseleave", function(e) {
       cursor.css('opacity', 0);
     });
+  }else{
+    $('body').css('padding-bottom', 0);
   }
   
   $("input, a, input, button").on("mouseenter", function() {
