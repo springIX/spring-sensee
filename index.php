@@ -16,7 +16,23 @@
   <div class="<?=$menuClass?>_wrap">
     <?php include $path."/src/inc/header.php"; ?>
     <main id="contents" class="<?=$menuClass?>_container">
-      <section class="<?=$menuClass?>_visual" style="height:100vh;">
+      <section class="<?=$menuClass?>_visual">
+        <div class="swiper">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide" data-tit="TOGETHER" data-info="센시의 보편적 일상의 순간" data-cont="img">
+              <img src="<?=$img?>brand_d.jpg" alt="" class="main_visual_sld_view">
+            </li>
+            <li class="swiper-slide" data-tit="MEANINGFUL" data-info="모두를 위한 유의미함" data-cont="vid">
+              <video src="<?=$img?>visual01_d.mp4" inlinesplay muted class="main_visual_sld_view"></video>
+            </li>
+            <li class="swiper-slide" data-tit="BASICS" data-info="차이로 차별하지 않는 기본" data-cont="vid">
+              <video src="<?=$img?>visual02_d.mp4" inlinesplay muted class="main_visual_sld_view"></video>
+            </li>
+          </ul>
+        </div>
+        <div class="layout_inner main_visual_cont">
+          <div class="pagi"></div>
+        </div>
       </section>
       <section class="<?=$menuClass?>_intro">
         <div class="section_tit taC layout_inner" data-aos="fade-up">
@@ -149,17 +165,6 @@
     </main>
     <?php include $path."/src/inc/footer.php"; ?>
     <script src="<?=$path?>src/js/<?=$menuClass?>.js"></script>
-    <script>
-      $(function(){
-        $(".main_tech").on("mousemove", function(event) {
-          var mouseXpos = event.clientX;
-          var mouseYpos = event.clientY;
-          var YrotateDeg = mouseXpos * -0.02;
-          var XrotateDeg = mouseYpos * -0.01;
-          $(".leaf_box i img").css('transform',`translate(${XrotateDeg}rem, ${YrotateDeg}rem )`);
-        });
-      });
-    </script>
   </div>
 </body>
 

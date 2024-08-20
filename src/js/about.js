@@ -18,6 +18,7 @@ $(function () {
   
   /* BRAND MOVIE POPUP */
   let vidPop = $('[data-view="brand_movie"]');
+  vidPop.find('video').get(0).pause();
   $('[data-btn="brand_movie"]').click(function () { 
     if (vidPop.hasClass('on')) {
       vidPop.find('video').get(0).play();

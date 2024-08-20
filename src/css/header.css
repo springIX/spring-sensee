@@ -31,25 +31,18 @@
     font-size: 12rem;
   }
 }
-.header::before, .header::after {
+.header::before {
   content: "";
   position: absolute;
   left: 0;
   width: 100%;
-}
-.header::before {
   height: 1px;
   background-color: rgba(255, 255, 255, 0.3);
   bottom: 0;
+  z-index: 1;
 }
-.header::after {
-  height: 100%;
-  transition: 0.3s ease;
-  bottom: 1px;
-}
-.header.bg:not(.on)::after {
-  background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(10px);
+.header.bg:not(.on) {
+  background: rgba(0, 0, 0, 0.6);
 }
 .header .logo {
   width: 109rem;
@@ -58,7 +51,7 @@
   align-items: center;
   margin-right: 198rem;
   position: relative;
-  z-index: 6;
+  z-index: 1;
 }
 .header .logo a svg path {
   transition: 0.3s ease;
@@ -80,7 +73,6 @@
 }
 .header .gnb {
   position: relative;
-  z-index: 5;
 }
 .header .gnb ul {
   display: flex;
@@ -162,7 +154,6 @@
 }
 .header .setting_box .ctrl_txt {
   position: relative;
-  z-index: 3;
 }
 .header .setting_box .ctrl_txt .ctrl_btn {
   display: flex;
@@ -398,7 +389,6 @@
 }
 .header .setting_box .lang_wrap {
   position: relative;
-  z-index: 5;
   margin-left: 11rem;
 }
 @media (max-width: 1280px) {
@@ -512,7 +502,6 @@
   width: 20rem;
   height: 14rem;
   margin-left: 16rem;
-  z-index: 5;
   position: relative;
 }
 @media (min-width: 751px) {
@@ -542,8 +531,7 @@
 }
 @media (max-width: 1280px) {
   .header.on::before {
-    background-color: rgba(0, 0, 0, 0.1);
-    z-index: 6;
+    background-color: #d9d9d9;
   }
   .header.on .logo a svg path {
     fill: #000000;

@@ -24,7 +24,7 @@
   </h1>
   <div class="family_site pps">
     <div class="family_site_select" data-view="fam_site">
-      <span data-btn="fam_site">Family site</span>
+      <button data-btn="fam_site">Family site</button>
       <div class="link_list">
         <a href="https://3dcoloring.co.kr/" target="_blank">SENSEE 3DColoring</a>
         <a href="https://3dcoloring.co.kr/" target="_blank">SENSEE 3DColoring</a>
@@ -54,7 +54,6 @@
         </svg>
       </a>
     </div>
-
   </div>
 </footer>
 <div class="cursor pc"></div>
@@ -64,6 +63,5 @@
 <script src="<?=$path?>src/js/swiper.min.js"></script>
 <script src="<?=$path?>src/js/gsap.js"></script>
 <script src="<?=$path?>src/js/ScrollTrigger.js"></script>
-<script src="<?=$path?>src/js/main.js"></script>
 <script src="<?=$path?>src/js/aos.js"></script>
 <script src="<?=$path?>src/js/common.js"></script>

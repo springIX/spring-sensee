@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .to("#leaf_img_04", 1,{ opacity: 1, duration: 2 }, "+=0.5")
         .to("#leaf_img_05", 1,{ opacity: 1, duration: 1 }, "+=1")
         .to("#leaf_img_06", 1,{ opacity: 1, duration: 1 }, "+=1")
-        .to("#contents.sustainability_container, .sustainability_inner", 10,{ backgroundColor:"#000" }, "group1")
+        .to("#contents.sustainability_container, .sustainability_inner", 1,{ backgroundColor:"#000" }, "group1")
         .to("#esg_img_wrap", 10,{ opacity: .4,}, "group1")
         .to(".sustainability_leaf_img", 10,{ opacity: 0,}, "group1")
         .to(".sustainability_leaf_img", 10,{ opacity: 0,}, "group1");

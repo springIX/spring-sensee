@@ -59,7 +59,7 @@
     font-size: 16rem;
   }
 }
-.footer .family_site .family_site_select span {
+.footer .family_site .family_site_select button {
   display: block;
   width: 100%;
   text-align: left;
@@ -67,7 +67,7 @@
   padding-bottom: 30rem;
 }
 @media (max-width: 750px) {
-  .footer .family_site .family_site_select span {
+  .footer .family_site .family_site_select button {
     padding-bottom: 20rem !important;
   }
 }

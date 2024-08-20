@@ -24,26 +24,18 @@
     height: 60rem;
     font-size: 12rem;
   }
-  &::before,
-  &::after {
+  &::before {
     content: "";
     position: absolute;
     left: 0;
     width: 100%;
-  }
-  &::before {
     height: 1px;
     background-color: rgba($color: $color-white, $alpha: 0.3);
     bottom: 0;
+    z-index: 1;
   }
-  &::after {
-    height: 100%;
-    transition: 0.3s ease;
-    bottom: 1px;
-  }
-  &.bg:not(.on)::after {
-    background: rgba($color: $color-black, $alpha: 0.4);
-    backdrop-filter: blur(10px);
+  &.bg:not(.on) {
+    background: rgba($color: $color-black, $alpha: 0.6);
   }
   .logo {
     width: 109rem;
@@ -52,7 +44,7 @@
     align-items: center;
     margin-right: 198rem;
     position: relative;
-    z-index: 6;
+    z-index: 1;
     a {
       svg path {
         transition: 0.3s ease;
@@ -70,7 +62,6 @@
   }
   .gnb {
     position: relative;
-    z-index: 5;
     ul {
       display: flex;
       gap: 60rem;
@@ -151,7 +142,6 @@
     }
     .ctrl_txt {
       position: relative;
-      z-index: 3;
       .ctrl_btn {
         display: flex;
         align-items: center;
@@ -407,7 +397,6 @@
     }
     .lang_wrap {
       position: relative;
-      z-index: 5;
       margin-left: 11rem;
       @include screen("tb") {
         position: fixed;
@@ -511,7 +500,6 @@
       width: 20rem;
       height: 14rem;
       margin-left: 16rem;
-      z-index: 5;
       position: relative;
       @include screen("pc") {
         min-width: 15px;
@@ -542,8 +530,7 @@
   @include screen("tb") {
     &.on {
       &::before {
-        background-color: rgba($color: $color-black, $alpha: 0.1);
-        z-index: 6;
+        background-color: $color-gray2;
       }
       .logo a svg path {
         fill: $color-black;

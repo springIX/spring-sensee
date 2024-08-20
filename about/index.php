@@ -240,7 +240,7 @@
     <!-- BRAND MOVIE POPUP -->
     <div class="popup" data-view="brand_movie">
       <button class="close" data-btn="brand_movie"></button>
-      <video src="<?=$img?>ceo.mp4" autoplay inlinesplay></video>
+      <video src="<?=$img?>visual01_d.mp4" playsinline controller></video>
     </div>
     <?php include $path."/src/inc/footer.php"; ?>
     <script src="<?=$path?>src/js/<?=$menuClass?>.js"></script>
