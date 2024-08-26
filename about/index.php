@@ -31,11 +31,11 @@
       <section class="<?=$menuClass?>_overview">
         <div class="section_tit layout_inner" data-aos="fade-up">
           <h5 class="h5_">OVERVIEW</h5>
-          <h3 class="h3_ pps">Evolving to <br class="mo">bring <br class="pc">the world together</h3>
+          <h3 class="h3_ ">Evolving to <br class="mo">bring <br class="pc">the world together</h3>
         </div>
         <div class="overview_cont layout_inner_w">
           <div class="txt_wrap">
-            <p class="sub_head pps" data-aos="fade-up">Brand history</p>
+            <p class="sub_head " data-aos="fade-up">Brand history</p>
             <div class="info_wrap">
               <p class="info" data-aos="fade-up" data-aos-delay="100">
                 ESG의 진정한 핵심가치는 내재화에 있으며 <br>
@@ -111,7 +111,7 @@
               <i></i>
             </button>
           </div>
-          <p class="sub_tit4 pps">SENSEE BRAND MOVIE</p>
+          <p class="sub_tit4 ">SENSEE BRAND MOVIE</p>
         </div>
       </section>>
     </div>
@@ -124,7 +124,7 @@
           <li class="swiper-slide layout_inner">
             <div class="txt_box">
               <div class="meant">
-                <p class="caption pps">Touch the world and <br>See the unseen</p>
+                <p class="caption ">Touch the world and <br>See the unseen</p>
                 <div class="sub_tit">
                   세상에 대한 끊임없는 연구 <br>
                   그리고 근본적인 문제 해결에 대한 도전. <br>
@@ -142,7 +142,7 @@
           <li class="swiper-slide layout_inner">
             <div class="txt_box">
               <div class="meant">
-                <p class="caption pps">Touch the world and <br>See the unseen</p>
+                <p class="caption ">Touch the world and <br>See the unseen</p>
                 <div class="sub_tit">
                   부대표님내용 수급 필요 및 사진 수급필요
                 </div>
@@ -165,7 +165,7 @@
     <!-- BRAND MOVIE POPUP -->
     <div class="popup" data-view="brand_movie">
       <button class="close" data-btn="brand_movie"></button>
-      <video src="<?=$img?>brand_movie.mp4" playsinline controller loop></video>
+      <video src="<?=$img?>brand_movie.mp4" playsinline controls></video>
     </div>
     <?php include $path."/src/inc/footer.php"; ?>
     <script src="<?=$path?>src/js/<?=$menuClass?>.js"></script>

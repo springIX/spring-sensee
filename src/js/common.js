@@ -8,14 +8,55 @@ $(function () {
   });
   
   /********* HEADER *********/
-  win.on("scroll", function(){
-    let scrTop = $(this).scrollTop();
-    
-    /* 불투명 헤더로 전환 */
-    if (scrTop > 100) {
-      $('.header').addClass('bg');
-    } else { 
-      $('.header').removeClass('bg');
+  win.on('load resize',function(){
+    /* 수납식 헤더 */
+    let didScroll = false;
+    let lastScrollTop = 0;
+    let delta = 5;
+    let navbarHeight = $('.header').outerHeight();
+
+    win.scroll(function(event){
+      //$('.header').addClass('scrolled');
+      didScroll = true;
+
+      /* 불투명 헤더 */
+      if (win.scrollTop() > navbarHeight) {
+        $('.header').addClass('bg');
+      } else { 
+        $('.header').removeClass('bg');
+      }
+
+      $('.header [data-view]').removeClass('on');
+    });
+
+    setInterval(function() {
+      if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+      }
+    }, 0);
+
+    function hasScrolled() {
+      let st = $(this).scrollTop();
+      
+      // Make sure they scroll more than delta
+      if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+      
+      if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        if($('.header').hasClass('active') == false){
+          $('.header').removeClass('nav_up').addClass('nav_down');
+        }
+        
+      } else {
+        // Scroll Up
+        if(st + win.height() < $(document).height()) {
+          $('.header').removeClass('nav_down').addClass('nav_up');
+        }
+      }
+      
+      lastScrollTop = st;
     }
   });
 
@@ -62,7 +103,7 @@ $(function () {
   /* SCROLL TOP BTN */
   win.on("scroll", function () {
     let scrTop = $(this).scrollTop();
-    if (scrTop < $(window).height() / 2 || scrTop > $('body').height() - $('footer').height()) {
+    if (scrTop < win.height() / 2 || scrTop > $('body').height() - $('footer').height()) {
       $('.scr_top').fadeOut(500);
     }else { 
       $('.scr_top').fadeIn(500);
@@ -75,13 +116,13 @@ $(function () {
   
   /* 커서 */
   cursor = $(".cursor"); 
-  if ($(window).width() >= 750) {
+  if (win.width() >= 750) {
     $('body').css('padding-bottom', $('footer').outerHeight());
     
-    var posX = 0,
-      posY = 0;
-    var mouseX = 0,
-      mouseY = 0;
+    let posX = 0,
+        posY = 0;
+    let mouseX = 0,
+        mouseY = 0;
     TweenMax.to({}, 0.01, {
       repeat: -1,
       onRepeat: function() {
