@@ -1,0 +1,609 @@
+@import "var";
+
+.about_container {
+  .about_overview {
+    padding-top: 280rem;
+    @include screen("mo") {
+      padding-top: 120rem;
+    }
+    .overview_cont {
+      margin-top: 160rem;
+      @include screen("mo") {
+        margin-top: 60rem;
+      }
+      .txt_wrap {
+        display: flex;
+        align-items: flex-start;
+        padding-left: 462rem;
+        position: relative;
+        $m_overview_grid: 70rem;
+        @include screen("mo") {
+          display: block;
+          padding-left: 0;
+        }
+        .sub_head {
+          position: absolute;
+          left: 0;
+          top: 0;
+          @include screen("mo") {
+            position: static;
+            margin-bottom: 8rem;
+            padding-left: $m_overview_grid;
+          }
+        }
+        .info_wrap {
+          display: flex;
+          flex-wrap: wrap;
+          @include screen("mo") {
+            br {
+              display: none;
+            }
+          }
+        }
+        .info {
+          @include screen("mo") {
+            padding-left: $m_overview_grid;
+          }
+        }
+        .ceo_info {
+          margin-left: auto;
+          border: 1px solid $color-black;
+          border-width: 0 0 0 1px;
+          padding: 0 0 32rem 57rem;
+          min-width: 490rem;
+          @include screen("mo") {
+            padding: 20rem 0 60rem;
+            border-width: 1px 0 0 0;
+            margin: 60rem 0 0 $m_overview_grid;
+            width: 100%;
+            min-width: unset;
+          }
+          .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 31rem;
+            @include screen("mo") {
+              margin-bottom: 40rem;
+            }
+            .img_box {
+              width: 81rem;
+              margin-right: 22rem;
+              @include screen("mo") {
+                width: 60rem;
+                margin-right: 11rem;
+              }
+            }
+            .txt_box {
+              line-height: 1.5;
+              p {
+                color: $color-gray1;
+              }
+            }
+          }
+          .btn_more {
+            margin-top: 130rem;
+            @include screen("mo") {
+              margin-top: 80rem;
+            }
+          }
+        }
+        @include screen("mo") {
+          .img1 {
+            width: 100%;
+            picture {
+              margin-left: -20rem;
+              width: calc(100% + 40rem);
+            }
+          }
+        }
+      }
+      .img_wrap {
+        display: flex;
+        gap: 62rem;
+        margin: 88rem auto 0;
+        img {
+          width: 400rem;
+        }
+        @include screen("mo") {
+          width: 195rem;
+          flex-direction: column;
+          margin-top: 60rem;
+          gap: 0;
+          img {
+            width: 100%;
+          }
+          .img2 {
+            order: 2;
+            margin: 60rem 0 20rem;
+          }
+          .img3 {
+            order: 3;
+          }
+          p {
+            order: 1;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+  .about_movie {
+    padding: 356rem 0 360rem;
+    @include screen("mo") {
+      padding: 120rem 0 160rem;
+      br {
+        display: none;
+      }
+    }
+    .tit_box {
+      .logo_cymbol {
+        display: inline-block;
+        width: 155rem;
+        @include screen("mo") {
+          width: 103rem;
+        }
+      }
+      .h4_ {
+        margin: 24rem 0 40rem;
+        @include screen("mo") {
+          margin: 12rem 0 20rem;
+        }
+      }
+    }
+    .movie_btn_wrap {
+      margin-top: 54rem;
+      @include screen("mo") {
+        margin-top: 63rem;
+      }
+      .movie_btn {
+        display: inline-block;
+        padding: 10rem;
+        border: 1px solid $color-black;
+        border-radius: 4rem;
+        @include screen("mo") {
+          padding: 6rem;
+        }
+        button {
+          position: relative;
+          display: block;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          img {
+            transition: 0.3s ease;
+          }
+          i {
+            width: 38rem;
+            height: 38rem;
+            position: absolute;
+            right: 10rem;
+            bottom: 10rem;
+            background-color: rgba($color: $color-black, $alpha: 0.8);
+            border-radius: 4rem;
+            overflow: hidden;
+            border: 1px solid $color-white;
+            &::before,
+            &::after {
+              content: "";
+              display: block;
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              right: 100%;
+              top: 0;
+              background: url(/src/images/common/arr_play.svg) no-repeat center
+                center / 12rem auto;
+              transition: 0.3s ease;
+            }
+            &::after {
+              right: 0;
+            }
+          }
+          @include screen("pc") {
+            &:hover {
+              img {
+                transform: scale(1.05);
+              }
+              i {
+                &::before,
+                &::after {
+                  transform: translateX(100%);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .about_value {
+    position: relative;
+    height: 6000rem;
+    @include screen("mo") {
+      height: 3000rem;
+    }
+    .sticky_box {
+      position: sticky;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100vh;
+      strong {
+        font-size: 260rem;
+        font-family: $font-en;
+        font-weight: 700;
+        display: block;
+        width: 100%;
+        text-align: center;
+        line-height: 390rem;
+        white-space: nowrap;
+        @include screen("mo") {
+          font-size: 50rem;
+          line-height: 75rem;
+        }
+      }
+      .value_tit {
+        transform: translate(-50%, -50%) scale(0.257);
+        @include screen("mo") {
+          transform: translate(-50%, -50%) scale(0.7);
+        }
+      }
+      .value_cont {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+        clip-path: circle(0%);
+        color: $color-white;
+        ul {
+          width: 100%;
+          height: 100%;
+          position: relative;
+          li {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: 0.5s ease;
+            opacity: 0;
+            &.value_together {
+              opacity: 1;
+            }
+            .value_bg {
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              left: 0;
+              top: 0;
+              object-fit: cover;
+            }
+            .txt_box {
+              position: absolute;
+              right: 0;
+              bottom: 90rem;
+              width: 798rem;
+              @include screen("mo") {
+                bottom: 0;
+                min-height: 237rem;
+                width: calc(100% - 90rem);
+              }
+              &::before {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 1px;
+                background-color: $color-white;
+                transform-origin: right center;
+                transform: scaleX(0);
+                transition: 0.5s ease;
+              }
+              > * {
+                transform: translateY(10rem);
+                opacity: 0;
+                transition: 0.5s ease;
+              }
+              span {
+                display: block;
+                margin: 40rem 0 8rem;
+                @include screen("mo") {
+                  margin-top: 20rem;
+                }
+              }
+              @include screen("mo") {
+                p {
+                  padding-right: 20rem;
+                  br {
+                    display: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .tit_box {
+          width: 100%;
+          height: 390rem;
+          overflow: hidden;
+          @include screen("mo") {
+            height: 75rem;
+          }
+          strong {
+            transition: 0.5s ease;
+          }
+        }
+        .pagi {
+          display: flex;
+          align-items: center;
+          font-weight: 700;
+          position: absolute;
+          left: 0;
+          bottom: 97rem;
+          transform: translateY(10rem);
+          opacity: 0;
+          transition: 0.5s ease;
+          @include screen("mo") {
+            display: block;
+            bottom: auto;
+            top: 80rem;
+            text-align: center;
+          }
+          p {
+            height: 20rem;
+            overflow: hidden;
+            &.current {
+              span {
+                display: block;
+                height: 100%;
+                transition: 0.5s ease;
+              }
+            }
+            &.total {
+              display: flex;
+              align-items: center;
+              @include screen("mo") {
+                display: block;
+                height: auto;
+              }
+              &::before {
+                content: "";
+                display: block;
+                width: 36rem;
+                height: 1px;
+                background-color: $color-white;
+                margin: 0 10rem;
+                @include screen("mo") {
+                  width: 1px;
+                  height: 40rem;
+                  margin: 4rem auto 8rem;
+                }
+              }
+            }
+          }
+        }
+        &.sceneA ul li.value_together,
+        &.sceneB ul li.value_meaningful,
+        &.sceneC ul li.value_basic {
+          opacity: 1;
+          .txt_box {
+            &::before {
+              transform: scaleX(1);
+            }
+            > * {
+              transform: translateY(0);
+              opacity: 1;
+              transition-delay: 0.3s;
+            }
+          }
+        }
+        &.sceneA .pagi,
+        &.sceneB .pagi,
+        &.sceneC .pagi {
+          transform: translateY(0);
+          opacity: 1;
+        }
+        &.sceneB {
+          .tit_box strong,
+          .pagi .current span {
+            transform: translateY(-100%);
+          }
+        }
+        &.sceneC {
+          .tit_box strong,
+          .pagi .current span {
+            transform: translateY(-200%);
+          }
+        }
+      }
+    }
+  }
+  .about_business {
+    padding: 280rem 0 374rem;
+    @include screen("mo") {
+      padding: 160rem 0;
+    }
+    .section_tit {
+      padding: 0 0 200rem 50%;
+      @include screen("mo") {
+        padding: 0 20rem 80rem 90rem;
+      }
+    }
+    .busi_list {
+      > li {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        @include screen("mo") {
+          display: block;
+        }
+        + li {
+          margin-top: 80rem;
+          padding-top: 80rem;
+          border-top: 1px solid #d9d9d9;
+          @include screen("mo") {
+            margin-top: 40rem;
+            padding-top: 40rem;
+          }
+        }
+        &:nth-child(even) {
+          flex-direction: row;
+          .txt_box {
+            padding-left: 36rem;
+            @include screen("mo") {
+              padding-left: 0;
+            }
+          }
+        }
+
+        > div {
+          width: calc(50% - 8rem);
+          @include screen("mo") {
+            width: 100%;
+          }
+        }
+        .txt_box {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          position: relative;
+          @include screen("mo") {
+            display: block;
+            padding: 24rem 20rem 0 90rem !important;
+            .sub_tit2 {
+              margin-bottom: 120rem;
+            }
+          }
+          .sub_tit3 {
+            padding: 80rem 0 28rem;
+            @include screen("mo") {
+              padding: 0;
+              position: absolute;
+              left: 20rem;
+              top: 31rem;
+            }
+            &::after {
+              content: "0" counter(about_busi);
+              counter-increment: about_busi;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 9999;
+  touch-action: none;
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: $color-bg;
+
+  &.on {
+    touch-action: auto;
+    pointer-events: auto;
+    opacity: 1;
+  }
+  .close {
+    width: 80rem;
+    height: 80rem;
+    background: url(/src/images/common/close2.svg) no-repeat center center /
+      contain;
+    position: absolute;
+    right: 46rem;
+    top: 60rem;
+    z-index: 10;
+    @include screen("mo") {
+      width: 52rem;
+      height: 52rem;
+      right: 20rem;
+      top: 20rem;
+    }
+  }
+  &[data-view="ceo"] {
+    .txt_box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 180rem 0 150rem 616rem;
+      height: 100%;
+      @include screen("mo") {
+        display: block;
+        padding: 95rem 0 0;
+      }
+      > * {
+        transform: translateY(50rem);
+        opacity: 0;
+        transition: 0.5s ease;
+      }
+      .meant .sub_tit {
+        margin-top: 12rem;
+        font-weight: 300;
+      }
+      .name {
+        &::before {
+          content: "";
+          display: block;
+          width: 52rem;
+          height: 2px;
+          background-color: $color-black;
+          margin-bottom: 10rem;
+        }
+        line-height: 1.6;
+        @include screen("mo") {
+          margin-top: 40rem;
+        }
+      }
+    }
+    .ceo_img {
+      width: 794rem;
+      position: absolute;
+      left: 0;
+      bottom: -60rem;
+      transform: translateY(50rem);
+      transition: 0.5s ease;
+      @include screen("mo") {
+        width: 100%;
+        bottom: 0;
+        max-width: 450rem;
+        left: -25rem;
+      }
+    }
+    &.on {
+      .txt_box > * {
+        transform: translateY(0);
+        opacity: 1;
+        transition-delay: 0.1s;
+      }
+      .ceo_img {
+        transform: translateY(0rem);
+      }
+    }
+  }
+  &[data-view="brand_movie"] {
+    video {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1.1);
+      opacity: 0;
+      transition: 0.5s ease;
+      @include screen("mo") {
+        object-fit: contain;
+      }
+    }
+    &.on video {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+}

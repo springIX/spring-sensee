@@ -698,6 +698,7 @@
   transform: scale(1.2);
   width: 100%;
   height: 100%;
+  filter: brightness(1);
 }
 @media (max-width: 750px) {
   .main_container .main_innovation .sticky_box .innovation_bg img {

@@ -99,12 +99,13 @@ $(document).ready(function () {
       main_innovation
         .to('.main_innovation .sticky_box .h3_', 1, { opacity: 0 }, 'group1')
         .to('.main_innovation .sticky_box .innovation_bg', 2, { left: 0, top: 0, width: "100%", height: "100%", }, 'group1')
-        .to('.main_innovation .sticky_box .innovation_bg img', 2, { scale: 1, }, 'group1')
+        .to('.main_innovation .sticky_box .innovation_bg img', 2, { scale: 1, filter: "brightness(.6)", }, 'group1')
         .to('.main_innovation .sticky_box .innovation_bg p', 1, { opacity: 1, y: 0 }, "-=50%")
         .to('.main_innovation .sticky_box .innovation_bg p strong:nth-child(1)', 1, { backgroundSize: '100%', ease: 'none', },)
         .to('.main_innovation .sticky_box .innovation_bg p strong:nth-child(2)', 1, { backgroundSize: '100%', ease: 'none', }, "-=20%")
         .to('.main_innovation .sticky_box .innovation_bg p strong:nth-child(3)', 1, { backgroundSize: '100%', ease: 'none', }, "-=20%")
         .to('.main_innovation .sticky_box .innovation_bg p strong:nth-child(4)', 1, { backgroundSize: '100%', ease: 'none', }, "-=20%")
+        .to('.main_innovation .sticky_box .innovation_bg p strong:nth-child(4)', 1, { backgroundSize: '100%', ease: 'none', },)
     },
     "(max-width: 750px)": function () {
       let main_innovation = gsap.timeline({
@@ -119,7 +120,7 @@ $(document).ready(function () {
       main_innovation
         .to('.main_innovation .sticky_box .h3_', 1, { opacity: 0 }, 'group1')
         .to('.innovation_bg img', 1, { height: "100vh" }, 'group1')
-        .to('.innovation_bg img', 1, { width: "100%", left: 0}, '-=20%')
+        .to('.innovation_bg img', 1, { width: "100%", left: 0, filter: "brightness(.6)"}, '-=20%')
       
       let main_innovation2 = gsap.timeline({
         scrollTrigger: {
@@ -139,6 +140,7 @@ $(document).ready(function () {
         .to('.main_innovation .sticky_box .innovation_bg p strong:nth-child(2)', 1, { backgroundSize: '100%', ease: 'none', }, "+=50%")
         .to('.main_innovation .sticky_box .innovation_bg p strong:nth-child(3)', 1, { backgroundSize: '100%', ease: 'none', }, "+=50%")
         .to('.main_innovation .sticky_box .innovation_bg p strong:nth-child(4)', 1, { backgroundSize: '100%', ease: 'none', }, "+=50%")
+        .to('.main_innovation .sticky_box .innovation_bg p strong:nth-child(4)', 1, { backgroundSize: '100%', ease: 'none', },)
     }
   });
 });

@@ -61,9 +61,9 @@
           .profile {
             display: flex;
             align-items: center;
-            margin-bottom: 172rem;
+            margin-bottom: 31rem;
             @include screen("mo") {
-              margin-bottom: 80rem;
+              margin-bottom: 40rem;
             }
             .img_box {
               width: 81rem;
@@ -78,6 +78,12 @@
               p {
                 color: $color-gray1;
               }
+            }
+          }
+          .btn_more {
+            margin-top: 130rem;
+            @include screen("mo") {
+              margin-top: 80rem;
             }
           }
         }
@@ -210,280 +216,6 @@
       }
     }
   }
-  .about_value {
-    position: relative;
-    height: 6000rem;
-    @include screen("mo") {
-      height: 3000rem;
-    }
-    .sticky_box {
-      position: sticky;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100vh;
-      strong {
-        font-size: 260rem;
-        font-family: $font-en;
-        font-weight: 700;
-        display: block;
-        width: 100%;
-        text-align: center;
-        line-height: 390rem;
-        white-space: nowrap;
-        @include screen("mo") {
-          font-size: 50rem;
-          line-height: 75rem;
-        }
-      }
-      .value_tit {
-        transform: translate(-50%, -50%) scale(0.257);
-        @include screen("mo") {
-          transform: translate(-50%, -50%) scale(0.7);
-        }
-      }
-      .value_cont {
-        width: 100%;
-        height: 100vh;
-        position: relative;
-        overflow: hidden;
-        clip-path: circle(0%);
-        color: $color-white;
-        ul {
-          width: 100%;
-          height: 100%;
-          position: relative;
-          li {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            left: 0;
-            top: 0;
-            transition: 0.5s ease;
-            opacity: 0;
-            &.value_together {
-              opacity: 1;
-            }
-            .value_bg {
-              width: 100%;
-              height: 100%;
-              position: absolute;
-              left: 0;
-              top: 0;
-              object-fit: cover;
-            }
-            .txt_box {
-              position: absolute;
-              right: 0;
-              bottom: 90rem;
-              width: 798rem;
-              @include screen("mo") {
-                bottom: 0;
-                min-height: 237rem;
-                width: calc(100% - 90rem);
-              }
-              &::before {
-                content: "";
-                display: block;
-                width: 100%;
-                height: 1px;
-                background-color: $color-white;
-                transform-origin: right center;
-                transform: scaleX(0);
-                transition: 0.5s ease;
-              }
-              > * {
-                transform: translateY(10rem);
-                opacity: 0;
-                transition: 0.5s ease;
-              }
-              span {
-                display: block;
-                margin: 40rem 0 8rem;
-                @include screen("mo") {
-                  margin-top: 20rem;
-                }
-              }
-              @include screen("mo") {
-                p {
-                  padding-right: 20rem;
-                  br {
-                    display: none;
-                  }
-                }
-              }
-            }
-          }
-        }
-        .tit_box {
-          width: 100%;
-          height: 390rem;
-          overflow: hidden;
-          @include screen("mo") {
-            height: 75rem;
-          }
-          strong {
-            transition: 0.5s ease;
-          }
-        }
-        .pagi {
-          display: flex;
-          align-items: center;
-          font-weight: 700;
-          position: absolute;
-          left: 0;
-          bottom: 97rem;
-          transform: translateY(10rem);
-          opacity: 0;
-          transition: 0.5s ease;
-          @include screen("mo") {
-            display: block;
-            bottom: auto;
-            top: 80rem;
-            text-align: center;
-          }
-          p {
-            height: 20rem;
-            overflow: hidden;
-            &.current {
-              span {
-                display: block;
-                height: 100%;
-                transition: 0.5s ease;
-              }
-            }
-            &.total {
-              display: flex;
-              align-items: center;
-              @include screen("mo") {
-                display: block;
-                height: auto;
-              }
-              &::before {
-                content: "";
-                display: block;
-                width: 36rem;
-                height: 1px;
-                background-color: $color-white;
-                margin: 0 10rem;
-                @include screen("mo") {
-                  width: 1px;
-                  height: 40rem;
-                  margin: 4rem auto 8rem;
-                }
-              }
-            }
-          }
-        }
-        &.sceneA ul li.value_together,
-        &.sceneB ul li.value_meaningful,
-        &.sceneC ul li.value_basic {
-          opacity: 1;
-          .txt_box {
-            &::before {
-              transform: scaleX(1);
-            }
-            > * {
-              transform: translateY(0);
-              opacity: 1;
-              transition-delay: 0.3s;
-            }
-          }
-        }
-        &.sceneA .pagi,
-        &.sceneB .pagi,
-        &.sceneC .pagi {
-          transform: translateY(0);
-          opacity: 1;
-        }
-        &.sceneB {
-          .tit_box strong,
-          .pagi .current span {
-            transform: translateY(-100%);
-          }
-        }
-        &.sceneC {
-          .tit_box strong,
-          .pagi .current span {
-            transform: translateY(-200%);
-          }
-        }
-      }
-    }
-  }
-  .about_business {
-    padding: 280rem 0 374rem;
-    @include screen("mo") {
-      padding: 160rem 0;
-    }
-    .section_tit {
-      padding: 0 0 200rem 50%;
-      @include screen("mo") {
-        padding: 0 20rem 80rem 90rem;
-      }
-    }
-    .busi_list {
-      > li {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row-reverse;
-        @include screen("mo") {
-          display: block;
-        }
-        + li {
-          margin-top: 80rem;
-          padding-top: 80rem;
-          border-top: 1px solid #d9d9d9;
-          @include screen("mo") {
-            margin-top: 40rem;
-            padding-top: 40rem;
-          }
-        }
-        &:nth-child(even) {
-          flex-direction: row;
-          .txt_box {
-            padding-left: 36rem;
-            @include screen("mo") {
-              padding-left: 0;
-            }
-          }
-        }
-
-        > div {
-          width: calc(50% - 8rem);
-          @include screen("mo") {
-            width: 100%;
-          }
-        }
-        .txt_box {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          position: relative;
-          @include screen("mo") {
-            display: block;
-            padding: 24rem 20rem 0 90rem !important;
-            .sub_tit2 {
-              margin-bottom: 120rem;
-            }
-          }
-          .sub_tit3 {
-            padding: 80rem 0 28rem;
-            @include screen("mo") {
-              padding: 0;
-              position: absolute;
-              left: 20rem;
-              top: 31rem;
-            }
-            &::after {
-              content: "0" counter(about_busi);
-              counter-increment: about_busi;
-            }
-          }
-        }
-      }
-    }
-  }
 }
 
 .popup {
@@ -521,62 +253,81 @@
     }
   }
   &[data-view="ceo"] {
-    .txt_box {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding: 180rem 0 150rem 616rem;
+    .swiper {
+      width: 100%;
       height: 100%;
-      @include screen("mo") {
-        display: block;
-        padding: 95rem 0 0;
-      }
-      > * {
-        transform: translateY(50rem);
-        opacity: 0;
-        transition: 0.5s ease;
-      }
-      .meant .sub_tit {
-        margin-top: 12rem;
-        font-weight: 300;
-      }
-      .name {
-        &::before {
-          content: "";
-          display: block;
-          width: 52rem;
-          height: 2px;
-          background-color: $color-black;
-          margin-bottom: 10rem;
+      .swiper-slide {
+        opacity: 0 !important;
+        touch-action: none;
+        pointer-events: none;
+        .txt_box {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          padding: 180rem 0 150rem 616rem;
+          height: 100%;
+          @include screen("mo") {
+            display: block;
+            padding: 95rem 0 0;
+          }
+          > * {
+            transform: translateY(50rem);
+            opacity: 0;
+            transition: 0.5s ease;
+          }
+          .meant .sub_tit {
+            margin-top: 12rem;
+            font-weight: 300;
+          }
+          .name {
+            &::before {
+              content: "";
+              display: block;
+              width: 52rem;
+              height: 2px;
+              background-color: $color-black;
+              margin-bottom: 10rem;
+            }
+            line-height: 1.6;
+            @include screen("mo") {
+              margin-top: 40rem;
+            }
+          }
         }
-        line-height: 1.6;
-        @include screen("mo") {
-          margin-top: 40rem;
+        .ceo_img {
+          width: 1036rem;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          transform: translateY(50rem);
+          transition: 0.5s ease;
+          @include screen("mo") {
+            width: 100%;
+            bottom: 0;
+            max-width: 450rem;
+            left: -25rem;
+          }
         }
       }
-    }
-    .ceo_img {
-      width: 794rem;
-      position: absolute;
-      left: 0;
-      bottom: -60rem;
-      transform: translateY(50rem);
-      transition: 0.5s ease;
       @include screen("mo") {
-        width: 100%;
-        bottom: 0;
-        max-width: 450rem;
-        left: -25rem;
+        .sld_nav {
+          bottom: 23rem;
+        }
       }
     }
     &.on {
-      .txt_box > * {
-        transform: translateY(0);
-        opacity: 1;
-        transition-delay: 0.1s;
-      }
-      .ceo_img {
-        transform: translateY(0rem);
+      .swiper .swiper-slide-active {
+        opacity: 1 !important;
+        touch-action: auto;
+        pointer-events: auto;
+        .txt_box > * {
+          transform: translateY(0);
+          opacity: 1;
+          transition-delay: 0.1s;
+        }
+        .ceo_img {
+          transform: translateY(0rem);
+        }
       }
     }
   }
