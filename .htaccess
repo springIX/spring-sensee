@@ -1,0 +1,7 @@
+<Ifmodule mod_url.c>
+  checkURL On
+  ServerEncoding EUC-KR
+  ClientEncoding UTF-8
+</Ifmodule>
+
+ErrorDocument 404 http://localhost:9001/error.php

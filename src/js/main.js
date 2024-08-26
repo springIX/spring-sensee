@@ -64,13 +64,82 @@ $(document).ready(function () {
       }, 3000);
   }
 
-
   $(".main_tech").on("mousemove", function(event) {
     var mouseXpos = event.clientX;
     var mouseYpos = event.clientY;
     var YrotateDeg = mouseXpos * -0.02;
     var XrotateDeg = mouseYpos * -0.01;
     $(".leaf_box i img").css('transform',`translate(${XrotateDeg}rem, ${YrotateDeg}rem )`);
+  });
+
+  let main_together = gsap.timeline({
+    scrollTrigger: { 
+      trigger: '.main_together_visual',
+      start: "top center",
+      end: "200%",
+      toggleClass:{targets:'.main_together',className:'on'},
+      scrub: true,
+    },
+  });
+
+  ScrollTrigger.matchMedia({
+    "(min-width: 751px)": function () {
+      let main_innovation = gsap.timeline({
+        scrollTrigger: {
+          trigger: '.main_innovation',
+          start: "top top",
+          end: "200%",
+          scrub: true,
+          pin: true,
+          pinnedContainer: '.main_innovation .sticky_box',
+          pinSpacing: true,
+        },
+      });
+      
+      main_innovation
+        .to('.main_innovation .sticky_box .h3_', 1, { opacity: 0 }, 'group1')
+        .to('.main_innovation .sticky_box .innovation_bg', 2, { left: 0, top: 0, width: "100%", height: "100%", }, 'group1')
+        .to('.main_innovation .sticky_box .innovation_bg img', 2, { scale: 1, }, 'group1')
+        .to('.main_innovation .sticky_box .innovation_bg p', 1, { opacity: 1, y: 0 }, "-=50%")
+        .to('.main_innovation .sticky_box .innovation_bg p strong:nth-child(1)', 1, { backgroundSize: '100%', ease: 'none', },)
+        .to('.main_innovation .sticky_box .innovation_bg p strong:nth-child(2)', 1, { backgroundSize: '100%', ease: 'none', }, "-=20%")
+        .to('.main_innovation .sticky_box .innovation_bg p strong:nth-child(3)', 1, { backgroundSize: '100%', ease: 'none', }, "-=20%")
+        .to('.main_innovation .sticky_box .innovation_bg p strong:nth-child(4)', 1, { backgroundSize: '100%', ease: 'none', }, "-=20%")
+    },
+    "(max-width: 750px)": function () {
+      let main_innovation = gsap.timeline({
+        scrollTrigger: {
+          trigger: '.main_innovation .sticky_box .h3_',
+          start: "top top",
+          end: "100%",
+          scrub: true,
+        },
+      });
+      
+      main_innovation
+        .to('.main_innovation .sticky_box .h3_', 1, { opacity: 0 }, 'group1')
+        .to('.innovation_bg img', 1, { height: "100vh" }, 'group1')
+        .to('.innovation_bg img', 1, { width: "100%", left: 0}, '-=20%')
+      
+      let main_innovation2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: '.main_innovation .innovation_bg',
+          start: "top top",
+          end: "100%",
+          scrub: true,
+          pin: true,
+          pinnedContainer: '.main_innovation .innovation_bg',
+          pinSpacing: true,
+        },
+      });
+      
+      main_innovation2
+        .to('.main_innovation .sticky_box .innovation_bg p', 1, { opacity: 1, y: 0 }, "-=50%")
+        .to('.main_innovation .sticky_box .innovation_bg p strong:nth-child(1)', 1, { backgroundSize: '100%', ease: 'none', },)
+        .to('.main_innovation .sticky_box .innovation_bg p strong:nth-child(2)', 1, { backgroundSize: '100%', ease: 'none', }, "+=50%")
+        .to('.main_innovation .sticky_box .innovation_bg p strong:nth-child(3)', 1, { backgroundSize: '100%', ease: 'none', }, "+=50%")
+        .to('.main_innovation .sticky_box .innovation_bg p strong:nth-child(4)', 1, { backgroundSize: '100%', ease: 'none', }, "+=50%")
+    }
   });
 });
 

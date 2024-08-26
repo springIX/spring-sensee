@@ -116,7 +116,6 @@ body.black_yellow path {
 }
 
 .h5_ {
-  font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: clamp(10px, 24rem, 999rem);
   line-height: 1.5;
@@ -383,7 +382,6 @@ body.black_yellow path {
   content: "Touch more";
   color: #ffffff;
   background-color: #000000;
-  font-family: "Poppins", sans-serif;
   font-weight: 700;
   width: 150rem;
   height: 56rem;

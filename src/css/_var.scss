@@ -1,7 +1,7 @@
 // SCSS의 'VAR, MIXIN, FUNCTION을 공통으로 사용하기 위한 목적
 
 // Font
-$font-kr: "Noto Sans KR", sans-serif;
+$font-kr: "Pretendard", sans-serif;
 $font-en: "Poppins", sans-serif;
 
 @mixin fontSize($size) {

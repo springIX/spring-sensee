@@ -120,7 +120,6 @@ body {
 } // 섹션 타이틀2
 
 .h5_ {
-  font-family: $font-en;
   font-weight: 700;
   @include fontSize(24rem);
   line-height: 1.5;
@@ -359,7 +358,6 @@ body {
     content: "Touch more";
     color: $color-white;
     background-color: $color-black;
-    font-family: $font-en;
     font-weight: 700;
     width: 150rem;
     height: 56rem;

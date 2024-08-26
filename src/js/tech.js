@@ -23,16 +23,6 @@ $(function () {
     return decimals ? s[0] + "." + ((s[1] || "") + "00000000").substr(0, decimals) : s[0];
   }
 
-  let tech_together = gsap.timeline({
-    scrollTrigger: { 
-      trigger: '.tech_together_visual',
-      start: "top 20%",
-      end: "200%",
-      toggleClass:{targets:'.tech_together',className:'on'},
-      scrub: true,
-    },
-  });
-
   // let color_arr = ['red','blue','green','yellow'];
   // for (var i = 0; i <= 24; i++){
   //   let color_rand = Math.floor(Math.random() * color_arr.length );
