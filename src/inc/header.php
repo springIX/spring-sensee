@@ -28,7 +28,7 @@
       <li><a href="/product/">PRODUCT</a></li>
       <li><a href="/sustainability/">SUSTAINABILITY</a></li>
       <!-- <li><a href="/media/">MEDIA ROOM</a></li> -->
-      <li><a href="/contact/">CONTACT US</a></li>
+      <li><a href="/location/">LOCATION</a></li>
       <li>
         <a href="https://3dcoloring.co.kr/" target="_blank">SHOP 
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13" fill="none">

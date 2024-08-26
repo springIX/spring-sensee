@@ -24,17 +24,14 @@
             'media-m' => $img.'keyvisual_m.jpg', // option
             'media-alt' => '', // required
             'dimmed' => 'all', // required
-            'title' => 'Contact Us', // required
-            'desc' => '센시는 여러분과 함께하는 모든 순간을 소중하게 생각합니다. <br class="pc">문의사항이나 도움이 필요하신 경우, 언제든지 연락 주시길 바랍니다.', // option
+            'title' => 'Location', // required
+            'desc' => '전 세계 주요 도시에 위치한 센시의 지사 위치를 한눈에 확인할 수 있으며,<br /> 각 지사의 주소와 연락처를 손쉽게 찾아보세요.', // option
           );
           printKeyvisual();
       ?>
       <!-- // Key visual -->
       <section class="<?=$menuClass?>_location">
         <div class="layout_inner">
-          <div class="tit_wrap">
-            <h3 class="h3_ pps">Location</h3>
-          </div>
           <div class="tab_contents">
             <div class="tab_buttons">
                 <button class="tab_button active" data-tab="tab1">Head Office</button>
@@ -44,6 +41,9 @@
             </div>
             <div class="tab_content active" id="tab1">
               <div class="office_inner">
+                <div class="tit_wrap">
+                  <h3 class="h3_ pps">Head Office</h3>
+                </div>
                 <div class="office_img">
                   <picture>
                     <source media="(min-width: <?=$min_width_d?>px)" srcset="<?=$img?>address_d.jpg" />
