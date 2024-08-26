@@ -19,19 +19,27 @@
       <section class="<?=$menuClass?>_visual">
         <div class="swiper">
           <ul class="swiper-wrapper">
-            <li class="swiper-slide" data-tit="TOGETHER" data-info="센시의 보편적 일상의 순간" data-cont="img">
-              <img src="<?=$img?>brand_d.jpg" alt="" class="main_visual_sld_view">
+            <li class="swiper-slide" data-tit="TOGETHER" data-info="센시의 보편적 일상의 순간" data-cont="vid">
+              <video src="<?=$img?>visual01.mp4" inlinesplay muted class="main_visual_sld_view"></video>
             </li>
             <li class="swiper-slide" data-tit="MEANINGFUL" data-info="모두를 위한 유의미함" data-cont="vid">
-              <video src="<?=$img?>visual01_d.mp4" inlinesplay muted class="main_visual_sld_view"></video>
+              <video src="<?=$img?>visual02.mp4" inlinesplay muted class="main_visual_sld_view"></video>
             </li>
             <li class="swiper-slide" data-tit="BASICS" data-info="차이로 차별하지 않는 기본" data-cont="vid">
-              <video src="<?=$img?>visual02_d.mp4" inlinesplay muted class="main_visual_sld_view"></video>
+              <video src="<?=$img?>visual03.mp4" inlinesplay muted class="main_visual_sld_view"></video>
             </li>
           </ul>
         </div>
         <div class="layout_inner main_visual_cont">
-          <div class="pagi"></div>
+          <div class="inner">
+            <h2 class="h2_">Touch the world and <br>See the unseen</h2>
+            <div class="pagi"></div>
+            <span class="btn_ctrl pause"></span>
+          </div>
+        </div>
+        <div class="sld_nav">
+          <span class="nxt"></span>
+          <span class="prv"></span>
         </div>
       </section>
       <section class="<?=$menuClass?>_intro">
@@ -43,7 +51,7 @@
           </p>
         </div>
         <div class="<?=$menuClass?>_intro_visual">
-          <strong class="bg_tit pps taC" data-aos="fade-in">
+          <strong class="bg_tit  taC" data-aos="fade-in">
             TOGETHER <br>
             MEANINGFUL <br>
             BASICS
@@ -56,7 +64,7 @@
         <div class="<?=$menuClass?>_brand_info layout_inner_l">
           <div class="section_tit" data-aos="fade-up">
             <h6 class="h5_">BRAND STORY</h6>
-            <h3 class="h3_ pps">Touch the world and <br class="pc">See the unseen</h3>
+            <h3 class="h3_ ">Touch the world and <br class="pc">See the unseen</h3>
           </div>
           <div class="txt_box">
             <div class="txt_wrap">
@@ -184,7 +192,7 @@
             발휘할 수 있도록 합니다. 
           </h3>
           <div class="innovation_bg f_center">
-            <img src="<?=$img?>innovation.jpg" alt="">
+            <video src="<?=$img?>innovation.mp4" inlinesplay muted autoplay loop></video>
             <p>
               <strong>센시는 기술이 활용될 수 있도록</strong>
               <strong>새로운 공정과 공법의 끊임없는 연구와</strong>

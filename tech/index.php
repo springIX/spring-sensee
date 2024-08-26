@@ -31,7 +31,7 @@
       <section class="<?=$menuClass?>_solution layout_inner">
         <div class="section_tit" data-aos="fade-up">
           <h5 class="h5_">OUR TECHNOLOGY</h5>
-          <h3 class="h3_ pps">Saving Time <br>and Costs</h3>
+          <h3 class="h3_">Saving Time <br>and Costs</h3>
           <p class="body_txt">
           센시의 인공지능 기반 독자적인 점자 플랫폼은 콘텐츠 제작 시간과 비용을 <br>비약적으로 줄여 복잡하고 다양한 점자 및 촉각 데이터를 제작, 관리하여 <br>전자 문서, 인쇄 등 다양한 방식의 콘텐츠를 공급합니다.
           </p>
@@ -66,11 +66,11 @@
               <img src="<?=$img?>solution.png" alt="" >
             </div>
           </div>
-          <div class="existing_value pps" data-aos="fade-up">
+          <div class="existing_value" data-aos="fade-up">
             <p class="compare_tit">기존 대비 절약시간</p>
             <strong>95</strong>
           </div>
-          <div class="existing_value pps" data-aos="fade-up">
+          <div class="existing_value" data-aos="fade-up">
             <p class="compare_tit">기존 대비 비용절감</p>
             <strong>90</strong>
           </div>

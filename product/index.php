@@ -29,7 +29,7 @@
         printKeyvisual();
       ?>
       <section class="<?=$menuClass?>_introduce">
-        <h3 class="h3_ pps ani_txt taC" data-aos="">BOOKS FOR EVERYONE</h3>
+        <h3 class="h3_ ani_txt taC" data-aos="">BOOKS FOR EVERYONE</h3>
         <div class="pd_intro_cont">
           <p class="body_txt layout_inner_l txt_box1"data-aos="fade-up">센시는 모두에게 동등한 <br>
           점자책의 다양한 콘텐츠를 통해 <br>
@@ -56,7 +56,7 @@
       </section>
 
       <section class="<?=$menuClass?>_book_types">
-        <div class="type_pagi sub_head pps" data-aos="">
+        <div class="type_pagi sub_head" data-aos="">
           <div class="pagi_inner x_scrollbar">
             <a href="#braille_book">Braille Books</a>
             <a href="#tactile_book">Tactile Books</a>
@@ -67,7 +67,7 @@
         <ul class="type_list taC layout_inner">
           <li id="braille_book">
             <div class="book_type_tit">
-              <h3 class="h3_ pps ani_txt" data-aos="">Braille Books</h3>
+              <h3 class="h3_ ani_txt" data-aos="">Braille Books</h3>
               <p class="body_txt" data-aos="fade-up">점자를 읽는 시각장애인, 글자를 읽는 비장애인, 모두를 위한 책입니다.</p>
             </div>
             <div class="book_cover">
@@ -82,7 +82,7 @@
           </li>
           <li id="tactile_book">
             <div class="book_type_tit">
-              <h3 class="h3_ pps ani_txt" data-aos="">Tactile Books</h3>
+              <h3 class="h3_ ani_txt" data-aos="">Tactile Books</h3>
               <p class="body_txt" data-aos="fade-up">다양한 시각 정보를 손으로 느낄 수 있게 <br>도형, 사진 등 정보를 표현한 책입니다.</p>
             </div>
             <div class="book_cover">
@@ -97,7 +97,7 @@
           </li>
           <li id="coloring_book">
             <div class="book_type_tit">
-              <h3 class="h3_ pps ani_txt" data-aos="">Coloring Books</h3>
+              <h3 class="h3_ ani_txt" data-aos="">Coloring Books</h3>
               <p class="body_txt" data-aos="fade-up">도형, 캐릭터를 만지면서 익히고 즐거운 색칠놀이를 통해 <br>시각장애 어린이 성장 과정에 도움을 줍니다.</p>
             </div>
             <div class="book_cover">
@@ -112,7 +112,7 @@
           </li>
           <li id="braille_edu">
             <div class="book_type_tit">
-              <h3 class="h3_ pps ani_txt" data-aos="">Braille Education</h3>
+              <h3 class="h3_ ani_txt" data-aos="">Braille Education</h3>
               <p class="body_txt" data-aos="fade-up">시각장애인에게 가장 중요한 점자를 <br>보다 쉽고 재미있게 배울 수 있도록 돕습니다.</p>
             </div>
             <div class="book_cover">

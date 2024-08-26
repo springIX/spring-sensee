@@ -8,14 +8,15 @@
     height: 100vh;
     position: relative;
     overflow: auto;
+    color: $color-white;
     .swiper {
       width: 100%;
       height: 100%;
       .swiper-slide {
-        opacity: 0 !important;
-        &.swiper-slide-active {
-          opacity: 1 !important;
-        }
+        // opacity: 0 !important;
+        // &.swiper-slide-active {
+        //   opacity: 1 !important;
+        // }
         .main_visual_sld_view {
           width: 100%;
           height: 100%;
@@ -29,40 +30,115 @@
       bottom: 110rem;
       width: 100%;
       z-index: 1;
-      .pagi {
-        display: flex;
-        .swiper-pagination-bullet {
-          width: 100%;
-          margin: 0;
-          height: auto;
-          border-radius: 0;
-          background-color: transparent;
-          opacity: 1;
-          border-bottom: 1px solid rgba($color: $color-white, $alpha: 0.2);
-          padding-bottom: 16rem;
-          color: $color-white;
-          display: flex;
-          align-items: center;
-          position: relative;
-          i {
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            height: 1px;
-            background-color: $color-white;
-            transform-origin: left center;
-            transform: scaleX(0);
-            transition: 0.3s linear;
+      @include screen("mo") {
+        bottom: 124rem;
+      }
+      .inner {
+        position: relative;
+        .h2_ {
+          padding-bottom: 62rem;
+          @include screen("mo") {
+            padding-bottom: 39rem;
           }
-          span {
-            font-weight: 700;
-          }
-          p {
-            margin-left: 16rem;
-            font-size: 12rem;
+          &::before {
+            content: "";
+            display: block;
+            width: 138rem;
+            height: 46rem;
+            margin-bottom: 60rem;
+            background: url(/src/images/common/logo_cymbol.svg) no-repeat center
+              center / contain;
+            @include screen("mo") {
+              width: 88rem;
+              height: 30rem;
+              margin-bottom: 16rem;
+            }
           }
         }
+        .pagi {
+          display: flex;
+          .swiper-pagination-bullet {
+            width: 100%;
+            margin: 0;
+            height: auto;
+            border-radius: 0;
+            background-color: transparent;
+            opacity: 1;
+            border-bottom: 1px solid rgba($color: $color-white, $alpha: 0.2);
+            padding-bottom: 16rem;
+            display: flex;
+            align-items: center;
+            position: relative;
+            color: rgba($color: $color-white, $alpha: 0.5);
+            transition: 0.5s ease;
+            @include screen("mo") {
+              display: none;
+              padding-bottom: 24rem;
+            }
+            i {
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              width: 100%;
+              height: 1px;
+              background-color: $color-white;
+              transform-origin: left center;
+              transition: 3s linear;
+              transform: scaleX(0);
+            }
+            span {
+              font-weight: 600;
+            }
+            p {
+              margin-left: 16rem;
+              font-size: 12rem;
+              transform: translateY(100%);
+              opacity: 0;
+              transition: 0.5s ease;
+              display: inline-block;
+              @include screen("mo") {
+                margin-left: 7rem;
+              }
+            }
+            &.swiper-pagination-bullet-active {
+              color: $color-white;
+              @include screen("mo") {
+                display: block;
+              }
+              p {
+                transform: translateY(0);
+                opacity: 1;
+              }
+              i {
+                animation: main_visual_pagi 3s linear;
+                @keyframes main_visual_pagi {
+                  from {
+                    transform: scaleX(0);
+                  }
+                  to {
+                    transform: scaleX(1);
+                  }
+                }
+              }
+            }
+          }
+        }
+        .btn_ctrl {
+          position: absolute;
+          right: 0;
+          bottom: 13rem;
+          width: 24rem;
+          @include screen("mo") {
+            bottom: 24rem;
+          }
+        }
+      }
+    }
+    .sld_nav {
+      span {
+        background-color: rgba($color: $color-black, $alpha: 0.2);
+        backdrop-filter: blur(5px);
+        border: 1px solid $color-white;
       }
     }
   }
@@ -611,7 +687,7 @@
           width: calc(100% + 40rem);
           height: 100vh;
         }
-        img {
+        video {
           position: absolute;
           left: 0;
           top: 0;

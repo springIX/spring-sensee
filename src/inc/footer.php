@@ -22,7 +22,7 @@
       </svg>
     </a>
   </h1>
-  <div class="family_site pps">
+  <div class="family_site">
     <div class="family_site_select" data-view="fam_site">
       <button data-btn="fam_site">Family site</button>
       <div class="link_list">
@@ -39,7 +39,7 @@
     </svg>
   </div>
   <div class="info">
-    <p class="ft_tit pps">Touch the world and <br>See the unseen
+    <p class="ft_tit">Touch the world and <br>See the unseen
     <div class="ft_contact flex_btm">
       <p class="caption">
         대전광역시 중구 테미로44번안길 33

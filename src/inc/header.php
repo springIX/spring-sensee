@@ -1,4 +1,4 @@
-<header class="header pps" data-view="all_menu">
+<header class="header" data-view="all_menu">
   <h1 class="logo">
     <a href="/">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 16" fill="none">
@@ -24,9 +24,10 @@
   <nav class="gnb">
     <ul>
       <li><a href="/about/">ABOUT US</a></li>
-      <li><a href="/tech/">TECHNOLOGY</a></li>
-      <li><a href="/product/">PRODUCT</a></li>
-      <li><a href="/sustainability/">SUSTAINABILITY</a></li>
+      <li><a href="/innovation/">INNOVATION</a></li>
+      <!-- <li><a href="/tech/">TECHNOLOGY</a></li>
+      <li><a href="/product/">PRODUCT</a></li> -->
+      <!-- <li><a href="/sustainability/">SUSTAINABILITY</a></li> -->
       <!-- <li><a href="/media/">MEDIA ROOM</a></li> -->
       <li><a href="/contact/">CONTACT US</a></li>
       <li>
@@ -53,7 +54,7 @@
         </div>
         <div class="txt_color">
           <span>Text color</span>
-          <div class="btn_wrap pps flex">
+          <div class="btn_wrap flex">
             <button data-color="white_black" class="on" title="하얀색 배경에 검정색 텍스트로 변경"><span>S</span></button>
             <button data-color="black_white" title="검정색 배경에 하얀색 텍스트로 변경"><span>S</span></button>
             <button data-color="blue_yellow" title="파란색 배경에 노란색 텍스트로 변경"><span>S</span></button>
@@ -62,14 +63,14 @@
         </div>
       </div>
     </div>
-    <div class="lang_wrap" data-view="lang">
+    <!-- <div class="lang_wrap" data-view="lang">
       <button class="lang_btn flex_cnt" data-btn="lang">KR</button>
       <div class="lang_link">
         <span>KR</span>
         <a href="/en/" title="영문사이트로 이동">EN</a>
         <a href="/sp/" title="스페인사이트로 이동">ES</a>
       </div>
-    </div>
+    </div> -->
     <button title="전체메뉴 버튼" data-btn="all_menu" class="all_menu_btn tb">
       <i></i>
       <i></i>
