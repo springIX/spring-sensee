@@ -615,6 +615,7 @@ body.black_yellow path {
 
 .x_scrollbar {
   overflow-x: auto;
+  padding-bottom: 10rem;
 }
 .x_scrollbar::-webkit-scrollbar {
   display: block;

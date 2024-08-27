@@ -88,7 +88,7 @@ $(function () {
     
     keyvisual
     .to('.keyvisual',{padding:"0 20rem"},'group1')
-    .to('.keyvisual .image_area img',{y:"20%"},'group1')
+    .to('.keyvisual .image_area img, .keyvisual .swiper',{y:"30%"},'group1')
   }
 
   /************** X SCROLLBAR **************/
@@ -194,7 +194,7 @@ function loadFontSize() {
 // 폰트 크기를 증가시키는 함수
 function increaseFontSize() {
   let fontSize = getFontSize();
-  if (fontSize < maxFontSize) {
+  if (fontSize <= maxFontSize) {
     fontSize += 0.05; // 폰트 크기를 1px씩 증가
     body.style.zoom = fontSize;
     saveFontSize(fontSize);
@@ -207,7 +207,7 @@ function increaseFontSize() {
 // 폰트 크기를 감소시키는 함수
 function decreaseFontSize() {
   let fontSize = getFontSize();
-  if (fontSize > minFontSize) {
+  if (fontSize >= minFontSize) {
     fontSize -= 0.05; // 폰트 크기를 1px씩 감소
     body.style.zoom = fontSize;
     saveFontSize(fontSize);

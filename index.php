@@ -2,7 +2,7 @@
   $path = './';
   $pageUrl = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
   $menuClass = 'main';
-  $menuName = '';
+  $menuName = 'Touch the world and See the unseen';
   $img = '/src/images/'.$menuClass.'/'.$menuClass.'_';
   $pageTitle = '';
   $pageImages = '';
@@ -16,10 +16,10 @@
   <div class="<?=$menuClass?>_wrap">
     <?php include $path."/src/inc/header.php"; ?>
     <main id="contents" class="<?=$menuClass?>_container">
-      <section class="<?=$menuClass?>_visual">
-        <div class="swiper">
+      <section class="<?=$menuClass?>_visual keyvisual">
+        <div class="swiper image_area">
           <ul class="swiper-wrapper">
-            <li class="swiper-slide" data-tit="TOGETHER" data-info="센시의 보편적 일상의 순간" data-cont="vid">
+            <li class="swiper-slide" data-tit="TOGETHER" data-info="센시의 보편적 일상의 순간" data-cont="vid" data-aos="zoom-out">
               <video src="<?=$img?>visual01.mp4" inlinesplay muted class="main_visual_sld_view"></video>
             </li>
             <li class="swiper-slide" data-tit="MEANINGFUL" data-info="모두를 위한 유의미함" data-cont="vid">
@@ -32,9 +32,9 @@
         </div>
         <div class="layout_inner main_visual_cont">
           <div class="inner">
-            <h2 class="h2_">Touch the world and <br>See the unseen</h2>
+            <h2 class="h2_" data-aos="fade-up"><?=$menuName?></h2>
             <div class="pagi"></div>
-            <span class="btn_ctrl pause"></span>
+            <span class="btn_ctrl pause" data-aos="zoom-in" data-aos-delay="400"></span>
           </div>
         </div>
         <div class="sld_nav">

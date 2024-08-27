@@ -2,7 +2,7 @@
   $path = '../';
   $pageUrl = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
   $menuClass = 'about';
-  $menuName = '';
+  $menuName = 'About Us';
   $img = '/src/images/'.$menuClass.'/'.$menuClass.'_';
   $pageTitle = '';
   $pageImages = '';
@@ -23,7 +23,6 @@
           'media-m' => $img.'keyvisual_m.jpg', // option
           'media-alt' => '', // required
           'dimmed' => 'all', // required
-          'title' => 'About Us', // required
           'desc' => '센시는 비장애인과 장애인이 함께 보고 즐길 수 있는 세상을 만들기 위해 <br class="pc">지속적인 연구를 수행하며, 근본적인 문제를 해결하기 위해 끊임없이 도전합니다.', // option
         );
         printKeyvisual();

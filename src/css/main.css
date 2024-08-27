@@ -74,7 +74,6 @@
   align-items: center;
   position: relative;
   color: rgba(255, 255, 255, 0.5);
-  transition: 0.5s ease;
 }
 @media (max-width: 750px) {
   .main_container .main_visual .main_visual_cont .inner .pagi .swiper-pagination-bullet {
@@ -125,10 +124,13 @@
   animation: main_visual_pagi 3s linear;
 }
 @keyframes main_visual_pagi {
-  from {
+  0% {
     transform: scaleX(0);
   }
-  to {
+  97% {
+    transform: scaleX(1);
+  }
+  100% {
     transform: scaleX(1);
   }
 }

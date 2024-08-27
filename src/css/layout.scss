@@ -581,6 +581,7 @@ body {
 // X Scrollbar
 .x_scrollbar {
   overflow-x: auto;
+  padding-bottom: 10rem;
   &::-webkit-scrollbar {
     display: block;
     height: 5px;

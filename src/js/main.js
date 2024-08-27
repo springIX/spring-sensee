@@ -8,7 +8,7 @@ $(document).ready(function () {
       el: '.main_visual .pagi',
       clickable: true,
       renderBullet: function (index, className) {
-        return '<div class="' + className + '"><span class="caption pps">' + (main_visual_sld.eq(index).data('tit')) + '</span><p>' + (main_visual_sld.eq(index).data('info')) + '</p><i></i></div>';
+        return '<div class="' + className + '" data-aos="fade-up" data-aos-delay="'+ index +'00"><span class="caption">' + (main_visual_sld.eq(index).data('tit')) + '</span><p>' + (main_visual_sld.eq(index).data('info')) + '</p><i></i></div>';
       }
     },
     navigation: {
