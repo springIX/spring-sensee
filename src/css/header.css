@@ -76,16 +76,41 @@
 }
 .header .gnb {
   position: relative;
+  height: 100%;
 }
 .header .gnb ul {
   display: flex;
   gap: 60rem;
+  height: 100%;
+}
+.header .gnb ul li {
+  height: 100%;
+}
+.header .gnb ul li a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.header .gnb ul li a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
+  transform: scaleX(0);
+  transition: 0.3s ease;
+}
+.header .gnb ul li a:hover::before {
+  transform: scaleX(1);
 }
 .header .gnb ul li svg {
   display: inline-block;
   width: 16rem;
   height: 16rem;
-  transform: rotate(-45deg) translateY(4rem);
+  transform: rotate(-45deg) translate(3rem, 4rem);
 }
 @media (max-width: 1280px) {
   .header .gnb {
@@ -121,11 +146,15 @@
   }
   .header .gnb ul li {
     transition: 0.3s ease;
+    height: auto;
+  }
+  .header .gnb ul li a::before {
+    display: none;
   }
   .header .gnb ul li svg {
     width: 33rem;
     height: 33rem;
-    transform: rotate(-45deg) translateY(10rem);
+    transform: rotate(-45deg) translate(3rem, 3rem);
   }
   .header .gnb ul li svg path {
     fill: #000000 !important;
