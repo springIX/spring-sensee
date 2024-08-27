@@ -65,15 +65,38 @@
   }
   .gnb {
     position: relative;
+    height: 100%;
     ul {
       display: flex;
       gap: 60rem;
+      height: 100%;
       li {
+        height: 100%;
+        a {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            background-color: $color-white;
+            transform: scaleX(0);
+            transition: 0.3s ease;
+          }
+          &:hover::before {
+            transform: scaleX(1);
+          }
+        }
         svg {
           display: inline-block;
           width: 16rem;
           height: 16rem;
-          transform: rotate(-45deg) translateY(4rem);
+          transform: rotate(-45deg) translate(3rem, 4rem);
         }
       }
     }
@@ -108,10 +131,14 @@
         align-items: flex-start;
         li {
           transition: 0.3s ease;
+          height: auto;
+          a::before {
+            display: none;
+          }
           svg {
             width: 33rem;
             height: 33rem;
-            transform: rotate(-45deg) translateY(10rem);
+            transform: rotate(-45deg) translate(3rem, 3rem);
             path {
               fill: $color-black !important;
             }
