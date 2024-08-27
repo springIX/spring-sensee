@@ -1,21 +1,29 @@
 @import "var";
 
-.contact_location {
-  margin-top: 200rem;
-  margin-bottom: 240rem;
+.location_inner {
+  padding-top: 200rem;
+  padding-bottom: 240rem;
+  @include screen("mo") {
+    padding-top: 70rem;
+    padding-bottom: 160rem;
+  }
   .tit_wrap {
     padding-bottom: 8rem;
     border-bottom: 1px solid $color-gray2;
   }
   .tab_contents {
     width: 100%;
-    margin: 50px auto;
+    margin: 50rem auto;
     .tab_buttons {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 10px;
-      padding: 0 320rem;
+      margin-bottom: 50rem;
+      padding: 0 200rem;
       gap: 20rem;
+      @include screen("mo") {
+        padding: 0;
+        gap: 11rem;
+      }
       .tab_button {
         flex: 1;
         cursor: pointer;
@@ -28,10 +36,20 @@
         border: 1px solid $color-black;
         color: $color-black;
         font-weight: 600;
-        box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 10rem 20rem 0px rgba(0, 0, 0, 0.1);
         &.active {
           background-color: $color-black;
           color: $color-white;
+        }
+        @include screen("mo") {
+          padding: 14rem 10rem;
+          font-size: 12rem;
+          white-space: nowrap;
+          border-radius: 35rem;
+          line-height: 1;
+          width: 104rem;
+          box-sizing: border-box;
+          box-shadow: none;
         }
       }
     }
@@ -40,92 +58,83 @@
       &.active {
         display: block;
       }
-      .office_inner {
-        margin-top: 110rem;
-        position: relative;
-        .floating_area {
-          position: absolute;
-          padding-top: 40rem;
-          padding-bottom: 40rem;
-          background-color: $color-black;
-          padding-left: 154rem;
-          width: 754rem;
-          height: 284rem;
-          box-sizing: border-box;
-          bottom: -120rem;
-          .floating_txt {
-            color: $color-white;
-            .office_tit {
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              margin-bottom: 32rem;
-              gap: 20rem;
-              .dot {
-                width: 5rem;
-                height: 5rem;
-                border-radius: 50%;
-                background-color: $color-white;
-              }
-            }
-            .office_txt {
-              display: flex;
-              flex-direction: column;
-              gap: 16rem;
-              font-weight: 400;
-              @include fontSize(16rem);
-              line-height: 1.75;
-              @include screen("mo") {
-                font-size: 12rem;
-                line-height: 1.34;
-              }
-              .office_address {
-                &::before {
-                  content: "";
-                  display: block;
-                }
-              }
-            }
-          }
+    }
+  }
+}
+.tab_content {
+  .tab_content_tit {
+    @include fontSize(200rem);
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 80rem;
+    @include screen("mo") {
+      font-size: 52rem;
+    }
+  }
+  .sub_tab_buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 32rem;
+    justify-content: center;
+    margin-bottom: 100rem;
+    .sub_tab_button {
+      line-height: 1.6;
+      padding-bottom: 4rem;
+      @include fontSize(20rem);
+      @include screen("mo") {
+        font-size: 20rem;
+      }
+      &.active {
+        font-weight: 700;
+        border-bottom: 2px solid #000;
+      }
+    }
+  }
+  .sub_tab_content {
+    display: none;
+    text-align: center;
+    &.active {
+      display: block;
+    }
+    .map_contents {
+      .map_desc {
+        font-weight: 700;
+        line-height: 1.5;
+        @include fontSize(16rem);
+        @include screen("mo") {
+          font-size: 14rem;
         }
       }
     }
   }
 }
-.contact_map {
-  margin-bottom: 200rem;
-  .map_contents {
+.map_contents {
+  width: 100%;
+  .map_content {
+    margin-top: 24rem;
+    position: relative;
     width: 100%;
-    .map_tit {
-      display: flex;
-      gap: 14rem;
-      align-items: center;
-      justify-content: flex-end;
-      .bold {
-        font-weight: 700;
-      }
-      .dot {
-        width: 5rem;
-        height: 5rem;
-        border-radius: 50%;
-        background-color: $color-gray2;
-      }
+    height: 700rem;
+    border: 1px solid $color-gray2;
+    padding: 10rem;
+    @include screen("mo") {
+      height: 300rem;
+      padding: 5rem;
+      border: 1px solid $color-black;
     }
-    .map_content {
-      margin-top: 30rem;
-      position: relative;
+    iframe {
       width: 100%;
-      height: 700rem;
-      border: 1px solid $color-gray2;
-      padding: 10rem;
-      iframe {
-        width: 100%;
-        height: 100%;
-      }
+      height: 100%;
     }
   }
 }
-.contact_form {
+
+
+
+
+
+.location_form {
   padding-bottom: 200rem;
   padding-top: 140rem;
   background-color: $color-bg;
