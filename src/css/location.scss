@@ -18,10 +18,13 @@
       display: flex;
       justify-content: space-between;
       margin-bottom: 50rem;
-      padding: 0 200rem;
+      padding-left: 200rem;
+      padding-right: 200rem;
       gap: 20rem;
       @include screen("mo") {
-        padding: 0;
+        justify-content: flex-start;
+        padding-left: 20rem;
+        padding-right: 0rem;
         gap: 11rem;
       }
       .tab_button {
@@ -42,14 +45,17 @@
           color: $color-white;
         }
         @include screen("mo") {
+          flex: 0 0 auto;
           padding: 14rem 10rem;
           font-size: 12rem;
           white-space: nowrap;
           border-radius: 35rem;
           line-height: 1;
-          width: 104rem;
+          width: 104px;
+          height: 44rem;
           box-sizing: border-box;
           box-shadow: none;
+          min-width: 104px;
         }
       }
     }
@@ -70,6 +76,7 @@
     margin-bottom: 80rem;
     @include screen("mo") {
       font-size: 52rem;
+      margin-bottom: 40rem;
     }
   }
   .sub_tab_buttons {
@@ -78,6 +85,9 @@
     gap: 32rem;
     justify-content: center;
     margin-bottom: 100rem;
+    @include screen("mo") {
+      margin-bottom: 87rem;
+    }
     .sub_tab_button {
       line-height: 1.6;
       padding-bottom: 4rem;

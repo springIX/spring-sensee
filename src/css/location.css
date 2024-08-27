@@ -23,12 +23,15 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 50rem;
-  padding: 0 200rem;
+  padding-left: 200rem;
+  padding-right: 200rem;
   gap: 20rem;
 }
 @media (max-width: 750px) {
   .location_inner .tab_contents .tab_buttons {
-    padding: 0;
+    justify-content: flex-start;
+    padding-left: 20rem;
+    padding-right: 0rem;
     gap: 11rem;
   }
 }
@@ -52,14 +55,17 @@
 }
 @media (max-width: 750px) {
   .location_inner .tab_contents .tab_buttons .tab_button {
+    flex: 0 0 auto;
     padding: 14rem 10rem;
     font-size: 12rem;
     white-space: nowrap;
     border-radius: 35rem;
     line-height: 1;
-    width: 104rem;
+    width: 104px;
+    height: 44rem;
     box-sizing: border-box;
     box-shadow: none;
+    min-width: 104px;
   }
 }
 .location_inner .tab_contents .tab_content {
@@ -79,6 +85,7 @@
 @media (max-width: 750px) {
   .tab_content .tab_content_tit {
     font-size: 52rem;
+    margin-bottom: 40rem;
   }
 }
 .tab_content .sub_tab_buttons {
@@ -87,6 +94,11 @@
   gap: 32rem;
   justify-content: center;
   margin-bottom: 100rem;
+}
+@media (max-width: 750px) {
+  .tab_content .sub_tab_buttons {
+    margin-bottom: 87rem;
+  }
 }
 .tab_content .sub_tab_buttons .sub_tab_button {
   line-height: 1.6;
