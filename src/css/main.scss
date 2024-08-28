@@ -38,6 +38,12 @@
         position: relative;
         .h2_ {
           padding-bottom: 62rem;
+          i::after {
+            content: "and";
+            @include screen("mo") {
+              content: "&";
+            }
+          }
           @include screen("mo") {
             padding-bottom: 39rem;
           }
@@ -142,6 +148,20 @@
         background-color: rgba($color: $color-black, $alpha: 0.2);
         backdrop-filter: blur(5px);
         border: 1px solid $color-white;
+        &:hover {
+          backdrop-filter: none;
+          background-color: $color-white;
+          &::after {
+            filter: brightness(0);
+          }
+        }
+        @include screen("mo") {
+          backdrop-filter: none;
+          background-color: $color-white;
+          &::after {
+            filter: brightness(0);
+          }
+        }
       }
     }
   }
@@ -199,10 +219,13 @@
   .main_brand {
     padding-bottom: 500rem;
     @include screen("mo") {
-      padding-bottom: 154rem;
+      padding-bottom: 160rem;
     }
     .main_brand_info {
       padding: 0 94rem 147rem 0;
+      @include screen("pc_more") {
+        padding-right: calc(50vw - 866px) !important;
+      }
       @include screen("mo") {
         padding: 0 20rem 80rem 0;
       }
@@ -218,10 +241,12 @@
           display: flex;
           gap: 49rem;
           margin-bottom: 96rem;
+          font-size: 20rem;
           @include screen("mo") {
             flex-direction: column;
             gap: 20rem;
             margin-bottom: 60rem;
+            font-size: 14rem;
             br {
               display: none;
             }
@@ -444,7 +469,7 @@
     .main_together_visual {
       padding-bottom: 180rem;
       @include screen("mo") {
-        padding: 83rem 0 322rem;
+        padding: 83rem 0 282rem;
       }
       position: relative;
       .circle_box {
@@ -457,6 +482,7 @@
           height: 484rem;
           left: 50%;
           transform: translateX(-50%);
+          margin: 0;
         }
         .ball {
           position: absolute;
@@ -626,8 +652,8 @@
       }
       @include screen("mo") {
         width: 548rem;
-        right: -303rem;
-        bottom: 45rem;
+        right: calc(50% - 470rem);
+        bottom: 0;
       }
     }
     &.on {
@@ -676,7 +702,7 @@
       height: 100vh;
       @include screen("mo") {
         display: block;
-        padding: 80rem 0 270rem;
+        padding-top: 80rem;
         height: auto;
       }
       .innovation_bg {
@@ -754,7 +780,7 @@
         line-height: 1.5;
         @include fontSize(80rem);
         @include screen("mo") {
-          margin: 24rem 0 48rem;
+          margin: 24rem 0 0;
           @include fontSize(40rem);
         }
         i {
@@ -766,7 +792,7 @@
         padding-top: 20rem;
         border-top: 1px solid $color-black;
         @include screen("mo") {
-          margin-top: 60rem;
+          margin: 48rem 0;
           padding-top: 24rem;
         }
         p {

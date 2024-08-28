@@ -31,7 +31,6 @@
       <button data-btn="fam_site">Family site</button>
       <div class="link_list">
         <a href="https://3dcoloring.co.kr/" target="_blank">SENSEE 3DColoring</a>
-        <a href="https://3dcoloring.co.kr/" target="_blank">SENSEE 3DColoring</a>
       </div>
     </div>
   </div>
@@ -52,7 +51,7 @@
 
         ©2024 SENSEE. All Rights Reserved.
       </p>
-      <a href="" target="_blank" class="insta">Instagram 
+      <a href="https://www.instagram.com/3dcoloring_sensee/" target="_blank" class="insta">Instagram 
         <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
           <path d="M2.38836 1.18195L8.75232 1.18195M8.75232 1.18195L8.75232 7.54591M8.75232 1.18195L1.18256 8.75293" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>

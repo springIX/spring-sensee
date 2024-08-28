@@ -60,16 +60,28 @@
   }
 }
 .footer .family_site .family_site_select button {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   text-align: left;
-  background: url(/src/images/common/arr_select.svg) no-repeat right top 8rem/10rem auto;
   padding-bottom: 30rem;
 }
 @media (max-width: 750px) {
   .footer .family_site .family_site_select button {
     padding-bottom: 20rem !important;
   }
+}
+.footer .family_site .family_site_select button::after {
+  content: "";
+  display: block;
+  width: 10rem;
+  height: 10rem;
+  background: url(/src/images/common/arr_select.svg) no-repeat center center/contain;
+  transition: 0.3s ease;
+}
+.footer .family_site .family_site_select.on button::after {
+  transform: rotate(180deg);
 }
 .footer .family_site .family_site_select .link_list {
   display: none;
@@ -133,6 +145,7 @@
 @media (max-width: 750px) {
   .footer .info .ft_contact .insta {
     margin-bottom: 50rem;
+    font-size: 16rem;
   }
 }
 .footer .info .ft_contact .insta svg {

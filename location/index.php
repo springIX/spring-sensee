@@ -24,7 +24,7 @@
             'media-m' => $img.'keyvisual_m.jpg', // option
             'media-alt' => '', // required
             'dimmed' => 'all', // required
-            'desc' => '전 세계 주요 도시에 위치한 센시의 지사 위치를 한눈에 확인할 수 있으며,<br /> 각 지사의 주소와 연락처를 손쉽게 찾아보세요.', // option
+            'desc' => '전 세계 주요 도시에 위치한 센시의 지사 위치를 한눈에 <span class="ib_br">확인할 수 있으며,</span><br /> 각 지사의 주소와 연락처를 손쉽게 찾아보세요.', // option
           );
           printKeyvisual();
       ?>
@@ -120,7 +120,7 @@
                   Contents Lab
                 </div>
                 <div class="sub_tab_buttons">
-                    <button class="sub_tab_button active" data-tab="sub4_tab1">서울 지점</button>
+                    <button class="sub_tab_button active" data-tab="sub4_tab1">서울</button>
                 </div>
                 <div class="sub_tab_content active" id="sub4_tab1">
                   <div class="map_contents">
@@ -139,8 +139,8 @@
                   USA
                 </div>
                 <div class="sub_tab_buttons">
-                    <button class="sub_tab_button active" data-tab="sub5_tab1">미국법인 사무실</button>
-                    <button class="sub_tab_button" data-tab="sub5_tab2">미국법인 창고</button>
+                    <button class="sub_tab_button active" data-tab="sub5_tab1">토런스</button>
+                    <button class="sub_tab_button" data-tab="sub5_tab2">가데나</button>
                 </div>
                 <div class="sub_tab_content active" id="sub5_tab1">
                   <div class="map_contents">

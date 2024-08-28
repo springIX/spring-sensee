@@ -16,23 +16,23 @@
   <div class="<?=$menuClass?>_wrap">
     <?php include $path."/src/inc/header.php"; ?>
     <main id="contents" class="<?=$menuClass?>_container">
-      <section class="<?=$menuClass?>_visual keyvisual">
+      <section class="<?=$menuClass?>_visual vh100">
         <div class="swiper image_area">
           <ul class="swiper-wrapper">
             <li class="swiper-slide" data-tit="TOGETHER" data-info="센시의 보편적 일상의 순간" data-cont="vid" data-aos="zoom-out">
-              <video src="<?=$img?>visual01.mp4" inlinesplay muted class="main_visual_sld_view"></video>
+              <video src="<?=$img?>visual01.mp4" inlinesplay muted autoplay crossorigin="anonymous" class="main_visual_sld_view"></video>
             </li>
             <li class="swiper-slide" data-tit="MEANINGFUL" data-info="모두를 위한 유의미함" data-cont="vid">
-              <video src="<?=$img?>visual02.mp4" inlinesplay muted class="main_visual_sld_view"></video>
+              <video src="<?=$img?>visual02.mp4" inlinesplay muted crossorigin="anonymous" class="main_visual_sld_view"></video>
             </li>
             <li class="swiper-slide" data-tit="BASICS" data-info="차이로 차별하지 않는 기본" data-cont="vid">
-              <video src="<?=$img?>visual03.mp4" inlinesplay muted class="main_visual_sld_view"></video>
+              <video src="<?=$img?>visual03.mp4" inlinesplay muted crossorigin="anonymous" class="main_visual_sld_view"></video>
             </li>
           </ul>
         </div>
         <div class="layout_inner main_visual_cont">
           <div class="inner">
-            <h2 class="h2_" data-aos="fade-up"><?=$menuName?></h2>
+            <h2 class="h2_" data-aos="fade-up">Touch the world <i></i> See the unseen</h2>
             <div class="pagi"></div>
             <span class="btn_ctrl pause" data-aos="zoom-in" data-aos-delay="400"></span>
           </div>
@@ -44,7 +44,7 @@
       </section>
       <section class="<?=$menuClass?>_intro">
         <div class="section_tit taC layout_inner" data-aos="fade-up">
-          <h5 class="h5_">sensee</h5>
+          <h5 class="h5_">SENSEE</h5>
           <h2 class="h3_">모두를 위한 기술</h2>
           <p class="body_txt">
           센시는 정보 접근의 차별이 없는 세상을 위해 <br>다양한 기술과 솔루션을 공급합니다.
@@ -118,8 +118,8 @@
           <h5 class="h3_">모두를 위한 기술, <br class="mo">함께하는 세상</h5>
           <h5 class="body_txt">
             센시의 독자적인 AI 데이터 분석 및 자동 편집 기술은 시각장애인도 함께 볼 수 있는 Universal 콘텐츠를 공급합니다. <br>
-            센시의 AI 기술력과 모두를 위한 콘텐츠 디자인은 UN Zero Project의 혁신 솔루션으로 선정되어 글로벌로 확장하고 있습니다. <br><br>
-            글자와 점자를 함께 제공할 수 있는 개인형, 산업용 및 디지털 플랫폼 구축 기술은 장애인과 비장애인이 함께 즐기는 세상에 기여합니다.<br>
+            센시의 AI 기술력과 모두를 위한 콘텐츠 디자인은 UN Zero Project의 혁신 솔루션으로 선정되어 <span class="ib_br">글로벌로 확장하고 있습니다.</span> <br><br>
+            글자와 점자를 함께 제공할 수 있는 개인형, 산업용 및 디지털 플랫폼 구축 기술은 장애인과 비장애인이 함께 <span class="ib_br">즐기는 세상에 기여합니다.</span><br>
             끊임없는 기술 개발, 기술의 산업 연결 및 글로벌 인프라 구축으로 진정한 ESG의 가치를 실천합니다.
           </h5>
         </div>
@@ -191,8 +191,12 @@
             변환을 지원하여, 모두가 공평한 기회와 능력을 
             발휘할 수 있도록 합니다. 
           </h3>
+          <h5 class="h5_ flex_cnt">
+            <span>INNOVATION</span>
+            <p>Technology for everyone</p>
+          </h5>
           <div class="innovation_bg f_center">
-            <video src="<?=$img?>innovation.mp4" inlinesplay muted autoplay loop></video>
+            <video src="<?=$img?>innovation.mp4" playsinline muted autoplay loop></video>
             <p>
               <strong>센시는 기술이 활용될 수 있도록</strong>
               <strong>새로운 공정과 공법의 끊임없는 연구와</strong>
@@ -200,10 +204,6 @@
               <strong>가치의 확산을 이끌어 갑니다.</strong>
             </p>
           </div>
-          <h5 class="h5_ flex_cnt">
-            <span>INNOVATION</span>
-            <p>Technology for everyone</p>
-          </h5>
         </div>
       </section>
     </main>

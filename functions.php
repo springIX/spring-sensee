@@ -12,7 +12,7 @@ function printKeyvisual() {
     global $max_width_m;
     global $menuName;
 
-    echo '<section class="keyvisual">';
+    echo '<section class="keyvisual vh100">';
     echo '  <div class="container">';
     echo '    <div class="image_area" data-aos="zoom-out">';
     if ($Keyvisual['media-type'] == 'image') {

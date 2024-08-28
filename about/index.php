@@ -89,9 +89,9 @@
             </div>
             <p data-aos="fade-up" data-aos-delay="200">
               센시의 내일은 <br>
-              점자산업의 보편화와 함께 <br>
+              점자 산업의 보편화와 함께 <br>
               장애인과 비장애인의 경계가 사라지는 <br class="mo">교육시장과 <br class="pc"> 
-              지속가능한 미래를 위한 <br class="mo">DE&I를 선도 합니다.
+              지속 가능한 미래를 위한 <br class="mo">DE&I를 선도합니다.
             </p>
           </div>
         </div>
@@ -120,7 +120,7 @@
       <button class="close" data-btn="ceo"></button>
       <div class="swiper">
         <ul class="swiper-wrapper">
-          <li class="swiper-slide layout_inner">
+          <li class="swiper-slide layout_inner ceo_sis">
             <div class="txt_box">
               <div class="meant">
                 <p class="caption ">Touch the world and <br>See the unseen</p>
@@ -132,7 +132,7 @@
                 </div>
               </div>
               <div class="name">
-                <strong>Alice Jiyun Cho (조지윤)</strong><br>
+                <strong>Victor Insik (서인식)</strong><br>
                 CE0 & Founder of SENSEE, Inc
               </div>
             </div>
@@ -143,11 +143,10 @@
               <div class="meant">
                 <p class="caption ">Touch the world and <br>See the unseen</p>
                 <div class="sub_tit">
-                  부대표님내용 수급 필요 및 사진 수급필요
                 </div>
               </div>
               <div class="name">
-                <strong>Victor Insik (서인식)</strong><br>
+                <strong>Alice Jiyun Cho (조지윤)</strong><br>
                 CE0 & Founder of SENSEE, Inc
               </div>
             </div>

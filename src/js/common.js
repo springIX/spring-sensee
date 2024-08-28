@@ -1,3 +1,12 @@
+// 모바일에서 브라우저 하단베젤 고려
+let mvh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${mvh}px`);
+window.addEventListener('resize', () => {
+	// We execute the same script as before
+	let mvh = window.innerHeight * 0.01;
+	document.documentElement.style.setProperty('--vh', `${mvh}px`);
+});
+
 $(function () { 
   const win = $(window);
   let ftH = $('footer').outerHeight();
@@ -60,6 +69,7 @@ $(function () {
       lastScrollTop = st;
     }
     
+    console.log('^^');
     ftH = $('footer').outerHeight();
     $('body').css('padding-bottom', ftH);
   });
