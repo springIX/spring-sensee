@@ -123,6 +123,12 @@ picture {
   width: 100%;
 }
 
+@include screen("pc_more") {
+  html {
+    font-size: 1px;
+  }
+}
+
 @include screen("tb") {
   body {
     @include fontSize(20rem);

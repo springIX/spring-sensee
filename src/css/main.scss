@@ -7,7 +7,7 @@
     width: 100%;
     height: 100vh;
     position: relative;
-    overflow: auto;
+    overflow: hidden;
     color: $color-white;
     .swiper {
       width: 100%;
@@ -614,7 +614,7 @@
     .hand_img {
       width: 906rem;
       position: absolute;
-      right: 152rem;
+      right: calc(50% - 802rem);
       bottom: -89rem;
       transform: translateY(10%);
       opacity: 0;
@@ -679,9 +679,12 @@
         height: 181rem;
         position: absolute;
         left: $layout_inner;
-        top: 118rem;
+        top: calc(50% - 360rem);
         z-index: 10;
         overflow: hidden;
+        @include screen("pc_more") {
+          left: $layout_inner_pc_more;
+        }
         @include screen("mo") {
           position: relative;
           left: -20rem;

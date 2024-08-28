@@ -225,6 +225,12 @@ body.black_yellow path {
   padding-right: 198rem !important;
   position: relative;
 }
+@media (min-width: 1921px) {
+  .layout_inner {
+    padding-left: calc(50vw - 762px) !important;
+    padding-right: calc(50vw - 762px) !important;
+  }
+}
 @media (max-width: 750px) {
   .layout_inner {
     padding-left: 20rem !important;
@@ -236,6 +242,12 @@ body.black_yellow path {
   padding-left: 198rem !important;
   position: relative;
 }
+@media (min-width: 1921px) {
+  .layout_inner_l {
+    padding-left: calc(50vw - 762px) !important;
+    padding-right: calc(50vw - 762px) !important;
+  }
+}
 @media (max-width: 750px) {
   .layout_inner_l {
     padding-left: 20rem !important;
@@ -246,6 +258,12 @@ body.black_yellow path {
   padding-right: 198rem !important;
   position: relative;
 }
+@media (min-width: 1921px) {
+  .layout_inner_r {
+    padding-left: calc(50vw - 762px) !important;
+    padding-right: calc(50vw - 762px) !important;
+  }
+}
 @media (max-width: 750px) {
   .layout_inner_r {
     padding-right: 20rem !important;
@@ -255,6 +273,12 @@ body.black_yellow path {
 .layout_inner_w {
   padding-left: 198rem !important;
   position: relative;
+}
+@media (min-width: 1921px) {
+  .layout_inner_w {
+    padding-left: calc(50vw - 762px) !important;
+    padding-right: calc(50vw - 762px) !important;
+  }
 }
 @media (max-width: 750px) {
   .layout_inner_w {
@@ -430,7 +454,6 @@ body.black_yellow path {
   color: #ffffff;
   justify-content: space-between;
   gap: 202rem;
-  padding-bottom: 41rem;
 }
 @media (max-width: 750px) {
   .keyvisual .floating_area .floating_txt {
@@ -476,7 +499,13 @@ body.black_yellow path {
   flex-shrink: 0;
   padding-right: 20rem;
   width: 952rem;
-  overflow: hidden;
+  position: relative;
+  padding-bottom: 41rem;
+}
+@media (min-width: 1921px) {
+  .keyvisual .floating_area .floating_txt .infor_txt .kv_desc {
+    width: auto;
+  }
 }
 @media (max-width: 750px) {
   .keyvisual .floating_area .floating_txt .infor_txt .kv_desc {
@@ -488,26 +517,23 @@ body.black_yellow path {
   transform: translateY(100%);
   transition: 1s ease;
 }
-.keyvisual .floating_area .floating_txt .infor_txt .kv_desc.aos-animate p {
-  transform: translateY(0%);
-}
-.keyvisual .floating_area .kv_line {
+.keyvisual .floating_area .floating_txt .infor_txt .kv_desc::after {
+  content: "";
   position: absolute;
   bottom: 0;
-  right: 0;
+  left: 0;
   height: 1px;
   opacity: 0.3;
   background: #fff;
-  width: 952rem;
+  width: 100vw;
   transform: scaleX(0);
-  transform-origin: right center;
+  transform-origin: left center;
+  transition: 0.5s ease;
 }
-@media (max-width: 750px) {
-  .keyvisual .floating_area .kv_line {
-    width: calc(100% - 20rem);
-  }
+.keyvisual .floating_area .floating_txt .infor_txt .kv_desc.aos-animate p {
+  transform: translateY(0%);
 }
-.keyvisual .floating_area .kv_line.aos-animate {
+.keyvisual .floating_area .floating_txt .infor_txt .kv_desc.aos-animate::after {
   transform: scaleX(1);
 }
 

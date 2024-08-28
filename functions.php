@@ -46,7 +46,6 @@ function printKeyvisual() {
     echo '          <div class="kv_desc" data-aos=""><p>'.$Keyvisual['desc'].'</p></div>';
     echo '        </div>';
     echo '      </div>';
-    echo '      <div class="kv_line" data-aos=""></div>';
     echo '    </div>';
     echo '  </div>';
     echo '</section>';

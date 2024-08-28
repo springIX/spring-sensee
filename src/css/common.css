@@ -133,6 +133,11 @@ picture {
   width: 100%;
 }
 
+@media (min-width: 1921px) {
+  html {
+    font-size: 1px;
+  }
+}
 @media (max-width: 1280px) {
   body {
     font-size: clamp(10px, 20rem, 999rem);

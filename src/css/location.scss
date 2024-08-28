@@ -16,19 +16,18 @@
     margin: 50rem auto;
     .tab_buttons {
       display: flex;
-      justify-content: space-between;
-      margin-bottom: 50rem;
-      padding-left: 200rem;
-      padding-right: 200rem;
+      justify-content: center;
+      padding-bottom: 50rem;
       gap: 20rem;
       @include screen("mo") {
         justify-content: flex-start;
         padding-left: 20rem;
-        padding-right: 0rem;
+        padding-right: 20rem;
         gap: 11rem;
+        padding-bottom: 10rem;
+        margin-bottom: 44rem;
       }
       .tab_button {
-        flex: 1;
         cursor: pointer;
         transition: background-color 0.3s;
         padding: 14rem 35rem;
@@ -40,6 +39,7 @@
         color: $color-black;
         font-weight: 600;
         box-shadow: 0px 10rem 20rem 0px rgba(0, 0, 0, 0.1);
+        width: 200rem;
         &.active {
           background-color: $color-black;
           color: $color-white;
@@ -139,10 +139,6 @@
     }
   }
 }
-
-
-
-
 
 .location_form {
   padding-bottom: 200rem;

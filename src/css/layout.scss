@@ -218,6 +218,11 @@ body {
   padding-left: $layout_inner !important;
   padding-right: $layout_inner !important;
   position: relative;
+
+  @include screen("pc_more") {
+    padding-left: $layout_inner_pc_more !important;
+    padding-right: $layout_inner_pc_more !important;
+  }
   @include screen("mo") {
     padding-left: $layout_inner_m !important;
     padding-right: $layout_inner_m !important;
@@ -226,6 +231,10 @@ body {
 .layout_inner_l {
   padding-left: $layout_inner !important;
   position: relative;
+  @include screen("pc_more") {
+    padding-left: $layout_inner_pc_more !important;
+    padding-right: $layout_inner_pc_more !important;
+  }
   @include screen("mo") {
     padding-left: $layout_inner_m !important;
   }
@@ -233,6 +242,10 @@ body {
 .layout_inner_r {
   padding-right: $layout_inner !important;
   position: relative;
+  @include screen("pc_more") {
+    padding-left: $layout_inner_pc_more !important;
+    padding-right: $layout_inner_pc_more !important;
+  }
   @include screen("mo") {
     padding-right: $layout_inner_m !important;
   }
@@ -240,6 +253,10 @@ body {
 .layout_inner_w {
   padding-left: $layout_inner !important;
   position: relative;
+  @include screen("pc_more") {
+    padding-left: $layout_inner_pc_more !important;
+    padding-right: $layout_inner_pc_more !important;
+  }
   @include screen("mo") {
     padding-left: $layout_inner_m !important;
     padding-right: $layout_inner_m !important;
@@ -402,7 +419,6 @@ body {
       color: $color-white;
       justify-content: space-between;
       gap: 202rem;
-      padding-bottom: 41rem;
       @include screen("mo") {
         padding-bottom: 24rem;
         gap: 0;
@@ -440,7 +456,11 @@ body {
           flex-shrink: 0;
           padding-right: 20rem;
           width: 952rem;
-          overflow: hidden;
+          position: relative;
+          padding-bottom: 41rem;
+          @include screen("pc_more") {
+            width: auto;
+          }
           @include screen("mo") {
             padding-right: 0;
             width: 100%;
@@ -449,27 +469,28 @@ body {
             transform: translateY(100%);
             transition: 1s ease;
           }
-          &.aos-animate p {
-            transform: translateY(0%);
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 1px;
+            opacity: 0.3;
+            background: #fff;
+            width: 100vw;
+            transform: scaleX(0);
+            transform-origin: left center;
+            transition: 0.5s ease;
+          }
+          &.aos-animate {
+            p {
+              transform: translateY(0%);
+            }
+            &::after {
+              transform: scaleX(1);
+            }
           }
         }
-      }
-    }
-    .kv_line {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      height: 1px;
-      opacity: 0.3;
-      background: #fff;
-      width: 952rem;
-      transform: scaleX(0);
-      transform-origin: right center;
-      @include screen("mo") {
-        width: calc(100% - 20rem);
-      }
-      &.aos-animate {
-        transform: scaleX(1);
       }
     }
   }
