@@ -1,5 +1,6 @@
 $(function () { 
   const win = $(window);
+  let ftH = $('footer').outerHeight();
   
   /********* BTN FUNCTION *********/
   $('[data-btn]').click(function () { 
@@ -58,6 +59,9 @@ $(function () {
       
       lastScrollTop = st;
     }
+    
+    ftH = $('footer').outerHeight();
+    $('body').css('padding-bottom', ftH);
   });
 
   /* 텍스트 색상 버튼 */
@@ -100,23 +104,15 @@ $(function () {
   
   /************** FOOTER **************/
   /* SCROLL TOP BTN */
-  win.on("scroll", function () {
-    let scrTop = $(this).scrollTop();
-    if (scrTop < win.height() / 2 || scrTop > $('body').height() - $('footer').height()) {
-      $('.scr_top').fadeOut(500);
-    }else { 
-      $('.scr_top').fadeIn(500);
-    }
-  });
   $('.scr_top').click(function () { 
     $('html, body').animate({'scrollTop' : 0}, 700);
     return false;
   });
+  $('.scr_top_wrap').css('bottom', ftH);
   
   /* 커서 */
-  cursor = $(".cursor"); 
+  cursor = $(".cursor");
   if (win.width() >= 750) {
-    $('body').css('padding-bottom', $('footer').outerHeight());
     
     let posX = 0,
         posY = 0;

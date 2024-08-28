@@ -1,4 +1,8 @@
-<a href="#" class="scr_top"></a>
+<div class="scr_top_wrap">
+  <div class="sticky_box">
+    <a href="#" class="scr_top"></a>
+  </div>
+</div>
 <footer class="footer">
   <h1 class="logo">
     <a href="/">

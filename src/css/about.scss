@@ -302,10 +302,17 @@
           transform: translateY(50rem);
           transition: 0.5s ease;
           @include screen("mo") {
-            width: 100%;
+            max-width: 100%;
+            height: 430rem;
+            object-fit: contain;
+            object-position: center bottom;
             bottom: 0;
-            max-width: 450rem;
             left: -25rem;
+          }
+        }
+        &.ceo_jjy {
+          .ceo_img {
+            width: 706rem;
           }
         }
       }

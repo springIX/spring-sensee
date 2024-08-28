@@ -150,5 +150,6 @@ picture {
   body {
     font-size: clamp(10px, 14rem, 999rem);
     line-height: 1.72;
+    padding-bottom: 0 !important;
   }
 }

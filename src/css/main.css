@@ -14,6 +14,7 @@
 .main_container .main_visual .swiper {
   width: 100%;
   height: 100%;
+  filter: brightness(0.6);
 }
 .main_container .main_visual .swiper .swiper-slide .main_visual_sld_view {
   width: 100%;
@@ -302,11 +303,13 @@
 .main_container .main_brand .main_brand_visual .txt_box .txt {
   flex-shrink: 0;
   background-color: #f0f4f7;
-  padding: 144rem 322rem;
+  padding: 107rem 170rem;
   position: relative;
+  width: 50%;
 }
 @media (max-width: 750px) {
   .main_container .main_brand .main_brand_visual .txt_box .txt {
+    width: auto;
     padding: 38rem 43rem 0;
     margin: -122rem -1rem 0 117rem;
   }

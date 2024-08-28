@@ -24,11 +24,11 @@
   <nav class="gnb">
     <ul>
       <li><a href="/about/">ABOUT US</a></li>
-      <li><a href="/innovation/">INNOVATION</a></li>
-      <!-- <li><a href="/tech/">TECHNOLOGY</a></li>
-      <li><a href="/product/">PRODUCT</a></li> -->
-      <!-- <li><a href="/sustainability/">SUSTAINABILITY</a></li> -->
-      <!-- <li><a href="/media/">MEDIA ROOM</a></li> -->
+      <!--<li><a href="/innovation/">INNOVATION</a></li>
+      <li><a href="/tech/">TECHNOLOGY</a></li>
+      <li><a href="/product/">PRODUCT</a></li>
+      <li><a href="/sustainability/">SUSTAINABILITY</a></li>
+      <li><a href="/media/">MEDIA ROOM</a></li> -->
       <li><a href="/location/">LOCATION</a></li>
       <li>
         <a href="https://3dcoloring.co.kr/" target="_blank">SHOP 
@@ -42,7 +42,7 @@
   </nav>
   <div class="setting_box">
     <div class="ctrl_txt">
-      <button class="ctrl_btn" title="텍스트 크기, 색상 조정 팝업이 열리는 버튼" data-btn="ctrl_txt">Text <span class="flex"><i></i></span></button>
+      <button class="ctrl_btn" title="텍스트 크기, 색상 조정 팝업이 열리는 버튼" data-btn="ctrl_txt">Text</button>
       <div class="ctrl_box" data-view="ctrl_txt">
         <button class="close_btn" title="텍스트 크기, 색상 조정 팝업이 닫히는 버튼" data-btn="ctrl_txt"></button>
         <div class="txt_size flex_cnt">

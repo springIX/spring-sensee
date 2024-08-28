@@ -54,10 +54,10 @@
                 </div>
                 <div class="profile">
                   <div class="img_box">
-                    <img src="<?=$img?>ceo_profile.png"/>
+                    <img src="<?=$img?>ceo_profile02.png"/>
                   </div>
                   <div class="txt_box">
-                    <span>Alice Jo (조지윤)</span>
+                    <span>Alice Jiyun Cho (조지윤)</span>
                     <p>CE0 & Founder of SENSEE, Inc</p>
                   </div>
                 </div>
@@ -112,7 +112,7 @@
           </div>
           <p class="sub_tit4 ">SENSEE BRAND MOVIE</p>
         </div>
-      </section>>
+      </section>
     </div>
 
     <!-- CEO INTRODUCE POPUP -->
@@ -125,20 +125,20 @@
               <div class="meant">
                 <p class="caption ">Touch the world and <br>See the unseen</p>
                 <div class="sub_tit">
-                  세상에 대한 끊임없는 연구 <br>
-                  그리고 근본적인 문제 해결에 대한 도전. <br>
-                  센시는 모두가 함께 즐길 수 있는  <br>
-                  세상을 만들기 위해 설립되었습니다.
+                  ESG의 진정한 핵심가치는 내재화에 있으며 <br>
+                  센시는 다양성이 존중되고 장애가 차별받지 않는 <br>
+                  세상을 위해 하나의 기술로 시작하여, <br>
+                  모두를 위한 기술로 지속가능한 세상을 만들어 갑니다.
                 </div>
               </div>
               <div class="name">
-                <strong>Victor Insik (서인식)</strong><br>
+                <strong>Alice Jiyun Cho (조지윤)</strong><br>
                 CE0 & Founder of SENSEE, Inc
               </div>
             </div>
             <img src="<?=$img?>ceo.png" alt="" class="ceo_img">
           </li>
-          <li class="swiper-slide layout_inner">
+          <li class="swiper-slide layout_inner ceo_jjy">
             <div class="txt_box">
               <div class="meant">
                 <p class="caption ">Touch the world and <br>See the unseen</p>
@@ -151,7 +151,7 @@
                 CE0 & Founder of SENSEE, Inc
               </div>
             </div>
-            <img src="<?=$img?>ceo.png" alt="" class="ceo_img">
+            <img src="<?=$img?>ceo02.png" alt="" class="ceo_img">
           </li>
         </ul>
         <div class="sld_nav">

@@ -142,5 +142,6 @@ picture {
   body {
     @include fontSize(14rem);
     line-height: 1.72;
+    padding-bottom: 0 !important;
   }
 }

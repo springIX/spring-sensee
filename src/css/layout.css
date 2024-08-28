@@ -88,7 +88,7 @@ body.black_yellow path {
 
 .h3_ {
   font-weight: 700;
-  font-size: clamp(10px, 100rem, 999rem);
+  font-size: clamp(10px, 88rem, 999rem);
   line-height: 1.44;
 }
 .h3_.pps {

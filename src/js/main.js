@@ -117,8 +117,8 @@ $(document).ready(function () {
   $(".main_tech").on("mousemove", function(event) {
     var mouseXpos = event.clientX;
     var mouseYpos = event.clientY;
-    var YrotateDeg = mouseXpos * -0.02;
-    var XrotateDeg = mouseYpos * -0.01;
+    var YrotateDeg = mouseXpos * -0.06;
+    var XrotateDeg = mouseYpos * -0.03;
     $(".leaf_box i img").css('transform',`translate(${XrotateDeg}rem, ${YrotateDeg}rem )`);
   });
 

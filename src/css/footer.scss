@@ -138,36 +138,48 @@
   }
 }
 
-.scr_top {
-  display: none;
-  width: 50rem;
-  height: 50rem;
-  border-radius: 50%;
-  background-color: $color-black;
-  position: fixed;
-  right: 44rem;
-  bottom: 44rem;
-  overflow: hidden;
+.scr_top_wrap {
+  position: absolute;
+  right: 0;
+  top: 138rem;
+  width: 0px;
   z-index: 99;
-  @include screen("mo") {
-    right: 20rem;
-    bottom: 20rem;
+  .sticky_box {
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100vh;
   }
-  &::before,
-  &::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: url(/src/images/common/arr_link.svg) no-repeat center center/
-      22rem auto;
-    transform: rotate(-90deg);
-    transition: 0.3s ease;
-  }
-  &:hover {
+  .scr_top {
+    width: 50rem;
+    height: 50rem;
+    border-radius: 50%;
+    background-color: $color-black;
+    position: absolute;
+    right: 44rem;
+    bottom: 44rem;
+    overflow: hidden;
+    @include screen("mo") {
+      right: 20rem;
+      bottom: 20rem;
+    }
     &::before,
     &::after {
-      transform: translateY(-100%) rotate(-90deg);
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: url(/src/images/common/arr_link.svg) no-repeat center center/
+        22rem auto;
+      transform: rotate(-90deg);
+      transition: 0.3s ease;
+    }
+    &:hover {
+      &::before,
+      &::after {
+        transform: translateY(-100%) rotate(-90deg);
+      }
     }
   }
 }
