@@ -20,13 +20,13 @@
         <div class="swiper image_area">
           <ul class="swiper-wrapper">
             <li class="swiper-slide" data-tit="TOGETHER" data-info="센시의 보편적 일상의 순간" data-cont="vid" data-aos="zoom-out">
-              <video src="<?=$img?>visual01.mp4" inlinesplay muted autoplay crossorigin="anonymous" class="main_visual_sld_view"></video>
+              <video src="<?=$img?>visual01.mp4" playsinline muted autoplay class="main_visual_sld_view"></video>
             </li>
             <li class="swiper-slide" data-tit="MEANINGFUL" data-info="모두를 위한 유의미함" data-cont="vid">
-              <video src="<?=$img?>visual02.mp4" inlinesplay muted crossorigin="anonymous" class="main_visual_sld_view"></video>
+              <video src="<?=$img?>visual02.mp4" playsinline muted class="main_visual_sld_view"></video>
             </li>
             <li class="swiper-slide" data-tit="BASICS" data-info="차이로 차별하지 않는 기본" data-cont="vid">
-              <video src="<?=$img?>visual03.mp4" inlinesplay muted crossorigin="anonymous" class="main_visual_sld_view"></video>
+              <video src="<?=$img?>visual03.mp4" playsinline muted class="main_visual_sld_view"></video>
             </li>
           </ul>
         </div>
