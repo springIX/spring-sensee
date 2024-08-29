@@ -150,9 +150,6 @@
   .about_container .about_movie {
     padding: 120rem 0 160rem;
   }
-  .about_container .about_movie br {
-    display: none;
-  }
 }
 .about_container .about_movie .tit_box .logo_cymbol {
   display: inline-block;
@@ -260,6 +257,10 @@
   right: 46rem;
   top: 60rem;
   z-index: 10;
+  transition: 0.3s ease;
+}
+.popup .close:hover {
+  transform: rotate(90deg);
 }
 @media (max-width: 750px) {
   .popup .close {

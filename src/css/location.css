@@ -104,6 +104,8 @@
   line-height: 1.6;
   padding-bottom: 4rem;
   color: #888888;
+  font-weight: 700;
+  border-bottom: 2px solid transparent;
   font-size: clamp(10px, 20rem, 999rem);
 }
 @media (max-width: 750px) {
@@ -112,8 +114,7 @@
   }
 }
 .tab_content .sub_tab_buttons .sub_tab_button.active {
-  font-weight: 700;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #000000;
   color: #000000;
 }
 .tab_content .sub_tab_content {

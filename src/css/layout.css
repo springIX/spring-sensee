@@ -388,7 +388,6 @@ body.black_yellow path {
 }
 
 .vh100 {
-  height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
 }
 
@@ -565,13 +564,37 @@ body.black_yellow path {
   line-height: 56rem;
   border-radius: 2rem;
 }
-.btn_more::after {
-  content: "";
+.btn_more i {
   width: 56rem;
   height: 56rem;
-  background: #000000 url(/src/images/common/arr_link.svg) no-repeat center center/40% auto;
   margin-left: 1px;
   border-radius: 2rem;
+  overflow: hidden;
+  background-color: #000000;
+}
+.btn_more i::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #000000 url(/src/images/common/arr_link.svg) no-repeat center center/40% auto;
+}
+@keyframes more_btn {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  51% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.btn_more:hover i::before {
+  animation: more_btn 0.3s ease;
 }
 
 .sld_nav {

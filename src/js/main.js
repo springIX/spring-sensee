@@ -3,12 +3,13 @@ $(document).ready(function () {
   let img_sld_delay = 3000;
   const swiper = new Swiper('.main_visual .swiper', {
     loop: true,
-    speed: 500, 
+    speed: 500,
+    touchRatio: 0,
     pagination: {
       el: '.main_visual .pagi',
       clickable: true,
       renderBullet: function (index, className) {
-        return '<div class="' + className + '" data-aos="fade-up" data-aos-delay="'+ index +'00"><span class="caption">' + (main_visual_sld.eq(index).data('tit')) + '</span><p>' + (main_visual_sld.eq(index).data('info')) + '</p><i></i></div>';
+        return '<div class="' + className + '" data-aos="fade-up" data-aos-offset="-500" data-aos-delay="'+ index +'00"><span class="caption">' + (main_visual_sld.eq(index).data('tit')) + '</span><p>' + (main_visual_sld.eq(index).data('info')) + '</p><i></i></div>';
       }
     },
     navigation: {
@@ -33,49 +34,25 @@ $(document).ready(function () {
   // 슬라이드 변경시 비디오 자동 재생 및 이미지 슬라이드 처리
   swiper.on('slideChange', () => {
       clearTimeout(imageSlideTimeout); // 이전 타이머 제거
-    $('.btn_ctrl').removeClass('play');
+      $('.btn_ctrl.pause').removeClass('disabled');
+      $('.btn_ctrl.play').addClass('disabled');
+      $('.main_visual .main_visual_cont .pagi .swiper-pagination-bullet i').css('animation-play-state', 'running');
     
       slides.forEach((slide, index) => {
           const video = slide.querySelector('video.main_visual_sld_view');
           const img = slide.querySelector('img.main_visual_sld_view');
 
           if (index === swiper.activeIndex) {
-              if (video) {
-                $('.main_visual_cont .pagi .swiper-pagination-bullet i').css('animation-duration', video.duration+'s');
-                video.play(); // 현재 슬라이드가 비디오일 경우 재생
+              $('.main_visual_cont .pagi .swiper-pagination-bullet i').css('animation-duration', video.duration+'s');
+              video.play(); // 현재 슬라이드가 비디오일 경우 재생
 
-                // 슬라이드 정지버튼
-                $('.btn_ctrl').click(function () {
-                  if ($(this).hasClass('play') == false) {
-                    $(this).addClass('play'); 
-                    video.play(); 
-                    $('.main_visual .main_visual_cont .pagi .swiper-pagination-bullet i').css('animation-play-state', 'paused');
-                  } else {
-                    $(this).removeClass('play'); 
-                    video.pause(); 
-                    $('.main_visual .main_visual_cont .pagi .swiper-pagination-bullet i').css('animation-play-state', 'running');
-                  }
-                });
-              } else if (img) {
-                $('.main_visual_cont .pagi .swiper-pagination-bullet i').css('animation-duration', img_sld_delay+'ms');
-                imageSlideTimeout = setTimeout(() => {
-                  swiper.slideNext(); // 이미지일 경우 3초 후 다음 슬라이드로
-                }, img_sld_delay);
-                // 슬라이드 정지버튼
-                $('.btn_ctrl').click(function () {
-                if ($(this).hasClass('play') == false) {
-                  $(this).removeClass('play'); 
-                  setTimeout(imageSlideTimeout);
-                  $('.main_visual .main_visual_cont .pagi .swiper-pagination-bullet i').css('animation-play-state', 'running');
-                } else {
-                  $(this).addClass('play');
-                  imageSlideTimeout = setTimeout(() => {
-                    swiper.slideNext(); // 이미지일 경우 3초 후 다음 슬라이드로
-                  }, img_sld_delay);
-                  $('.main_visual .main_visual_cont .pagi .swiper-pagination-bullet i').css('animation-play-state', 'paused');
-                }
+              // 슬라이드 정지버튼
+              $('.btn_ctrl.pause').click(function(){
+                video.pause();   
               });
-              }
+              $('.btn_ctrl.play').click(function () {
+                video.play(); 
+              });
           } else {
               if (video) {
                   video.pause(); // 다른 슬라이드의 비디오는 일시정지
@@ -85,6 +62,16 @@ $(document).ready(function () {
       });
   });
 
+  $('.btn_ctrl.pause').click(function () {
+    $('.btn_ctrl.play').removeClass('disabled');
+    $(this).addClass('disabled');
+    $('.main_visual .main_visual_cont .pagi .swiper-pagination-bullet i').css('animation-play-state', 'paused');
+  });
+  $('.btn_ctrl.play').click(function(){
+    $('.btn_ctrl.pause').removeClass('disabled');
+    $(this).addClass('disabled');
+    $('.main_visual .main_visual_cont .pagi .swiper-pagination-bullet i').css('animation-play-state', 'running');
+  });
 
   // 초기 로드 시 첫 번째 슬라이드에 대한 처리
   const firstSlide = swiper.slides[swiper.activeIndex].querySelector('.main_visual_sld_view');
@@ -93,16 +80,11 @@ $(document).ready(function () {
       firstSlide.play();
       $('.main_visual_cont .pagi .swiper-pagination-bullet i').css('animation-duration', firstSlide.duration + 's');
       // 슬라이드 정지버튼
-      $('.btn_ctrl').click(function () {
-        if ($(this).hasClass('play') == false) {
-          $(this).addClass('play'); 
-          firstSlide.pause(); 
-          $('.main_visual .main_visual_cont .pagi .swiper-pagination-bullet i').css('animation-play-state', 'paused');
-        } else {
-          $(this).removeClass('play'); 
-          firstSlide.play(); 
-          $('.main_visual .main_visual_cont .pagi .swiper-pagination-bullet i').css('animation-play-state', 'running');
-        }
+      $('.btn_ctrl.pause').click(function () {
+        firstSlide.pause();
+      });
+      $('.btn_ctrl.play').click(function () {
+        firstSlide.play(); 
       });
     }, false);
   } else if (firstSlide.tagName === 'IMG') {
@@ -111,9 +93,8 @@ $(document).ready(function () {
     }, img_sld_delay);
   }
 
-
-
-
+  
+  // 나뭇잎 효과
   $(".main_tech").on("mousemove", function(event) {
     var mouseXpos = event.clientX;
     var mouseYpos = event.clientY;
@@ -157,34 +138,19 @@ $(document).ready(function () {
         .to('.main_innovation .sticky_box .innovation_bg p strong:nth-child(4)', 1, { backgroundSize: '100% 100%', ease: 'none', }, "-=20%")
         .to('.main_innovation .sticky_box .innovation_bg p strong:nth-child(4)', 1, { backgroundSize: '100% 100%', ease: 'none', },)
     },
-    "(max-width: 750px)": function () {
-      let main_innovation = gsap.timeline({
-        scrollTrigger: {
-          trigger: '.main_innovation .sticky_box .h3_',
-          start: "top top",
-          end: "100%",
-          scrub: true,
-        },
-      });
-      
-      main_innovation
-        .to('.main_innovation .sticky_box .h3_, .main_innovation .sticky_box .h5_', 1, { opacity: 0 }, 'group1')
-        .to('.innovation_bg video', 1, { height: "100vh" }, 'group1')
-        .to('.innovation_bg video', 1, { width: "100%", left: 0, filter: "brightness(.6)"}, '-=20%')
-      
+    "(max-width: 750px)": function () {      
       let main_innovation2 = gsap.timeline({
         scrollTrigger: {
           trigger: '.main_innovation .innovation_bg',
-          start: "top top",
-          end: "100%",
+          start: "top 50%",
+          end: "bottom 80%",
           scrub: true,
-          pin: true,
-          pinnedContainer: '.main_innovation .innovation_bg',
-          pinSpacing: true,
+          markers: true,
         },
       });
       
       main_innovation2
+        .to('.main_innovation .sticky_box .innovation_bg', 1, { left: "-20rem", width: "calc(100% + 40rem)" }, "-=50%")
         .to('.main_innovation .sticky_box .innovation_bg p', 1, { opacity: 1, y: 0 }, "-=50%")
         .to('.main_innovation .sticky_box .innovation_bg p strong:nth-child(1)', 1, { backgroundSize: '100% 100%', ease: 'none', },)
         .to('.main_innovation .sticky_box .innovation_bg p strong:nth-child(2)', 1, { backgroundSize: '100% 100%', ease: 'none', }, "+=50%")
@@ -192,6 +158,10 @@ $(document).ready(function () {
         .to('.main_innovation .sticky_box .innovation_bg p strong:nth-child(4)', 1, { backgroundSize: '100% 100%', ease: 'none', }, "+=50%")
         .to('.main_innovation .sticky_box .innovation_bg p strong:nth-child(4)', 1, { backgroundSize: '100% 100%', ease: 'none', },)
     }
+  });
+
+  $(window).resize(function () { 
+    ScrollTrigger.update;
   });
 });
 

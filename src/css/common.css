@@ -1,6 +1,5 @@
 /* Responsive */
 /* Ellipsis */
-@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("swiper.min.css");
 @import url("layout.css");
@@ -10,7 +9,7 @@
 html {
   height: 100%;
   overflow-y: auto;
-  font-size: 0.0520833318vw;
+  font-size: 1px;
   background-color: #ffffff;
 }
 
@@ -133,9 +132,9 @@ picture {
   width: 100%;
 }
 
-@media (min-width: 1921px) {
+@media (min-width: 751px) and (max-width: 1920px) {
   html {
-    font-size: 1px;
+    font-size: 0.0520833318vw;
   }
 }
 @media (max-width: 1280px) {
@@ -144,9 +143,6 @@ picture {
   }
 }
 @media (max-width: 750px) {
-  html {
-    font-size: 1px;
-  }
   body {
     font-size: clamp(10px, 14rem, 999rem);
     line-height: 1.72;

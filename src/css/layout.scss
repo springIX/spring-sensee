@@ -356,7 +356,6 @@ body {
 }
 
 .vh100 {
-  height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
 }
 
@@ -524,14 +523,38 @@ body {
     line-height: 56rem;
     border-radius: 2rem;
   }
-  &::after {
-    content: "";
+  i {
     width: 56rem;
     height: 56rem;
-    background: $color-black url(/src/images/common/arr_link.svg) no-repeat
-      center center / 40% auto;
     margin-left: 1px;
     border-radius: 2rem;
+    overflow: hidden;
+    background-color: $color-black;
+    &::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: $color-black url(/src/images/common/arr_link.svg) no-repeat
+        center center / 40% auto;
+    }
+    @keyframes more_btn {
+      0% {
+        transform: translateX(0%);
+      }
+      50% {
+        transform: translateX(100%);
+      }
+      51% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(0%);
+      }
+    }
+  }
+  &:hover i::before {
+    animation: more_btn 0.3s ease;
   }
 }
 

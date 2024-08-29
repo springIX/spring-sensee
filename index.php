@@ -19,14 +19,14 @@
       <section class="<?=$menuClass?>_visual vh100">
         <div class="swiper image_area">
           <ul class="swiper-wrapper">
-            <li class="swiper-slide" data-tit="TOGETHER" data-info="센시의 보편적 일상의 순간" data-cont="vid" data-aos="zoom-out">
-              <video src="<?=$img?>visual01.mp4" playsinline muted autoplay class="main_visual_sld_view"></video>
+            <li class="swiper-slide video-slide" data-tit="TOGETHER" data-info="센시의 보편적 일상의 순간" data-cont="vid" data-aos="zoom-out">
+              <video src="<?=$img?>visual01.mp4" muted playsinline autoplay class="main_visual_sld_view" poster="/src/images/main/main_visual01.jpg"></video>
             </li>
-            <li class="swiper-slide" data-tit="MEANINGFUL" data-info="모두를 위한 유의미함" data-cont="vid">
-              <video src="<?=$img?>visual02.mp4" playsinline muted class="main_visual_sld_view"></video>
+            <li class="swiper-slide video-slide" data-tit="MEANINGFUL" data-info="모두를 위한 유의미함" data-cont="vid">
+              <video src="<?=$img?>visual02.mp4" muted playsinline autoplay class="main_visual_sld_view" poster="/src/images/main/main_visual02.jpg"></video>
             </li>
-            <li class="swiper-slide" data-tit="BASICS" data-info="차이로 차별하지 않는 기본" data-cont="vid">
-              <video src="<?=$img?>visual03.mp4" playsinline muted class="main_visual_sld_view"></video>
+            <li class="swiper-slide video-slide" data-tit="BASICS" data-info="차이로 차별하지 않는 기본" data-cont="vid">
+              <video src="<?=$img?>visual03.mp4" muted playsinline autoplay class="main_visual_sld_view" poster="/src/images/main/main_visual03.jpg"></video>
             </li>
           </ul>
         </div>
@@ -34,6 +34,7 @@
           <div class="inner">
             <h2 class="h2_" data-aos="fade-up">Touch the world <i></i> See the unseen</h2>
             <div class="pagi"></div>
+            <span class="btn_ctrl play" data-aos="zoom-in" data-aos-delay="400"></span>
             <span class="btn_ctrl pause" data-aos="zoom-in" data-aos-delay="400"></span>
           </div>
         </div>
@@ -83,7 +84,7 @@
                 등을 기획하고 솔루션을 제공합니다.
               </p>
             </div>
-            <a href="/about/" class="btn_more" data-aos="fade-up"></a>
+            <a href="/about/" class="btn_more" data-aos="fade-up"><i></i></a>
           </div>
         </div>
         <div class="<?=$menuClass?>_brand_visual">
@@ -179,7 +180,7 @@
         <img src="<?=$img?>together_hand.png" alt="" class="hand_img">
       </section>
       <section class="<?=$menuClass?>_innovation">
-        <div class="sticky_box layout_inner">
+        <div class="sticky_box layout_inner vh100">
           <span class="sub_tit4">
             세상을 만지고 <br>
             보이지 않는 것을 보다

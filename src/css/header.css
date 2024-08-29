@@ -119,7 +119,7 @@
     top: 0;
     width: 100%;
     height: 100vh;
-    background-color: #ffffff;
+    background-color: #f0f4f7;
     color: #000000;
     padding: 100px 20rem 0;
     font-size: 40rem;
@@ -531,6 +531,15 @@
   }
   .header.on .gnb {
     transform: translateY(0);
+  }
+  .header.on .setting_box .ctrl_txt .ctrl_btn {
+    opacity: 0;
+    touch-action: none;
+    pointer-events: none;
+  }
+  .header.on .setting_box .all_menu_btn {
+    width: 24rem;
+    height: 24rem;
   }
   .header.on .setting_box .all_menu_btn i {
     background-color: #000000;

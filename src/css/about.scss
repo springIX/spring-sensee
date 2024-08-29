@@ -131,9 +131,6 @@
     padding: 356rem 0 360rem;
     @include screen("mo") {
       padding: 120rem 0 160rem;
-      br {
-        display: none;
-      }
     }
     .tit_box {
       .logo_cymbol {
@@ -245,6 +242,10 @@
     right: 46rem;
     top: 60rem;
     z-index: 10;
+    transition: 0.3s ease;
+    &:hover {
+      transform: rotate(90deg);
+    }
     @include screen("mo") {
       width: 52rem;
       height: 52rem;
