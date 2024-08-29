@@ -198,7 +198,7 @@
           </h5>
           <div class="innovation_bg f_center">
             <video src="<?=$img?>innovation.mp4" playsinline muted autoplay loop></video>
-            <p>
+            <p data-aos="">
               <strong>센시는 기술이 활용될 수 있도록</strong>
               <strong>새로운 공정과 공법의 끊임없는 연구와</strong>
               <strong>글로벌 기술 공급 및 구축사업을 통한</strong>

@@ -145,13 +145,10 @@ $(document).ready(function () {
           start: "top 50%",
           end: "bottom 80%",
           scrub: true,
-          markers: true,
         },
       });
       
       main_innovation2
-        .to('.main_innovation .sticky_box .innovation_bg', 1, { left: "-20rem", width: "calc(100% + 40rem)" }, "-=50%")
-        .to('.main_innovation .sticky_box .innovation_bg p', 1, { opacity: 1, y: 0 }, "-=50%")
         .to('.main_innovation .sticky_box .innovation_bg p strong:nth-child(1)', 1, { backgroundSize: '100% 100%', ease: 'none', },)
         .to('.main_innovation .sticky_box .innovation_bg p strong:nth-child(2)', 1, { backgroundSize: '100% 100%', ease: 'none', }, "+=50%")
         .to('.main_innovation .sticky_box .innovation_bg p strong:nth-child(3)', 1, { backgroundSize: '100% 100%', ease: 'none', }, "+=50%")

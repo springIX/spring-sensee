@@ -809,9 +809,9 @@
 @media (max-width: 750px) {
   .main_container .main_innovation .sticky_box .innovation_bg {
     position: relative;
-    left: 0;
+    left: -20rem;
     top: 0;
-    width: 100%;
+    width: calc(100% + 40rem);
     height: 640rem;
   }
 }
@@ -844,6 +844,11 @@
   .main_container .main_innovation .sticky_box .innovation_bg p {
     font-size: 32rem;
     padding: 0 20rem;
+    transition: 1s ease;
+  }
+  .main_container .main_innovation .sticky_box .innovation_bg p.aos-animate {
+    opacity: 1;
+    transform: translateY(0%);
   }
 }
 .main_container .main_innovation .sticky_box .innovation_bg p strong {

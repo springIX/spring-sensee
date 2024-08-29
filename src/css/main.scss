@@ -712,18 +712,18 @@
         width: 322rem;
         height: 181rem;
         position: absolute;
-        left: 198rem;
+        left: $layout_inner;
         top: calc(50% - 360rem);
         z-index: 10;
         overflow: hidden;
         @include screen("pc_more") {
-          left: calc(50vw - 762px);
+          left: $layout_inner_pc_more;
         }
         @include screen("mo") {
           position: relative;
-          left: 0;
+          left: -20rem;
           top: 0;
-          width: 100%;
+          width: calc(100% + 40rem);
           height: 640rem;
         }
         video {
@@ -751,6 +751,11 @@
           @include screen("mo") {
             font-size: 32rem;
             padding: 0 20rem;
+            transition: 1s ease;
+            &.aos-animate {
+              opacity: 1;
+              transform: translateY(0%);
+            }
           }
           strong {
             display: block;
