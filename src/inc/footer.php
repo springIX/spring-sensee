@@ -51,7 +51,7 @@
 
         ©2024 SENSEE. All Rights Reserved.
       </p>
-      <a href="https://www.instagram.com/3dcoloring_sensee/" target="_blank" class="insta">Instagram 
+      <a href="https://www.instagram.com/3dcoloring_sensee/" target="_blank" class="insta"><span>Instagram </span>
         <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
           <path d="M2.38836 1.18195L8.75232 1.18195M8.75232 1.18195L8.75232 7.54591M8.75232 1.18195L1.18256 8.75293" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>

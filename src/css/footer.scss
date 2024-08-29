@@ -134,6 +134,13 @@
           margin-bottom: 50rem;
           font-size: 16rem;
         }
+        span {
+          transition: 0.3s ease;
+          display: inline-block;
+        }
+        &:hover span {
+          transform: translateX(5rem);
+        }
         svg {
           display: inline-block;
           width: 12rem;

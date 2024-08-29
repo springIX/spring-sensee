@@ -92,13 +92,14 @@
       line-height: 1.6;
       padding-bottom: 4rem;
       color: $color-gray1;
+      font-weight: 700;
+      border-bottom: 2px solid transparent;
       @include fontSize(20rem);
       @include screen("mo") {
         font-size: 20rem;
       }
       &.active {
-        font-weight: 700;
-        border-bottom: 2px solid #000;
+        border-bottom: 2px solid $color-black;
         color: $color-black;
       }
     }

@@ -49,7 +49,7 @@
                   </div>
                   <div class="txt_box">
                     <span>Victor Insik (서인식)</span>
-                    <p>CE0 & Founder of SENSEE, Inc</p>
+                    <p>CEO & Founder of SENSEE, Inc</p>
                   </div>
                 </div>
                 <div class="profile">
@@ -58,10 +58,10 @@
                   </div>
                   <div class="txt_box">
                     <span>Alice Jiyun Cho (조지윤)</span>
-                    <p>CE0 & Founder of SENSEE, Inc</p>
+                    <p>CO - Founder & VP of SENSEE, Inc</p>
                   </div>
                 </div>
-                <button class="btn_more" data-btn="ceo"></button>
+                <button class="btn_more" data-btn="ceo"><i></i></button>
               </div>
               <div class="img1">
                 <picture data-aos="clip-up">
@@ -133,7 +133,7 @@
               </div>
               <div class="name">
                 <strong>Victor Insik (서인식)</strong><br>
-                CE0 & Founder of SENSEE, Inc
+                CEO & Founder of SENSEE, Inc
               </div>
             </div>
             <img src="<?=$img?>ceo.png" alt="" class="ceo_img">
@@ -143,11 +143,16 @@
               <div class="meant">
                 <p class="caption ">Touch the world and <br>See the unseen</p>
                 <div class="sub_tit">
+                  센시는 다양한 배경과 능력을 가진 <br>
+                  모든 사람들이 접근할 수 있는 제품을 설계하고, <br>
+                  함께 하는 경험의 가치를 중요시하며, <br>
+                  포용적이고 지속 가능한 미래를 위해 <br>
+                  기여하고자 합니다.
                 </div>
               </div>
               <div class="name">
                 <strong>Alice Jiyun Cho (조지윤)</strong><br>
-                CE0 & Founder of SENSEE, Inc
+                CO - Founder & VP of SENSEE, Inc
               </div>
             </div>
             <img src="<?=$img?>ceo02.png" alt="" class="ceo_img">

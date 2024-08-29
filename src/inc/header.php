@@ -48,8 +48,9 @@
         <div class="txt_size flex_cnt">
           <span>Text size</span>
           <div class="btn_wrap">
-            <button id="increase_font" class="size_up" title="텍스트 크게 보기"></button>
-            <button id="decrease_font" class="size_down" title="텍스트 작게 보기"></button>
+            <button id="reset_font" class="size_reset disabled" title="텍스트 크기 리셋"></button>
+            <button id="increase_font" class="size_up" title="텍스트 크게 보기"><i></i></button>
+            <button id="decrease_font" class="size_down" title="텍스트 작게 보기"><i></i></button>
           </div>
         </div>
         <div class="txt_color">

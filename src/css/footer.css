@@ -148,6 +148,13 @@
     font-size: 16rem;
   }
 }
+.footer .info .ft_contact .insta span {
+  transition: 0.3s ease;
+  display: inline-block;
+}
+.footer .info .ft_contact .insta:hover span {
+  transform: translateX(5rem);
+}
 .footer .info .ft_contact .insta svg {
   display: inline-block;
   width: 12rem;

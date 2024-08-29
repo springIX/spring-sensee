@@ -106,7 +106,7 @@
       top: 0;
       width: 100%;
       height: 100vh;
-      background-color: $color-white;
+      background-color: $color-bg;
       color: $color-black;
       padding: 100px 20rem 0;
       font-size: 40rem;
@@ -258,34 +258,44 @@
               width: 32rem;
               height: 32rem;
               border-radius: 8rem;
-              background-color: rgba($color: $color-white, $alpha: 0.2);
+              background-color: $color-white;
               position: relative;
-              transition: 0.3s eae;
-              &::before,
-              &::after {
-                content: "";
-                width: 16rem;
-                height: 2px;
-                background-color: $color-white;
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%, -50%);
-                transition: 0.3s ease;
+              transition: 0.3s ease;
+              i {
+                &::before,
+                &::after {
+                  content: "";
+                  width: 16rem;
+                  height: 2px;
+                  background-color: $color-black;
+                  position: absolute;
+                  left: 50%;
+                  top: 50%;
+                  transform: translate(-50%, -50%);
+                  transition: 0.3s ease;
+                }
+                &::after {
+                  transform: translate(-50%, -50%) rotate(90deg);
+                }
               }
-              &::after {
-                transform: translate(-50%, -50%) rotate(90deg);
-              }
-              &.size_down::after {
+              &.size_down i::after {
                 display: none;
+              }
+              &.size_reset::after {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 100%;
+                background: url(/src/images/common/arr_reset.svg) no-repeat
+                  center center / contain;
               }
               &.disabled {
                 cursor: default;
                 touch-action: none;
                 pointer-events: none;
                 background-color: rgba($color: $color-black, $alpha: 0.2);
-                &::before,
-                &::after {
+                i::before,
+                i::after {
                   background-color: rgba($color: $color-black, $alpha: 0.2);
                 }
               }
@@ -509,18 +519,27 @@
         transform: translateY(0);
       }
       .setting_box {
-        .all_menu_btn i {
-          background-color: $color-black;
-          left: 50%;
-          top: 50%;
-          &:nth-child(1) {
-            transform: translate(-50%, -50%) rotate(45deg);
-          }
-          &:nth-child(2) {
-            transform: translate(-50%, -50%) scaleX(0);
-          }
-          &:nth-child(3) {
-            transform: translate(-50%, -50%) rotate(-45deg);
+        .ctrl_txt .ctrl_btn {
+          opacity: 0;
+          touch-action: none;
+          pointer-events: none;
+        }
+        .all_menu_btn {
+          width: 24rem;
+          height: 24rem;
+          i {
+            background-color: $color-black;
+            left: 50%;
+            top: 50%;
+            &:nth-child(1) {
+              transform: translate(-50%, -50%) rotate(45deg);
+            }
+            &:nth-child(2) {
+              transform: translate(-50%, -50%) scaleX(0);
+            }
+            &:nth-child(3) {
+              transform: translate(-50%, -50%) rotate(-45deg);
+            }
           }
         }
         .lang_wrap {
