@@ -171,6 +171,11 @@
     margin: 12rem 0 20rem;
   }
 }
+@media (max-width: 750px) {
+  .about_container .about_movie .tit_box .body_txt {
+    font-size: 14rem;
+  }
+}
 .about_container .about_movie .movie_btn_wrap {
   margin-top: 54rem;
 }
