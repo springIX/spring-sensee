@@ -462,10 +462,12 @@
     }
   }
   .main_together {
-    background-color: $color-black;
-    color: $color-white;
     overflow: hidden;
     padding: 300rem 0;
+    &.aos-animate {
+      background-color: $color-black;
+      color: $color-white;
+    }
     @include screen("mo") {
       padding: 120rem 0 155rem;
     }

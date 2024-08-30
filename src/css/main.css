@@ -508,10 +508,12 @@
   opacity: 1;
 }
 .main_container .main_together {
-  background-color: #000000;
-  color: #ffffff;
   overflow: hidden;
   padding: 300rem 0;
+}
+.main_container .main_together.aos-animate {
+  background-color: #000000;
+  color: #ffffff;
 }
 @media (max-width: 750px) {
   .main_container .main_together {
