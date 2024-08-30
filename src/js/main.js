@@ -119,7 +119,7 @@ $(document).ready(function () {
         scrollTrigger: {
           trigger: '.main_innovation',
           start: "top top",
-          end: "200%",
+          end: "350%",
           scrub: true,
           pin: true,
           pinnedContainer: '.main_innovation .sticky_box',
@@ -133,9 +133,9 @@ $(document).ready(function () {
         .to('.main_innovation .sticky_box .innovation_bg video', 2, { scale: 1, filter: "brightness(.6)", }, 'group1')
         .to('.main_innovation .sticky_box .innovation_bg p', 1, { opacity: 1, y: 0 }, "-=50%")
         .to('.main_innovation .sticky_box .innovation_bg p strong:nth-child(1)', 1, { backgroundSize: '100% 100%', ease: 'none', },)
-        .to('.main_innovation .sticky_box .innovation_bg p strong:nth-child(2)', 1, { backgroundSize: '100% 100%', ease: 'none', }, "-=20%")
-        .to('.main_innovation .sticky_box .innovation_bg p strong:nth-child(3)', 1, { backgroundSize: '100% 100%', ease: 'none', }, "-=20%")
-        .to('.main_innovation .sticky_box .innovation_bg p strong:nth-child(4)', 1, { backgroundSize: '100% 100%', ease: 'none', }, "-=20%")
+        .to('.main_innovation .sticky_box .innovation_bg p strong:nth-child(2)', 1, { backgroundSize: '100% 100%', ease: 'none', }, "+=100%")
+        .to('.main_innovation .sticky_box .innovation_bg p strong:nth-child(3)', 1, { backgroundSize: '100% 100%', ease: 'none', }, "+=100%")
+        .to('.main_innovation .sticky_box .innovation_bg p strong:nth-child(4)', 1, { backgroundSize: '100% 100%', ease: 'none', }, "+=100%")
         .to('.main_innovation .sticky_box .innovation_bg p strong:nth-child(4)', 1, { backgroundSize: '100% 100%', ease: 'none', },)
     },
     "(max-width: 750px)": function () {      
@@ -149,10 +149,12 @@ $(document).ready(function () {
       });
       
       main_innovation2
+        .to('.main_innovation .sticky_box .innovation_bg', 1, { left: "-20rem", width: "calc(100% + 40rem)" }, "-=50%")
+        .to('.main_innovation .sticky_box .innovation_bg p', 1, { opacity: 1, y: 0 }, "-=50%")
         .to('.main_innovation .sticky_box .innovation_bg p strong:nth-child(1)', 1, { backgroundSize: '100% 100%', ease: 'none', },)
-        .to('.main_innovation .sticky_box .innovation_bg p strong:nth-child(2)', 1, { backgroundSize: '100% 100%', ease: 'none', }, "+=50%")
-        .to('.main_innovation .sticky_box .innovation_bg p strong:nth-child(3)', 1, { backgroundSize: '100% 100%', ease: 'none', }, "+=50%")
-        .to('.main_innovation .sticky_box .innovation_bg p strong:nth-child(4)', 1, { backgroundSize: '100% 100%', ease: 'none', }, "+=50%")
+        .to('.main_innovation .sticky_box .innovation_bg p strong:nth-child(2)', 1, { backgroundSize: '100% 100%', ease: 'none', }, "+=100%")
+        .to('.main_innovation .sticky_box .innovation_bg p strong:nth-child(3)', 1, { backgroundSize: '100% 100%', ease: 'none', }, "+=100%")
+        .to('.main_innovation .sticky_box .innovation_bg p strong:nth-child(4)', 1, { backgroundSize: '100% 100%', ease: 'none', }, "+=100%")
         .to('.main_innovation .sticky_box .innovation_bg p strong:nth-child(4)', 1, { backgroundSize: '100% 100%', ease: 'none', },)
     }
   });

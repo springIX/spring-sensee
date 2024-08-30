@@ -138,7 +138,7 @@
           </i>
         </div>
       </section>
-      <section class="<?=$menuClass?>_together layout_inner">
+      <section class="<?=$menuClass?>_together layout_inner" data-aos="" data-aos-offset="600">
         <div class="section_tit" data-aos="fade-up">
           <h5 class="h5_">ENJOY STORY</h5>
           <h3 class="h3_">
