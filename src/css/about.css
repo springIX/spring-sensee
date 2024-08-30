@@ -19,7 +19,6 @@
 .about_container .about_overview .overview_cont .txt_wrap {
   display: flex;
   align-items: flex-start;
-  padding-left: 462rem;
   position: relative;
 }
 @media (max-width: 750px) {
@@ -29,14 +28,12 @@
   }
 }
 .about_container .about_overview .overview_cont .txt_wrap .sub_head {
-  position: absolute;
-  left: 0;
-  top: 0;
+  margin-right: 360rem;
+  white-space: nowrap;
 }
 @media (max-width: 750px) {
   .about_container .about_overview .overview_cont .txt_wrap .sub_head {
-    position: static;
-    margin-bottom: 8rem;
+    margin: 0 0 8rem;
     padding-left: 70rem;
   }
 }
@@ -45,7 +42,7 @@
   flex-wrap: wrap;
 }
 @media (max-width: 750px) {
-  .about_container .about_overview .overview_cont .txt_wrap .info_wrap br {
+  .about_container .about_overview .overview_cont .txt_wrap .info_wrap .body_txt br {
     display: none;
   }
 }
@@ -72,7 +69,7 @@
 }
 .about_container .about_overview .overview_cont .txt_wrap .ceo_info .profile {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 31rem;
 }
 @media (max-width: 750px) {
@@ -92,6 +89,12 @@
 }
 .about_container .about_overview .overview_cont .txt_wrap .ceo_info .profile .txt_box {
   line-height: 1.5;
+  padding-top: 15rem;
+}
+@media (max-width: 750px) {
+  .about_container .about_overview .overview_cont .txt_wrap .ceo_info .profile .txt_box {
+    padding-top: 10rem;
+  }
 }
 .about_container .about_overview .overview_cont .txt_wrap .ceo_info .profile .txt_box p {
   color: #888888;
@@ -177,13 +180,15 @@
   }
 }
 .about_container .about_movie .movie_btn_wrap .movie_btn {
-  display: inline-block;
+  width: 344rem;
+  margin: 0 auto 6rem;
   padding: 10rem;
   border: 1px solid #000000;
   border-radius: 4rem;
 }
 @media (max-width: 750px) {
   .about_container .about_movie .movie_btn_wrap .movie_btn {
+    width: 335rem;
     padding: 6rem;
   }
 }

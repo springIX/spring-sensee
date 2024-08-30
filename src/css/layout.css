@@ -91,8 +91,7 @@ body.black_yellow path {
   font-size: clamp(10px, 88rem, 999rem);
   line-height: 1.44;
 }
-.h3_.pps {
-  font-weight: 600;
+.h3_.eng {
   line-height: 1.2;
 }
 @media (max-width: 750px) {
@@ -198,7 +197,7 @@ body.black_yellow path {
 }
 @media (max-width: 750px) {
   .body_txt {
-    font-size: 14rem;
+    font-size: 16rem;
     line-height: 1.55;
   }
 }
@@ -307,12 +306,12 @@ body.black_yellow path {
   transform: translate(-50%, -50%);
 }
 
-.section_tit .h3_.pps {
-  margin-top: 10rem;
+.section_tit .h3_ {
+  margin-top: 12rem;
 }
 .section_tit .body_txt,
 .section_tit .sub_tit {
-  margin-top: 40rem;
+  margin-top: 24rem;
 }
 .section_tit .btn_more {
   display: inline-flex;
@@ -406,6 +405,7 @@ body.black_yellow path {
 .keyvisual {
   position: relative;
   overflow: hidden;
+  height: 100vh;
 }
 .keyvisual .container {
   position: relative;

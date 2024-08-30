@@ -14,7 +14,6 @@
       .txt_wrap {
         display: flex;
         align-items: flex-start;
-        padding-left: 462rem;
         position: relative;
         $m_overview_grid: 70rem;
         @include screen("mo") {
@@ -22,12 +21,10 @@
           padding-left: 0;
         }
         .sub_head {
-          position: absolute;
-          left: 0;
-          top: 0;
+          margin-right: 360rem;
+          white-space: nowrap;
           @include screen("mo") {
-            position: static;
-            margin-bottom: 8rem;
+            margin: 0 0 8rem;
             padding-left: $m_overview_grid;
           }
         }
@@ -35,7 +32,7 @@
           display: flex;
           flex-wrap: wrap;
           @include screen("mo") {
-            br {
+            .body_txt br {
               display: none;
             }
           }
@@ -60,7 +57,7 @@
           }
           .profile {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             margin-bottom: 31rem;
             @include screen("mo") {
               margin-bottom: 40rem;
@@ -75,6 +72,10 @@
             }
             .txt_box {
               line-height: 1.5;
+              padding-top: 15rem;
+              @include screen("mo") {
+                padding-top: 10rem;
+              }
               p {
                 color: $color-gray1;
               }
@@ -153,11 +154,13 @@
         margin-top: 63rem;
       }
       .movie_btn {
-        display: inline-block;
+        width: 344rem;
+        margin: 0 auto 6rem;
         padding: 10rem;
         border: 1px solid $color-black;
         border-radius: 4rem;
         @include screen("mo") {
+          width: 335rem;
           padding: 6rem;
         }
         button {

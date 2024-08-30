@@ -98,8 +98,7 @@ body {
   font-weight: 700;
   @include fontSize(88rem);
   line-height: 1.44;
-  &.pps {
-    font-weight: 600;
+  &.eng {
     line-height: 1.2;
   }
   @include screen("mo") {
@@ -195,7 +194,7 @@ body {
   line-height: 1.52;
   font-weight: 400;
   @include screen("mo") {
-    font-size: 14rem;
+    font-size: 16rem;
     line-height: 1.55;
   }
 } // 섹션 타이틀 본문
@@ -284,12 +283,12 @@ body {
 
 // section txt
 .section_tit {
-  .h3_.pps {
-    margin-top: 10rem;
+  .h3_ {
+    margin-top: 12rem;
   }
   .body_txt,
   .sub_tit {
-    margin-top: 40rem;
+    margin-top: 24rem;
   }
   .btn_more {
     display: inline-flex;
@@ -375,6 +374,7 @@ body {
 .keyvisual {
   position: relative;
   overflow: hidden;
+  height: 100vh;
   .container {
     position: relative;
     width: 100%;
