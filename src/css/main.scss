@@ -8,8 +8,9 @@
     position: relative;
     overflow: hidden;
     color: $color-white;
-    height: 100vh;
-
+    @include screen("pc") {
+      height: 100vh;
+    }
     .swiper {
       width: 100%;
       height: 100%;
