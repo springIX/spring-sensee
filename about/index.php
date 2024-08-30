@@ -30,13 +30,13 @@
       <section class="<?=$menuClass?>_overview">
         <div class="section_tit layout_inner" data-aos="fade-up">
           <h5 class="h5_">OVERVIEW</h5>
-          <h3 class="h3_ ">Evolving to <br class="mo">bring <br class="pc">the world together</h3>
+          <h3 class="h3_ eng">Evolving to <br class="mo">bring <br class="pc">the world together</h3>
         </div>
         <div class="overview_cont layout_inner_w">
           <div class="txt_wrap">
             <p class="sub_head " data-aos="fade-up">Brand history</p>
             <div class="info_wrap">
-              <p class="info" data-aos="fade-up" data-aos-delay="100">
+              <p class="body_txt info" data-aos="fade-up" data-aos-delay="100">
                 ESG의 진정한 핵심가치는 내재화에 있으며 <br>
                 센시는 다양성이 존중되고 장애가 차별받지 않는 <br>
                 세상을 위해 하나의 기술로 시작하여,  <br>
@@ -58,7 +58,7 @@
                   </div>
                   <div class="txt_box">
                     <span>Alice Jiyun Cho (조지윤)</span>
-                    <p>CO - Founder & VP of SENSEE, Inc</p>
+                    <p>CO - Founder & VP <br class="mo">of SENSEE, Inc</p>
                   </div>
                 </div>
                 <button class="btn_more" data-btn="ceo"><i></i></button>
@@ -100,8 +100,8 @@
         <div class="tit_box" data-aos="fade-up">
           <img src="<?=$icon?>logo_cymbol_black.svg" alt="" class="logo_cymbol">
           <h4 class="h4_">Touch the world and <br>See the unseen</h4>
-          <p class="body_txt">차이로 차별하지 않으며, 변화에 변함없는 원칙 <br class="pc">
-          모두가 윤리적인 삶을 누릴 수 있는 세상을 SENSEE가 만들어 갑니다.</p>
+          <p class="body_txt">차이로 차별하지 않으며, 변화에 변함없는 원칙 <br>
+          모두가 윤리적인 삶을 누릴 수 있는 세상을 <br class="mo">SENSEE가 만들어 갑니다.</p>
         </div>
         <div class="movie_btn_wrap" data-aos="fade-up">
           <div class="movie_btn">

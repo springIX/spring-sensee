@@ -16,7 +16,7 @@
   <div class="<?=$menuClass?>_wrap">
     <?php include $path."/src/inc/header.php"; ?>
     <main id="contents" class="<?=$menuClass?>_container">
-      <section class="<?=$menuClass?>_visual vh100">
+      <section class="<?=$menuClass?>_visual m_vh100">
         <div class="swiper image_area">
           <ul class="swiper-wrapper">
             <li class="swiper-slide video-slide" data-tit="TOGETHER" data-info="센시의 보편적 일상의 순간" data-cont="vid" data-aos="zoom-out">
@@ -57,7 +57,7 @@
             MEANINGFUL <br>
             BASICS
           </strong>
-          <img src="<?=$img?>intro.png" alt="" class="hand_img" data-aos="fade-up" />
+          <img src="<?=$img?>intro.png" alt="" class="hand_img" data-aos="" />
           <i data-aos=""></i>
         </div>
       </section>
@@ -65,15 +65,15 @@
         <div class="<?=$menuClass?>_brand_info layout_inner_l">
           <div class="section_tit" data-aos="fade-up">
             <h6 class="h5_">BRAND STORY</h6>
-            <h3 class="h3_ ">Touch the world and <br class="pc">See the unseen</h3>
+            <h3 class="h3_ eng">Touch the world and <br class="pc">See the unseen</h3>
           </div>
           <div class="txt_box">
             <div class="txt_wrap">
               <p data-aos="fade-up">
                 센시는 AI 기술로 모두에게 포용적인 콘텐츠를 <br>
-                제공하며, 인공지능 기반의 점자 편집, 이미지 변환, <br>
-                점자 디스플레이 기술을 통해 모든 사람이 <br>
-                접근할 수 있도록 합니다.
+                제공하며, 인공지능 기반의 점자 편집, <br>
+                이미지 변환, 점자 디스플레이 기술을 통해 <br>
+                모든 사람이 접근할 수 있도록 합니다.
               </p>
               <p data-aos="fade-up" data-aos-delay="100">
                 센시는 미래를 선도합니다. <br>
@@ -140,7 +140,7 @@
       </section>
       <section class="<?=$menuClass?>_together layout_inner">
         <div class="section_tit" data-aos="fade-up">
-          <h5 class="h5_">ENJOY STORY</h5>
+          <h5 class="h5_">DESIGN STORY</h5>
           <h3 class="h3_">
             센시의 디자인은 <br>
             모든 사람을 위한 철학이 <br> 
