@@ -390,6 +390,10 @@ body.black_yellow path {
   height: calc(var(--vh, 1vh) * 100);
 }
 
+.m_vh100 {
+  height: calc(var(--vh, 1vh) * 100);
+}
+
 .ib_br {
   display: inline-block;
 }
@@ -405,7 +409,11 @@ body.black_yellow path {
 .keyvisual {
   position: relative;
   overflow: hidden;
-  height: 100vh;
+}
+@media (min-width: 751px) {
+  .keyvisual {
+    height: 100vh;
+  }
 }
 .keyvisual .container {
   position: relative;

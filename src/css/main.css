@@ -9,7 +9,11 @@
   position: relative;
   overflow: hidden;
   color: #ffffff;
-  height: 100vh;
+}
+@media (min-width: 751px) {
+  .main_container .main_visual {
+    height: 100vh;
+  }
 }
 .main_container .main_visual .swiper {
   width: 100%;
