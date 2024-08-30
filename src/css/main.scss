@@ -244,6 +244,14 @@
       @include screen("mo") {
         padding: 0 20rem 80rem 0;
       }
+      .section_tit {
+        .h3_ i::before {
+          content: "and";
+          @include screen("mo") {
+            content: "&";
+          }
+        }
+      }
       .txt_box {
         width: max-content;
         margin: 160rem 0 0 auto;
@@ -264,6 +272,9 @@
             font-size: 14rem;
             br {
               display: none;
+              &.mo {
+                display: block;
+              }
             }
           }
         }
@@ -477,9 +488,6 @@
       margin-top: 12rem;
       @include screen("mo") {
         font-size: 40rem;
-        br {
-          display: none;
-        }
       }
     }
     .main_together_visual {

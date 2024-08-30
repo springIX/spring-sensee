@@ -271,6 +271,14 @@
     padding: 0 20rem 80rem 0;
   }
 }
+.main_container .main_brand .main_brand_info .section_tit .h3_ i::before {
+  content: "and";
+}
+@media (max-width: 750px) {
+  .main_container .main_brand .main_brand_info .section_tit .h3_ i::before {
+    content: "&";
+  }
+}
 .main_container .main_brand .main_brand_info .txt_box {
   width: max-content;
   margin: 160rem 0 0 auto;
@@ -297,6 +305,9 @@
   }
   .main_container .main_brand .main_brand_info .txt_box .txt_wrap br {
     display: none;
+  }
+  .main_container .main_brand .main_brand_info .txt_box .txt_wrap br.mo {
+    display: block;
   }
 }
 .main_container .main_brand .main_brand_visual {
@@ -531,9 +542,6 @@
 @media (max-width: 750px) {
   .main_container .main_together .section_tit .h3_ {
     font-size: 40rem;
-  }
-  .main_container .main_together .section_tit .h3_ br {
-    display: none;
   }
 }
 .main_container .main_together .main_together_visual {

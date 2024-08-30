@@ -197,7 +197,7 @@ body.black_yellow path {
 }
 @media (max-width: 750px) {
   .body_txt {
-    font-size: 16rem;
+    font-size: 14rem;
     line-height: 1.55;
   }
 }

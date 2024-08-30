@@ -65,7 +65,7 @@
         <div class="<?=$menuClass?>_brand_info layout_inner_l">
           <div class="section_tit" data-aos="fade-up">
             <h6 class="h5_">BRAND STORY</h6>
-            <h3 class="h3_ eng">Touch the world and <br class="pc">See the unseen</h3>
+            <h3 class="h3_ eng">Touch the world <i></i> <br class="pc">See the unseen</h3>
           </div>
           <div class="txt_box">
             <div class="txt_wrap">
@@ -76,7 +76,7 @@
                 모든 사람이 접근할 수 있도록 합니다.
               </p>
               <p data-aos="fade-up" data-aos-delay="100">
-                센시는 미래를 선도합니다. <br>
+                센시는 미래를 선도합니다. <br class="mo">
                 2024년 UN Zero Project에서 <br>
                 포용적 교육(Inclusive Education)과 ICT 분야를 <br> 
                 비롯하여 국내 최초로 전 세계 12개 혁신 솔루션에 <br>
@@ -118,7 +118,7 @@
           <h5 class="h5_">TECHNOLOGY</h5>
           <h5 class="h3_">모두를 위한 기술, <br class="mo">함께하는 세상</h5>
           <h5 class="body_txt">
-            센시의 독자적인 AI 데이터 분석 및 자동 편집 기술은 시각장애인도 함께 볼 수 있는 Universal 콘텐츠를 공급합니다. <br>
+            센시의 독자적인 AI 데이터 분석 및 자동 편집 기술은 시각장애인도 함께 볼 수 있는 <span class="ib_br">Universal 콘텐츠를 공급합니다.</span> <br>
             센시의 AI 기술력과 모두를 위한 콘텐츠 디자인은 UN Zero Project의 혁신 솔루션으로 선정되어 <span class="ib_br">글로벌로 확장하고 있습니다.</span> <br><br>
             글자와 점자를 함께 제공할 수 있는 개인형, 산업용 및 디지털 플랫폼 구축 기술은 장애인과 비장애인이 함께 <span class="ib_br">즐기는 세상에 기여합니다.</span><br>
             끊임없는 기술 개발, 기술의 산업 연결 및 글로벌 인프라 구축으로 진정한 ESG의 가치를 실천합니다.
@@ -143,7 +143,7 @@
           <h5 class="h5_">DESIGN STORY</h5>
           <h3 class="h3_">
             센시의 디자인은 <br>
-            모든 사람을 위한 철학이 <br> 
+            모든 사람을 위한 <br class="mo">철학이 <br class="pc"> 
             담겨있습니다.
           </h3>
         </div>
