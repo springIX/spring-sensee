@@ -147,6 +147,11 @@
           margin: 12rem 0 20rem;
         }
       }
+      @include screen("mo") {
+        .body_txt {
+          font-size: 14rem;
+        }
+      }
     }
     .movie_btn_wrap {
       margin-top: 54rem;
