@@ -720,6 +720,7 @@
   }
   .main_innovation {
     position: relative;
+    transition-duration: 0s !important;
     .sticky_box {
       display: flex;
       flex-direction: column;

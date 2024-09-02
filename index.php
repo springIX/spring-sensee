@@ -179,7 +179,7 @@
         </div>
         <img src="<?=$img?>together_hand.png" alt="" class="hand_img">
       </section>
-      <section class="<?=$menuClass?>_innovation">
+      <section class="<?=$menuClass?>_innovation" id="main_innovation" data-aos="">
         <div class="sticky_box layout_inner vh100">
           <span class="sub_tit4">
             세상을 만지고 <br>

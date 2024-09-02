@@ -802,6 +802,7 @@
 }
 .main_container .main_innovation {
   position: relative;
+  transition-duration: 0s !important;
 }
 .main_container .main_innovation .sticky_box {
   display: flex;
