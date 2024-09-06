@@ -174,12 +174,12 @@ $(document).ready(function () {
     innoScr();
   });
 
-  if ($('.main_innovation').hasClass('aos-animate')) {
-    setTimeout(() => {
-      window.scrollTo(0, $('.pin-spacer').offset().top);
-    }, 1000);
-  } 
-
+  setTimeout(() => {
+    if ($('.main_innovation').hasClass('aos-animate')) {
+      window.scroll(0, $('.main_together').offset().top + $('.main_together').outerHeight());
+    } 
+  }, 1000);
+  
   $(window).resize(function () {
     if (window.sessionStorage.getItem('innoScr') == 'on') { 
       setTimeout(() => {
