@@ -34,8 +34,8 @@
             <div class="tab_buttons x_scrollbar">
                 <button class="tab_button active" data-tab="tab1">Head Office</button>
                 <button class="tab_button" data-tab="tab2">R&D Center</button>
-                <button class="tab_button" data-tab="tab3">Manufacture</button>
-                <button class="tab_button" data-tab="tab4">Contents Lab</button>
+                <button class="tab_button" data-tab="tab3">Contents Lab</button>
+                <button class="tab_button" data-tab="tab4">Manufacture</button>
                 <button class="tab_button" data-tab="tab5">USA</button>
             </div>
 
@@ -80,6 +80,25 @@
             <div class="layout_inner tab_content" id="tab3">
               <div class="office_inner">
                 <div class="tab_content_tit">
+                  Contents Lab
+                </div>
+                <div class="sub_tab_buttons">
+                    <button class="sub_tab_button active" data-tab="sub4_tab1">서울</button>
+                </div>
+                <div class="sub_tab_content active" id="sub4_tab1">
+                  <div class="map_contents">
+                    <div class="map_desc">서울특별시 강남구 테헤란로 443, 4층 (우: 06158)</div>
+                    <div class="map_content">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.0371379055864!2d127.05297987632106!3d37.50704222753653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca413f2f03e6d%3A0xdc3e4f5438979c4f!2z7ISc7Jq47Yq567OE7IucIOqwleuCqOq1rCDthYztl6TrnoDroZwgNDQzIDTsuLU!5e0!3m2!1sko!2skr!4v1724731167924!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="layout_inner tab_content" id="tab4">
+              <div class="office_inner">
+                <div class="tab_content_tit">
                   Manufacture
                 </div>
                 <div class="sub_tab_buttons">
@@ -91,7 +110,7 @@
                   <div class="map_contents">
                     <div class="map_desc">경기도 파주시 신촌1로 27 (우: 10880)</div>
                     <div class="map_content">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3214.6619771299765!2d127.41933797627998!3d36.32050309459249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3565492ba68f3675%3A0x42ab5acbbdc51ac2!2z64yA7KCE6rSR7Jet7IucIOykkeq1rCDthYzrr7jroZw0NOuyiOyViOq4uCAzMw!5e0!3m2!1sko!2skr!4v1724051358390!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3155.5336128425997!2d126.69157227632903!3d37.730623814701126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c88d4ebbbdd6f%3A0x8845191d3ea633a!2z6rK96riw64-EIO2MjOyjvOyLnCDsi6DstIwx66GcIDI3!5e0!3m2!1sko!2skr!4v1725610492631!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                   </div>
                 </div>
@@ -108,25 +127,6 @@
                     <div class="map_desc">C.3 Nte. 557, Chilpancingo, 22446 Tijuana, B.C., Mexico</div>
                     <div class="map_content">
                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3363.3488713356896!2d-116.91752802384225!3d32.54353319588068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d947157cd9c165%3A0x9bf6ae3101a7b6e6!2zQy4gMyBOdGUuIDU1NywgQ2hpbHBhbmNpbmdvLCAyMjQ0NiBUaWp1YW5hLCBCLkMuLCDrqZXsi5zsvZQ!5e0!3m2!1sko!2skr!4v1724726831238!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="layout_inner tab_content" id="tab4">
-              <div class="office_inner">
-                <div class="tab_content_tit">
-                  Contents Lab
-                </div>
-                <div class="sub_tab_buttons">
-                    <button class="sub_tab_button active" data-tab="sub4_tab1">서울</button>
-                </div>
-                <div class="sub_tab_content active" id="sub4_tab1">
-                  <div class="map_contents">
-                    <div class="map_desc">서울특별시 강남구 테헤란로 443, 4층 (우: 06158)</div>
-                    <div class="map_content">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.0371379055864!2d127.05297987632106!3d37.50704222753653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca413f2f03e6d%3A0xdc3e4f5438979c4f!2z7ISc7Jq47Yq567OE7IucIOqwleuCqOq1rCDthYztl6TrnoDroZwgNDQzIDTsuLU!5e0!3m2!1sko!2skr!4v1724731167924!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                   </div>
                 </div>
