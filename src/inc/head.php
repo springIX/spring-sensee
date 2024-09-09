@@ -6,12 +6,12 @@
   <meta name="format-detection" content="telephone=no" />
 
   <title>SENSEE <?=$menuName==""?"":"｜$menuName"?></title>
-  <meta name="description" content="<?=$pageDescription==""?"":"$pageDescription"?>">
+  <meta name="description" content="센시가 제안하는 새로운 미래를 경험해보세요. 센시의 가치, 철학 그리고 기술 등을 깊이 있게 살펴볼 수 있습니다.">
   <meta name="keywords" content="<?=$pageKeywords==""?"":"$pageKeywords"?>">
   <meta property="og:title" content="<?=$pageTitle==""?"":"$pageTitle"?>" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="<?=$pageUrl==""?"":"$pageUrl"?>" />
-  <meta property="og:image" content="<?=$pageImages==""?"":"$pageImages"?>" />
+  <meta property="og:image" content="<?=$icon?>og.jpg" />
   <link rel="canonical" href="<?=$pageUrl==""?"":"$pageUrl"?>" />
 
   <link rel="shortcut icon" href="/favicon.ico"><!-- Chrome, Safari, IE -->
