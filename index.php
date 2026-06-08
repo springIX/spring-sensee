@@ -6,8 +6,8 @@
   $img = '/src/images/'.$menuClass.'/'.$menuClass.'_';
   $pageTitle = '';
   $pageImages = '';
-  $pageDescription = '디스크립션';
-  $pageKeywords = '키워드';
+  $pageDescription = '';
+  $pageKeywords = '';
 
   include $path."src/inc/head.php";
 ?>
